@@ -1,0 +1,23 @@
+7/18/25, 8:27 PM Um User Info, Add new
+Um
+User
+Info,
+Add
+new
+localhost/karsaaz_pos/umuserinfo_add.php 1 / 2
+
+7/18/25, 8:27 PM Um User Info, Add new
+User Name
+Cell No
+Email
+Login User Name
+Password
+Password Hint
+Group Code
+Remarks
+User T ype
+Is Account  Active
+No Of  Attempt
+No Of W orng Attempt
+   
+localhost/karsaaz_pos/umuserinfo_add.php 2 / 2

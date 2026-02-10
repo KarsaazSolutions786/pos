@@ -1,0 +1,447 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-view" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="view_header" data-itemid="view_header" {$item_view_header} data-pageid="{$pageid}" >{$pagetitlelabel AccountCBal1 view}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN Code_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Code}  r-vertical-field" data-fieldname="Code" data-signal-error-for="Code{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="Code" data-fieldname="Code" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Code}">
+		
+		{BEGIN Code_label}{$label AccountCBal1 Code }{END Code_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Code_value}	</div>
+
+		
+</div>
+
+
+{END Code_fieldblock}
+											
+{BEGIN ParentAccountCode_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ParentAccountCode}  r-vertical-field" data-fieldname="ParentAccountCode" data-signal-error-for="ParentAccountCode{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="ParentAccountCode" data-fieldname="ParentAccountCode" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ParentAccountCode}">
+		
+		{BEGIN ParentAccountCode_label}{$label AccountCBal1 ParentAccountCode }{END ParentAccountCode_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ParentAccountCode_value}	</div>
+
+		
+</div>
+
+
+{END ParentAccountCode_fieldblock}
+											
+{BEGIN ParentCode_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ParentCode}  r-vertical-field" data-fieldname="ParentCode" data-signal-error-for="ParentCode{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="ParentCode" data-fieldname="ParentCode" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ParentCode}">
+		
+		{BEGIN ParentCode_label}{$label AccountCBal1 ParentCode }{END ParentCode_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ParentCode_value}	</div>
+
+		
+</div>
+
+
+{END ParentCode_fieldblock}
+											
+{BEGIN AccountCode_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_AccountCode}  r-vertical-field" data-fieldname="AccountCode" data-signal-error-for="AccountCode{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="AccountCode" data-fieldname="AccountCode" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_AccountCode}">
+		
+		{BEGIN AccountCode_label}{$label AccountCBal1 AccountCode }{END AccountCode_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$AccountCode_value}	</div>
+
+		
+</div>
+
+
+{END AccountCode_fieldblock}
+											
+{BEGIN BuCode_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_BuCode}  r-vertical-field" data-fieldname="BuCode" data-signal-error-for="BuCode{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="BuCode" data-fieldname="BuCode" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_BuCode}">
+		
+		{BEGIN BuCode_label}{$label AccountCBal1 BuCode }{END BuCode_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$BuCode_value}	</div>
+
+		
+</div>
+
+
+{END BuCode_fieldblock}
+											
+{BEGIN AccountTypeCode_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_AccountTypeCode}  r-vertical-field" data-fieldname="AccountTypeCode" data-signal-error-for="AccountTypeCode{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="AccountTypeCode" data-fieldname="AccountTypeCode" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_AccountTypeCode}">
+		
+		{BEGIN AccountTypeCode_label}{$label AccountCBal1 AccountTypeCode }{END AccountTypeCode_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$AccountTypeCode_value}	</div>
+
+		
+</div>
+
+
+{END AccountTypeCode_fieldblock}
+											
+{BEGIN AccountType_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_AccountType}  r-vertical-field" data-fieldname="AccountType" data-signal-error-for="AccountType{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="AccountType" data-fieldname="AccountType" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_AccountType}">
+		
+		{BEGIN AccountType_label}{$label AccountCBal1 AccountType }{END AccountType_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$AccountType_value}	</div>
+
+		
+</div>
+
+
+{END AccountType_fieldblock}
+											
+{BEGIN CBalance_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CBalance}  r-vertical-field" data-fieldname="CBalance" data-signal-error-for="CBalance{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="CBalance" data-fieldname="CBalance" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_CBalance}">
+		
+		{BEGIN CBalance_label}{$label AccountCBal1 CBalance }{END CBalance_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$CBalance_value}	</div>
+
+		
+</div>
+
+
+{END CBalance_fieldblock}
+											
+{BEGIN CBalStatus_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CBalStatus}  r-vertical-field" data-fieldname="CBalStatus" data-signal-error-for="CBalStatus{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="CBalStatus" data-fieldname="CBalStatus" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_CBalStatus}">
+		
+		{BEGIN CBalStatus_label}{$label AccountCBal1 CBalStatus }{END CBalStatus_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$CBalStatus_value}	</div>
+
+		
+</div>
+
+
+{END CBalStatus_fieldblock}
+											
+{BEGIN FcCBalance_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_FcCBalance}  r-vertical-field" data-fieldname="FcCBalance" data-signal-error-for="FcCBalance{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="FcCBalance" data-fieldname="FcCBalance" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_FcCBalance}">
+		
+		{BEGIN FcCBalance_label}{$label AccountCBal1 FcCBalance }{END FcCBalance_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$FcCBalance_value}	</div>
+
+		
+</div>
+
+
+{END FcCBalance_fieldblock}
+											
+{BEGIN FCBalStatus_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_FCBalStatus}  r-vertical-field" data-fieldname="FCBalStatus" data-signal-error-for="FCBalStatus{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="FCBalStatus" data-fieldname="FCBalStatus" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_FCBalStatus}">
+		
+		{BEGIN FCBalStatus_label}{$label AccountCBal1 FCBalStatus }{END FCBalStatus_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$FCBalStatus_value}	</div>
+
+		
+</div>
+
+
+{END FCBalStatus_fieldblock}
+											
+{BEGIN Remarks_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Remarks}  r-vertical-field" data-fieldname="Remarks" data-signal-error-for="Remarks{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="Remarks" data-fieldname="Remarks" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Remarks}">
+		
+		{BEGIN Remarks_label}{$label AccountCBal1 Remarks }{END Remarks_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Remarks_value}	</div>
+
+		
+</div>
+
+
+{END Remarks_fieldblock}
+											
+{BEGIN FcCurrencyCode_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_FcCurrencyCode}  r-vertical-field" data-fieldname="FcCurrencyCode" data-signal-error-for="FcCurrencyCode{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="FcCurrencyCode" data-fieldname="FcCurrencyCode" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_FcCurrencyCode}">
+		
+		{BEGIN FcCurrencyCode_label}{$label AccountCBal1 FcCurrencyCode }{END FcCurrencyCode_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$FcCurrencyCode_value}	</div>
+
+		
+</div>
+
+
+{END FcCurrencyCode_fieldblock}
+											
+{BEGIN AccStatusType_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_AccStatusType}  r-vertical-field" data-fieldname="AccStatusType" data-signal-error-for="AccStatusType{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="AccStatusType" data-fieldname="AccStatusType" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_AccStatusType}">
+		
+		{BEGIN AccStatusType_label}{$label AccountCBal1 AccStatusType }{END AccStatusType_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$AccStatusType_value}	</div>
+
+		
+</div>
+
+
+{END AccStatusType_fieldblock}
+											
+{BEGIN UDate_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_UDate}  r-vertical-field" data-fieldname="UDate" data-signal-error-for="UDate{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="UDate" data-fieldname="UDate" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_UDate}">
+		
+		{BEGIN UDate_label}{$label AccountCBal1 UDate }{END UDate_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$UDate_value}	</div>
+
+		
+</div>
+
+
+{END UDate_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN back_button}
+<span data-itemtype="view_back_list" data-itemid="view_back_list" {$item_view_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Back to list			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="view_close" data-itemid="view_close" {$item_view_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" href="#" {$closebutton_attrs} >
+							Close window			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-menu-hamburger"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN edit_page_button}
+	<li data-itemtype="view_edit" data-itemid="view_edit" {$item_view_edit} data-pageid="{$pageid}" data-small >
+				<a  href="accountcbal1_edit.php?{$editlink}" {$edit_page_button_attrs}  title="" >
+				
+		Edit		
+		</a>
+	</li>
+{END edit_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

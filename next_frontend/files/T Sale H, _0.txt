@@ -1,0 +1,44 @@
+7/18/25, 8:26 PM T Sale H, Add new
+T Sale
+H, Add
+new
+localhost/karsaaz_pos/tsaleh_add.php 1 / 4
+
+7/18/25, 8:26 PM T Sale H, Add new
+Code  *
+TMonth
+TYear
+Book Code
+Book ID
+Virtual Code
+TBook
+TType
+TDate
+Status
+Party Code
+Select
+localhost/karsaaz_pos/tsaleh_add.php 2 / 4
+
+7/18/25, 8:26 PM T Sale H, Add new
+Total Amount
+Freight  Account Code
+Freight Charges
+Labor  Account Code
+Labor Charges
+Sale Tax Acc Code
+Sale Tax Rate
+Sale Tax Amount
+Discount  Acc Code
+Discount Remarks
+Discount Rate
+Discount  Amount
+Grand T otal
+localhost/karsaaz_pos/tsaleh_add.php 3 / 4
+
+7/18/25, 8:26 PM T Sale H, Add new
+Sale Men Code
+Commission
+Remarks
+Block
+   
+localhost/karsaaz_pos/tsaleh_add.php 4 / 4

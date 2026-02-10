@@ -1,0 +1,2384 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-list" >
+	{BEGIN body}
+		<style>
+		{$containerCss}
+		</style>
+		<div class="r-vbar-page">
+			<div data-width="250px" data-fixed class="r-left clearfix {$leftbar_class}" >
+								<div data-location="left" id="form_left_{$pageid}" data-makeup="leftbar" {$form_left} data-pageid="{$pageid}">
+{BEGIN left_block}
+ 
+     
+         
+
+			<div data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell class="clearfix " data-itemid="logo" {$item_logo}>
+				{BEGIN logo_block}
+	<A data-itemtype="logo" data-itemid="logo" {$item_logo} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-pageid="{$pageid}" {$logo_hiddenattr}>
+		{$logo}
+	</A>
+{END logo_block}
+				<button data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">	
+					<span class="sr-only">Toggle navigation</span>	
+					<span class="icon-bar"></span>					
+				</button>				
+			</div>
+		
+ 
+
+			<div class="clearfix " data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell data-itemid="expand_button" {$item_expand_button} data-topcell-item-type="expand_button" >
+				<span data-itemtype="expand_button" data-itemid="expand_button" {$item_expand_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Expand" class="btn btn-link   
+	" href="#" >
+					<span class="glyphicon glyphicon-triangle-right"></span>
+										</a>
+</span>
+			</div>
+		
+     
+     
+         
+
+			<div data-cellId="left_c1" data-pageid="{$pageid}" class="clearfix  r-ori-vert " data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+				{$menu main}			</div>
+		
+ 
+
+			<div class="clearfix  r-ori-vert" data-cellId="left_c1" data-pageid="{$pageid}" data-itemid="search_panel" {$item_search_panel} data-topcell-item-type="search_panel" >
+				<!-- Begin Search panel content -->
+<div class="searchOptions panel panel-primary searchPanelContainer " {$srchOpt_attrs} data-itemtype="search_panel" data-itemid="search_panel" {$item_search_panel} data-pageid="{$pageid}" >
+
+	<div class="panel-heading">
+		<div class="btn-group" id="addSearchFieldButton{$id}">
+			<button id="showHideControlChooseMenu{$id}" type="button" class="btn btn-default dropdown-toggle btn-sm )" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Search in			<span class="caret"></span>
+			</button>
+		</div>
+
+
+		<div class="btn-group searchpanel-options" id="searchPanelOptions{$id}">
+			<button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="glyphicon glyphicon glyphicon-option-vertical"></span>
+			</button>
+			<ul class="dropdown-menu dropdown-left">
+				<li id="showHideSearchType{$id}" {$showHideCtrlsOpt_attrs}><a>Show options</a></li>
+				<li role="separator" class="divider"></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAll" {$all_checkbox}><label for="radioAll"><span class="glyphicon">&nbsp;</span>all conditions</label></a></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAny" {$any_checkbox}><label for="radioAny"><span class="glyphicon">&nbsp;</span>any condition</label></a></li>
+				<li role="separator" class="divider"></li>
+				<li><a class="close-button"><span class="glyphicon glyphicon-remove">&nbsp;</span>hide</a></li>
+			</ul>
+		</div>
+
+
+		</div>
+	<div class="panel-body controlsBlock" {$bottomSearchButt_attrs} >
+
+
+		
+		{BEGIN searchCtrlBlock}
+		<div class="srchPanelRow form-group" {$filterRow_attrs}>
+			<label>{$fLabel}</label>	{$delCtrlButt}
+				<span class="rnr-searchtype">{$searchtype}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol1}</span>
+		</div>
+		{END searchCtrlBlock}
+																		{BEGIN searchCtrlBlock_BuCode}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_BuCode}" {$filterRow_attrs_BuCode}>
+			<label>{$label sClosingMonth BuCode }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_BuCode}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_BuCode}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_BuCode}</span>
+						</div>
+		{END searchCtrlBlock_BuCode}
+																{BEGIN searchCtrlBlock_VYear}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_VYear}" {$filterRow_attrs_VYear}>
+			<label>{$label sClosingMonth VYear }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_VYear}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_VYear}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_VYear}</span>
+						</div>
+		{END searchCtrlBlock_VYear}
+																{BEGIN searchCtrlBlock_VMonth}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_VMonth}" {$filterRow_attrs_VMonth}>
+			<label>{$label sClosingMonth VMonth }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_VMonth}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_VMonth}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_VMonth}</span>
+						</div>
+		{END searchCtrlBlock_VMonth}
+																{BEGIN searchCtrlBlock_UserName}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_UserName}" {$filterRow_attrs_UserName}>
+			<label>{$label sClosingMonth UserName }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_UserName}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_UserName}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_UserName}</span>
+						</div>
+		{END searchCtrlBlock_UserName}
+																{BEGIN searchCtrlBlock_UpdateUser}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_UpdateUser}" {$filterRow_attrs_UpdateUser}>
+			<label>{$label sClosingMonth UpdateUser }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_UpdateUser}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_UpdateUser}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_UpdateUser}</span>
+						</div>
+		{END searchCtrlBlock_UpdateUser}
+																{BEGIN searchCtrlBlock_UpdateTime}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_UpdateTime}" {$filterRow_attrs_UpdateTime}>
+			<label>{$label sClosingMonth UpdateTime }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_UpdateTime}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_UpdateTime}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_UpdateTime}</span>
+						</div>
+		{END searchCtrlBlock_UpdateTime}
+																{BEGIN searchCtrlBlock_UpdatePcUser}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_UpdatePcUser}" {$filterRow_attrs_UpdatePcUser}>
+			<label>{$label sClosingMonth UpdatePcUser }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_UpdatePcUser}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_UpdatePcUser}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_UpdatePcUser}</span>
+						</div>
+		{END searchCtrlBlock_UpdatePcUser}
+																{BEGIN searchCtrlBlock_UpdatePcName}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_UpdatePcName}" {$filterRow_attrs_UpdatePcName}>
+			<label>{$label sClosingMonth UpdatePcName }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_UpdatePcName}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_UpdatePcName}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_UpdatePcName}</span>
+						</div>
+		{END searchCtrlBlock_UpdatePcName}
+																{BEGIN searchCtrlBlock_UpdateLoc}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_UpdateLoc}" {$filterRow_attrs_UpdateLoc}>
+			<label>{$label sClosingMonth UpdateLoc }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_UpdateLoc}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_UpdateLoc}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_UpdateLoc}</span>
+						</div>
+		{END searchCtrlBlock_UpdateLoc}
+																{BEGIN searchCtrlBlock_UpdateDevice}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_UpdateDevice}" {$filterRow_attrs_UpdateDevice}>
+			<label>{$label sClosingMonth UpdateDevice }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_UpdateDevice}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_UpdateDevice}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_UpdateDevice}</span>
+						</div>
+		{END searchCtrlBlock_UpdateDevice}
+																{BEGIN searchCtrlBlock_UpdateDate}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_UpdateDate}" {$filterRow_attrs_UpdateDate}>
+			<label>{$label sClosingMonth UpdateDate }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_UpdateDate}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_UpdateDate}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_UpdateDate}</span>
+						</div>
+		{END searchCtrlBlock_UpdateDate}
+																{BEGIN searchCtrlBlock_TotalUpdate}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_TotalUpdate}" {$filterRow_attrs_TotalUpdate}>
+			<label>{$label sClosingMonth TotalUpdate }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_TotalUpdate}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_TotalUpdate}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_TotalUpdate}</span>
+						</div>
+		{END searchCtrlBlock_TotalUpdate}
+																{BEGIN searchCtrlBlock_DefaultMonth}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_DefaultMonth}" {$filterRow_attrs_DefaultMonth}>
+			<label>{$label sClosingMonth DefaultMonth }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_DefaultMonth}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_DefaultMonth}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_DefaultMonth}</span>
+						</div>
+		{END searchCtrlBlock_DefaultMonth}
+																{BEGIN searchCtrlBlock_CreateTime}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_CreateTime}" {$filterRow_attrs_CreateTime}>
+			<label>{$label sClosingMonth CreateTime }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_CreateTime}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_CreateTime}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_CreateTime}</span>
+						</div>
+		{END searchCtrlBlock_CreateTime}
+																{BEGIN searchCtrlBlock_CreatePcName}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_CreatePcName}" {$filterRow_attrs_CreatePcName}>
+			<label>{$label sClosingMonth CreatePcName }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_CreatePcName}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_CreatePcName}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_CreatePcName}</span>
+						</div>
+		{END searchCtrlBlock_CreatePcName}
+																{BEGIN searchCtrlBlock_CreatePCUser}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_CreatePCUser}" {$filterRow_attrs_CreatePCUser}>
+			<label>{$label sClosingMonth CreatePCUser }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_CreatePCUser}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_CreatePCUser}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_CreatePCUser}</span>
+						</div>
+		{END searchCtrlBlock_CreatePCUser}
+																{BEGIN searchCtrlBlock_CreateLoc}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_CreateLoc}" {$filterRow_attrs_CreateLoc}>
+			<label>{$label sClosingMonth CreateLoc }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_CreateLoc}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_CreateLoc}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_CreateLoc}</span>
+						</div>
+		{END searchCtrlBlock_CreateLoc}
+																{BEGIN searchCtrlBlock_CreateDevice}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_CreateDevice}" {$filterRow_attrs_CreateDevice}>
+			<label>{$label sClosingMonth CreateDevice }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_CreateDevice}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_CreateDevice}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_CreateDevice}</span>
+						</div>
+		{END searchCtrlBlock_CreateDevice}
+																{BEGIN searchCtrlBlock_CreateDate}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_CreateDate}" {$filterRow_attrs_CreateDate}>
+			<label>{$label sClosingMonth CreateDate }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_CreateDate}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_CreateDate}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_CreateDate}</span>
+						</div>
+		{END searchCtrlBlock_CreateDate}
+																{BEGIN searchCtrlBlock_Code}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_Code}" {$filterRow_attrs_Code}>
+			<label>{$label sClosingMonth Code }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_Code}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_Code}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_Code}</span>
+						</div>
+		{END searchCtrlBlock_Code}
+																{BEGIN searchCtrlBlock_CloseStatus}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_CloseStatus}" {$filterRow_attrs_CloseStatus}>
+			<label>{$label sClosingMonth CloseStatus }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_CloseStatus}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_CloseStatus}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_CloseStatus}</span>
+						</div>
+		{END searchCtrlBlock_CloseStatus}
+		
+
+	</div>
+
+	<div class="panel-footer bottomSearchButt" {$bottomSearchButt_attrs}>
+		<button class="btn btn-primary btn-sm" id="searchButton{$id}" {$searchbutton_attrs}>Search</button>
+
+				<button class="btn btn-default btn-sm" {$showAllCont_attrs} {$showallbutton_attrs}>Show all</button>
+	</div>
+</div>
+<!-- End Search panel content -->
+			</div>
+		
+    {END left_block}
+</div>				</div>
+			<div class="r-content-col" data-resize-left="leftbar">
+				<div  class="r-topheader" data-resize-name="topbar">
+									{BEGIN supertop_block}
+<nav class="navbar navbar-default" 
+	data-location="supertop" id="form_supertop_{$pageid}" data-makeup="leftbar" {$form_supertop} data-pageid="{$pageid}" >
+			 
+							 
+				<span class="navbar-form  navbar-header" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="expand_menu_button" {$item_expand_menu_button} data-topcell-item-type="expand_menu_button" >
+				<span data-itemtype="expand_menu_button" data-itemid="expand_menu_button" {$item_expand_menu_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Collapse" class="btn-link   
+	 glyphicon glyphicon-menu-hamburger" href="#" >		
+				
+								</a>
+</span>
+			</span>
+		 
+				<span class="navbar-form  navbar-collapse" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="collapse_button" {$item_collapse_button} data-topcell-item-type="collapse_button" >
+				<span data-itemtype="collapse_button" data-itemid="collapse_button" {$item_collapse_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Show menu" class="btn-link   
+	 glyphicon glyphicon-triangle-left" href="#" >		
+				
+								</a>
+</span>
+			</span>
+		 
+				<span class="navbar-form  navbar-collapse" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="breadcrumb" {$item_breadcrumb} data-topcell-item-type="breadcrumb" >
+				{BEGIN breadcrumb}
+<ol class="breadcrumb" data-itemtype="breadcrumb" data-itemid="breadcrumb" {$item_breadcrumb} data-pageid="{$pageid}">
+<li ><a href="{$crumb_home_link}"><span class="glyphicon glyphicon-home"></span></a>{$crumb_dropdown}</li>
+{BEGIN crumb}
+  <li class="{$crumb_item_class}">
+{BEGIN crumb_title_link}
+	<a {$crumb_attrs}>{$crumb_title}</a>
+{END crumb_title_link}
+{BEGIN crumb_title_span}
+	<span {$crumb_attrs}>{$crumb_title}</span>
+{END crumb_title_span}	
+	{$crumb_dropdown}
+  </li>
+{END crumb}
+</ol>
+{END breadcrumb}			</span>
+							 
+							 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="simple_search" {$item_simple_search} data-topcell-item-type="simple_search" >
+				<span data-itemtype="simple_search" data-itemid="simple_search" {$item_simple_search} data-pageid="{$pageid}" class="form-group">
+
+<div  class="input-group">
+{BEGIN searchform_text}
+	<input type="search" class="form-control" {$searchfor_attrs} size="25">
+{END searchform_text}
+	<span class="input-group-btn">
+	{BEGIN searchform_showall}
+				<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs} title="Show all">
+			<span class="glyphicon glyphicon-remove"></span>
+		</button>
+	{END searchform_showall}
+
+	{BEGIN searchform_search}
+	<button {$searchbutton_attrs} class="btn btn-primary" >
+		<span class="glyphicon glyphicon-search"></span>
+	</button>
+	{END searchform_search}
+	</span>
+</div>
+		
+</span>			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="list_options" {$item_list_options} data-topcell-item-type="list_options" >
+				<span data-itemtype="list_options" data-itemid="list_options" {$item_list_options} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-cog"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN exportselected_link}
+	<li data-itemtype="export_selected" data-itemid="export_selected" {$item_export_selected} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$exportselectedlink_attrs} {$exportselectedlink_span}  title="" >
+				
+		Export selected		
+		</a>
+	</li>
+{END exportselected_link}
+							{BEGIN deleteselected_link}
+	<li data-itemtype="delete_selected" data-itemid="delete_selected" {$item_delete_selected} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$deleteselectedlink_attrs} {$deleteselectedlink_span}  title="" >
+				
+		Delete selected		
+		</a>
+	</li>
+{END deleteselected_link}
+							<li role="separator" class="divider"></li>								<li data-itemtype="advsearch_link" data-itemid="advsearch_link" {$item_advsearch_link} data-pageid="{$pageid}" data-small >
+				<a   href="sclosingmonth_search.php{$stateLink_full}" {$advsearchlink_attrs}  title="" >
+				
+		Advanced search		
+		</a>
+	</li>
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="show_search_panel" data-itemid="show_search_panel" {$item_show_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="showOptPanel{$id}"  title="" >
+				
+		Show search panel		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="hide_search_panel" data-itemid="hide_search_panel" {$item_hide_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="hideOptPanel{$id}"  title="" >
+				
+		Hide search panel		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+							<li role="separator" class="divider"></li>							{BEGIN export_link}
+	<li data-itemtype="export" data-itemid="export" {$item_export} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$exportlink_attrs}  title="" >
+				
+		Export results		
+		</a>
+	</li>
+{END export_link}
+							<li role="separator" class="divider"></li>							{BEGIN import_link}
+	<li data-itemtype="import" data-itemid="import" {$item_import} data-pageid="{$pageid}" data-small >
+				<a  {$importlink_attrs} href="sclosingmonth_import.php{$stateLink_full}"  title="" >
+				
+		Import		
+		</a>
+	</li>
+{END import_link}
+					</ul>
+	</span>
+</span>
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login" >
+				{BEGIN guestloginbutton}
+<span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" href="#" {$guestloginlink_attrs} >
+							Login			</a>
+</span>
+{END guestloginbutton}
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button" >
+				{BEGIN loggedas_message}
+<span data-itemtype="username_button" data-itemid="username_button" {$item_username_button} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+			{BEGIN userbutton_icon}							<span class="glyphicon glyphicon-user"></span>
+						{END userbutton_icon}{$userbutton_image}			{$username}			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN userinfo_link}
+	<li data-itemtype="userinfo_link" data-itemid="userinfo_link" {$item_userinfo_link} data-pageid="{$pageid}" data-small >
+				<a  href="userinfo.php"  title="" >
+				
+		User Profile		
+		</a>
+	</li>
+{END userinfo_link}
+							{BEGIN logoutbutton}
+	<li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$logoutlink_attrs}  title="" >
+				
+		Log out		
+		</a>
+	</li>
+{END logoutbutton}
+							{BEGIN adminarea_link}
+	<li data-itemtype="adminarea_link" data-itemid="adminarea_link" {$item_adminarea_link} data-pageid="{$pageid}" data-small >
+				<a  href="admin_rights_list.php"  title="" >
+				
+		Admin Area		
+		</a>
+	</li>
+{END adminarea_link}
+					</ul>
+	</span>
+</span>
+{END loggedas_message}
+			</span>
+								</nav>
+{END supertop_block}
+						{$locking}
+				</div>	
+				<div class="r-body" data-resize-top="topbar" data-body-width="standard">
+					{$header}
+					<div class="r-top">
+									{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="leftbar" {$form_top} data-pageid="{$pageid}" >		
+	</div>		
+{END top_block}
+						</div>
+					<div class="r-above">
+										{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="leftbar" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class="			col-md-6
+	
+">
+		{BEGIN firstAboveGridCell}
+		 
+		{BEGIN add_link}
+<span data-itemtype="add" data-itemid="add" {$item_add} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$addlink_attrs} href="sclosingmonth_add.php{$stateLink_full}" >
+							Add new			</a>
+</span>
+{END add_link}
+	 
+		{BEGIN deleteselected_link}
+<span data-itemtype="delete" data-itemid="delete" {$item_delete} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$deleteselectedlink_attrs} {$deleteselectedlink_span} disabled >
+							Delete			</a>
+</span>
+{END deleteselected_link}
+			{END firstAboveGridCell}	
+	</div>			 
+				<div 
+	data-cellId="above-grid_c2" data-pageid="{$pageid}"	{$cell_above-grid_c2}
+	class="r-align-right			col-md-6
+	
+">
+		 
+		<span data-itemtype="details_found" data-itemid="details_found" {$item_details_found} data-pageid="{$pageid}" data-small >
+{$mlp_push}{$mlparam first var first_shown}{$mlparam last var last_shown}{$mlparam total var records_found}{mlang_message DISPLAYING}{$mlp_pop}</span>	 
+		<span data-itemtype="page_size" data-itemid="page_size" {$item_page_size} data-pageid="{$pageid}" >
+		{$recsPerPage}
+</span>	 
+		{BEGIN print_friendly}
+<span id="printpanelblock{$id}"  data-pageid="{$pageid}" {$printpanel_hiddenattr} data-itemtype="print_panel" data-itemid="print_panel" {$item_print_panel} data-pageid="{$pageid}">
+	<button title="Print-friendly page" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+					<span class="glyphicon glyphicon-print"></span>
+				<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu pull-right">
+										 
+				 
+					<li class="container-fluid 
+										">
+									<div id="print_friendly_scope{$id}">
+	<div class="row">
+		<div class="col-md-4">
+			Scope:		</div>
+
+			 
+		{BEGIN print_friendly_all}
+		<div class="col-md-8">
+			<label for="printAll{$id}">
+				<input type="radio" id="printAll{$id}" data-href="sclosingmonth_print.php?all=1&amp;{$crosstable_attrs}" name="printScope" >
+									Print all pages							</label>
+		</div>
+		{END print_friendly_all}
+		</div>
+		<div class="row">
+		<div class="col-md-4">&nbsp;</div>
+		<div class="col-md-8">
+			<label for="printPage{$id}">
+				<input name="printScope" id="printPage{$id}" type="radio" checked data-href="sclosingmonth_print.php?{$crosstable_attrs}">
+				Print this page			</label>
+		</div>
+	</div>
+		
+		 
+	<div class="row">
+		<div class="col-md-4">
+			&nbsp;
+		</div>
+		<div class="col-md-8">
+			<label style="color: gray;" for="printSelection{$id}">
+			<input name="printScope" disabled="disabled" id="printSelection{$id}" type="radio" >
+			Print selected			</label>
+		</div>
+	</div>
+	</div>
+				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+										">
+									<div>
+	<label for="printPerPage{$id}">
+					Records Per Page							
+	</label>
+	<input type="number" id="printPerPage{$id}" value="{$print_recspp}" class="rnr-printrecspp">		
+</div>
+				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+					 text-center 					">
+									<span data-itemtype="print_button" data-itemid="print_button" {$item_print_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" id="print_friendly_button{$id}" >
+							Print			</a>
+</span>
+				 
+					</li>
+															</ul>
+</span>
+{END print_friendly}
+		</div>					</div>
+	</div>		
+{END above-grid_block}
+						</div>
+					<div class="r-grid">
+										{BEGIN grid_block}
+{BEGIN grid_tabs}
+  <ul class="nav nav-tabs bsgrid_tabs">
+	{$grid_tabs_content}
+  </ul>
+{END grid_tabs}
+{BEGIN message_block}
+<div data-grid-message data-pageid="{$pageid}" class="alert {$message_class}" role="alert" {$grid_message_attrs}>{$message}</div>
+{END message_block}	<style>
+@media screen and (max-width: 767px) {
+		[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="Code"]:before {
+		content: "{$label sClosingMonth Code}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="VMonth"]:before {
+		content: "{$label sClosingMonth VMonth}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="VYear"]:before {
+		content: "{$label sClosingMonth VYear}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="CloseStatus"]:before {
+		content: "{$label sClosingMonth CloseStatus}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="DefaultMonth"]:before {
+		content: "{$label sClosingMonth DefaultMonth}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="BuCode"]:before {
+		content: "{$label sClosingMonth BuCode}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="UserName"]:before {
+		content: "{$label sClosingMonth UserName}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="CreateDate"]:before {
+		content: "{$label sClosingMonth CreateDate}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="CreateTime"]:before {
+		content: "{$label sClosingMonth CreateTime}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="CreatePcName"]:before {
+		content: "{$label sClosingMonth CreatePcName}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="CreatePCUser"]:before {
+		content: "{$label sClosingMonth CreatePCUser}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="CreateLoc"]:before {
+		content: "{$label sClosingMonth CreateLoc}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="CreateDevice"]:before {
+		content: "{$label sClosingMonth CreateDevice}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="UpdatePcUser"]:before {
+		content: "{$label sClosingMonth UpdatePcUser}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="UpdateUser"]:before {
+		content: "{$label sClosingMonth UpdateUser}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="UpdateDate"]:before {
+		content: "{$label sClosingMonth UpdateDate}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="UpdateTime"]:before {
+		content: "{$label sClosingMonth UpdateTime}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="UpdatePcName"]:before {
+		content: "{$label sClosingMonth UpdatePcName}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="TotalUpdate"]:before {
+		content: "{$label sClosingMonth TotalUpdate}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="UpdateLoc"]:before {
+		content: "{$label sClosingMonth UpdateLoc}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="UpdateDevice"]:before {
+		content: "{$label sClosingMonth UpdateDevice}";
+	}
+	}
+</style>
+<table data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" class=" table {$grid_classes} r-horizontal-grid  r-flexgrid rnr-b-grid rnr-gridtable" 
+	cellpadding="0" 
+	data-body-height="1"
+>
+						<thead>
+			{BEGIN grid_header}
+					
+		 
+						<tr {$rowattrs} {$row_grid_0} class="{$rowclass} 
+									{$gridHeader_class}
+									
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_headcell_icons}
+	<th
+	
+	{$cell_grid_headcell_icons}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_headcell_icons" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="sclosingmonth_list"		data-control-cell
+	
+	>
+
+	
+	</th>
+	{END cellblock_grid_headcell_icons}
+				 
+					{BEGIN cellblock_grid_headcell_checkbox}
+	<th
+	
+	{$cell_grid_headcell_checkbox}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_headcell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="sclosingmonth_list"	
+		data-checkbox-cell
+	>
+
+	 
+		{BEGIN checkbox_column}
+<span data-itemtype="grid_checkbox_head" data-itemid="grid_checkbox_head" {$item_grid_checkbox_head} data-pageid="{$pageid}" data-record-id="{$recId}" >
+	<input type="checkbox" {$checkboxheader_attrs}>
+</span>
+{END checkbox_column}
+	
+	</th>
+	{END cellblock_grid_headcell_checkbox}
+				 
+					{BEGIN cellblock_grid_headcell_field}
+	<th
+	
+	{$cell_grid_headcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$Code_class}
+			"
+
+			data-field="Code"
+	
+	data-cellId="grid_headcell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN Code_fieldheadercolumn}
+	{BEGIN Code_fieldheader}
+	<SPAN {$Code_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field21" {$item_simple_grid_field21} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Code" data-fieldname="Code">
+	{$label sClosingMonth Code }	{$arrow_icon_Code}
+	</SPAN>
+	{END Code_fieldheader}
+{END Code_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field}
+				 
+					{BEGIN cellblock_grid_headcell_field1}
+	<th
+	
+	{$cell_grid_headcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$VMonth_class}
+			"
+
+			data-field="VMonth"
+	
+	data-cellId="grid_headcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN VMonth_fieldheadercolumn}
+	{BEGIN VMonth_fieldheader}
+	<SPAN {$VMonth_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field22" {$item_simple_grid_field22} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="VMonth" data-fieldname="VMonth">
+	{$label sClosingMonth VMonth }	{$arrow_icon_VMonth}
+	</SPAN>
+	{END VMonth_fieldheader}
+{END VMonth_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field1}
+				 
+					{BEGIN cellblock_grid_headcell_field2}
+	<th
+	
+	{$cell_grid_headcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$VYear_class}
+			"
+
+			data-field="VYear"
+	
+	data-cellId="grid_headcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN VYear_fieldheadercolumn}
+	{BEGIN VYear_fieldheader}
+	<SPAN {$VYear_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field23" {$item_simple_grid_field23} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="VYear" data-fieldname="VYear">
+	{$label sClosingMonth VYear }	{$arrow_icon_VYear}
+	</SPAN>
+	{END VYear_fieldheader}
+{END VYear_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field2}
+				 
+					{BEGIN cellblock_grid_headcell_field3}
+	<th
+	
+	{$cell_grid_headcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$CloseStatus_class}
+			"
+
+			data-field="CloseStatus"
+	
+	data-cellId="grid_headcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN CloseStatus_fieldheadercolumn}
+	{BEGIN CloseStatus_fieldheader}
+	<SPAN {$CloseStatus_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field24" {$item_simple_grid_field24} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="CloseStatus" data-fieldname="CloseStatus">
+	{$label sClosingMonth CloseStatus }	{$arrow_icon_CloseStatus}
+	</SPAN>
+	{END CloseStatus_fieldheader}
+{END CloseStatus_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field3}
+				 
+					{BEGIN cellblock_grid_headcell_field4}
+	<th
+	
+	{$cell_grid_headcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$DefaultMonth_class}
+			"
+
+			data-field="DefaultMonth"
+	
+	data-cellId="grid_headcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN DefaultMonth_fieldheadercolumn}
+	{BEGIN DefaultMonth_fieldheader}
+	<SPAN {$DefaultMonth_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field25" {$item_simple_grid_field25} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="DefaultMonth" data-fieldname="DefaultMonth">
+	{$label sClosingMonth DefaultMonth }	{$arrow_icon_DefaultMonth}
+	</SPAN>
+	{END DefaultMonth_fieldheader}
+{END DefaultMonth_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field4}
+				 
+					{BEGIN cellblock_grid_headcell_field5}
+	<th
+	
+	{$cell_grid_headcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$BuCode_class}
+			"
+
+			data-field="BuCode"
+	
+	data-cellId="grid_headcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN BuCode_fieldheadercolumn}
+	{BEGIN BuCode_fieldheader}
+	<SPAN {$BuCode_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field26" {$item_simple_grid_field26} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="BuCode" data-fieldname="BuCode">
+	{$label sClosingMonth BuCode }	{$arrow_icon_BuCode}
+	</SPAN>
+	{END BuCode_fieldheader}
+{END BuCode_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field5}
+				 
+					{BEGIN cellblock_grid_headcell_field6}
+	<th
+	
+	{$cell_grid_headcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$UserName_class}
+			"
+
+			data-field="UserName"
+	
+	data-cellId="grid_headcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN UserName_fieldheadercolumn}
+	{BEGIN UserName_fieldheader}
+	<SPAN {$UserName_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field27" {$item_simple_grid_field27} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="UserName" data-fieldname="UserName">
+	{$label sClosingMonth UserName }	{$arrow_icon_UserName}
+	</SPAN>
+	{END UserName_fieldheader}
+{END UserName_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field6}
+				 
+					{BEGIN cellblock_grid_headcell_field7}
+	<th
+	
+	{$cell_grid_headcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$CreateDate_class}
+			"
+
+			data-field="CreateDate"
+	
+	data-cellId="grid_headcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN CreateDate_fieldheadercolumn}
+	{BEGIN CreateDate_fieldheader}
+	<SPAN {$CreateDate_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field28" {$item_simple_grid_field28} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="CreateDate" data-fieldname="CreateDate">
+	{$label sClosingMonth CreateDate }	{$arrow_icon_CreateDate}
+	</SPAN>
+	{END CreateDate_fieldheader}
+{END CreateDate_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field7}
+				 
+					{BEGIN cellblock_grid_headcell_field8}
+	<th
+	
+	{$cell_grid_headcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$CreateTime_class}
+			"
+
+			data-field="CreateTime"
+	
+	data-cellId="grid_headcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN CreateTime_fieldheadercolumn}
+	{BEGIN CreateTime_fieldheader}
+	<SPAN {$CreateTime_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field29" {$item_simple_grid_field29} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="CreateTime" data-fieldname="CreateTime">
+	{$label sClosingMonth CreateTime }	{$arrow_icon_CreateTime}
+	</SPAN>
+	{END CreateTime_fieldheader}
+{END CreateTime_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field8}
+				 
+					{BEGIN cellblock_grid_headcell_field9}
+	<th
+	
+	{$cell_grid_headcell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$CreatePcName_class}
+			"
+
+			data-field="CreatePcName"
+	
+	data-cellId="grid_headcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN CreatePcName_fieldheadercolumn}
+	{BEGIN CreatePcName_fieldheader}
+	<SPAN {$CreatePcName_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field30" {$item_simple_grid_field30} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="CreatePcName" data-fieldname="CreatePcName">
+	{$label sClosingMonth CreatePcName }	{$arrow_icon_CreatePcName}
+	</SPAN>
+	{END CreatePcName_fieldheader}
+{END CreatePcName_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field9}
+				 
+					{BEGIN cellblock_grid_headcell_field10}
+	<th
+	
+	{$cell_grid_headcell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$CreatePCUser_class}
+			"
+
+			data-field="CreatePCUser"
+	
+	data-cellId="grid_headcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN CreatePCUser_fieldheadercolumn}
+	{BEGIN CreatePCUser_fieldheader}
+	<SPAN {$CreatePCUser_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field31" {$item_simple_grid_field31} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="CreatePCUser" data-fieldname="CreatePCUser">
+	{$label sClosingMonth CreatePCUser }	{$arrow_icon_CreatePCUser}
+	</SPAN>
+	{END CreatePCUser_fieldheader}
+{END CreatePCUser_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field10}
+				 
+					{BEGIN cellblock_grid_headcell_field11}
+	<th
+	
+	{$cell_grid_headcell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$CreateLoc_class}
+			"
+
+			data-field="CreateLoc"
+	
+	data-cellId="grid_headcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN CreateLoc_fieldheadercolumn}
+	{BEGIN CreateLoc_fieldheader}
+	<SPAN {$CreateLoc_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field32" {$item_simple_grid_field32} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="CreateLoc" data-fieldname="CreateLoc">
+	{$label sClosingMonth CreateLoc }	{$arrow_icon_CreateLoc}
+	</SPAN>
+	{END CreateLoc_fieldheader}
+{END CreateLoc_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field11}
+				 
+					{BEGIN cellblock_grid_headcell_field12}
+	<th
+	
+	{$cell_grid_headcell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$CreateDevice_class}
+			"
+
+			data-field="CreateDevice"
+	
+	data-cellId="grid_headcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN CreateDevice_fieldheadercolumn}
+	{BEGIN CreateDevice_fieldheader}
+	<SPAN {$CreateDevice_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field33" {$item_simple_grid_field33} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="CreateDevice" data-fieldname="CreateDevice">
+	{$label sClosingMonth CreateDevice }	{$arrow_icon_CreateDevice}
+	</SPAN>
+	{END CreateDevice_fieldheader}
+{END CreateDevice_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field12}
+				 
+					{BEGIN cellblock_grid_headcell_field13}
+	<th
+	
+	{$cell_grid_headcell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$UpdatePcUser_class}
+			"
+
+			data-field="UpdatePcUser"
+	
+	data-cellId="grid_headcell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN UpdatePcUser_fieldheadercolumn}
+	{BEGIN UpdatePcUser_fieldheader}
+	<SPAN {$UpdatePcUser_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field34" {$item_simple_grid_field34} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="UpdatePcUser" data-fieldname="UpdatePcUser">
+	{$label sClosingMonth UpdatePcUser }	{$arrow_icon_UpdatePcUser}
+	</SPAN>
+	{END UpdatePcUser_fieldheader}
+{END UpdatePcUser_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field13}
+				 
+					{BEGIN cellblock_grid_headcell_field14}
+	<th
+	
+	{$cell_grid_headcell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$UpdateUser_class}
+			"
+
+			data-field="UpdateUser"
+	
+	data-cellId="grid_headcell_field14" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN UpdateUser_fieldheadercolumn}
+	{BEGIN UpdateUser_fieldheader}
+	<SPAN {$UpdateUser_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field35" {$item_simple_grid_field35} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="UpdateUser" data-fieldname="UpdateUser">
+	{$label sClosingMonth UpdateUser }	{$arrow_icon_UpdateUser}
+	</SPAN>
+	{END UpdateUser_fieldheader}
+{END UpdateUser_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field14}
+				 
+					{BEGIN cellblock_grid_headcell_field15}
+	<th
+	
+	{$cell_grid_headcell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$UpdateDate_class}
+			"
+
+			data-field="UpdateDate"
+	
+	data-cellId="grid_headcell_field15" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN UpdateDate_fieldheadercolumn}
+	{BEGIN UpdateDate_fieldheader}
+	<SPAN {$UpdateDate_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field36" {$item_simple_grid_field36} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="UpdateDate" data-fieldname="UpdateDate">
+	{$label sClosingMonth UpdateDate }	{$arrow_icon_UpdateDate}
+	</SPAN>
+	{END UpdateDate_fieldheader}
+{END UpdateDate_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field15}
+				 
+					{BEGIN cellblock_grid_headcell_field16}
+	<th
+	
+	{$cell_grid_headcell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$UpdateTime_class}
+			"
+
+			data-field="UpdateTime"
+	
+	data-cellId="grid_headcell_field16" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN UpdateTime_fieldheadercolumn}
+	{BEGIN UpdateTime_fieldheader}
+	<SPAN {$UpdateTime_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field37" {$item_simple_grid_field37} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="UpdateTime" data-fieldname="UpdateTime">
+	{$label sClosingMonth UpdateTime }	{$arrow_icon_UpdateTime}
+	</SPAN>
+	{END UpdateTime_fieldheader}
+{END UpdateTime_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field16}
+				 
+					{BEGIN cellblock_grid_headcell_field17}
+	<th
+	
+	{$cell_grid_headcell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$UpdatePcName_class}
+			"
+
+			data-field="UpdatePcName"
+	
+	data-cellId="grid_headcell_field17" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN UpdatePcName_fieldheadercolumn}
+	{BEGIN UpdatePcName_fieldheader}
+	<SPAN {$UpdatePcName_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field38" {$item_simple_grid_field38} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="UpdatePcName" data-fieldname="UpdatePcName">
+	{$label sClosingMonth UpdatePcName }	{$arrow_icon_UpdatePcName}
+	</SPAN>
+	{END UpdatePcName_fieldheader}
+{END UpdatePcName_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field17}
+				 
+					{BEGIN cellblock_grid_headcell_field18}
+	<th
+	
+	{$cell_grid_headcell_field18}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$TotalUpdate_class}
+			"
+
+			data-field="TotalUpdate"
+	
+	data-cellId="grid_headcell_field18" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN TotalUpdate_fieldheadercolumn}
+	{BEGIN TotalUpdate_fieldheader}
+	<SPAN {$TotalUpdate_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field39" {$item_simple_grid_field39} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="TotalUpdate" data-fieldname="TotalUpdate">
+	{$label sClosingMonth TotalUpdate }	{$arrow_icon_TotalUpdate}
+	</SPAN>
+	{END TotalUpdate_fieldheader}
+{END TotalUpdate_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field18}
+				 
+					{BEGIN cellblock_grid_headcell_field19}
+	<th
+	
+	{$cell_grid_headcell_field19}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$UpdateLoc_class}
+			"
+
+			data-field="UpdateLoc"
+	
+	data-cellId="grid_headcell_field19" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN UpdateLoc_fieldheadercolumn}
+	{BEGIN UpdateLoc_fieldheader}
+	<SPAN {$UpdateLoc_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field40" {$item_simple_grid_field40} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="UpdateLoc" data-fieldname="UpdateLoc">
+	{$label sClosingMonth UpdateLoc }	{$arrow_icon_UpdateLoc}
+	</SPAN>
+	{END UpdateLoc_fieldheader}
+{END UpdateLoc_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field19}
+				 
+					{BEGIN cellblock_grid_headcell_field20}
+	<th
+	
+	{$cell_grid_headcell_field20}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$UpdateDevice_class}
+			"
+
+			data-field="UpdateDevice"
+	
+	data-cellId="grid_headcell_field20" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN UpdateDevice_fieldheadercolumn}
+	{BEGIN UpdateDevice_fieldheader}
+	<SPAN {$UpdateDevice_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field41" {$item_simple_grid_field41} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="UpdateDevice" data-fieldname="UpdateDevice">
+	{$label sClosingMonth UpdateDevice }	{$arrow_icon_UpdateDevice}
+	</SPAN>
+	{END UpdateDevice_fieldheader}
+{END UpdateDevice_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field20}
+							</tr>
+					 
+					 
+					
+					{END grid_header}
+			</thead>
+															<tbody>
+					{BEGIN grid_row}
+									
+		 
+					 
+						<tr {$rowattrs} {$row_grid_1} class="{$rowclass} 
+								
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_cell_icons}
+	<td
+	
+	{$cell_grid_cell_icons}
+	{$recordattrs}
+	class="
+					"
+
+	
+	data-cellId="grid_cell_icons" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="sclosingmonth_list"		data-control-cell
+	
+	>
+
+	 
+		{BEGIN edit_column}
+{BEGIN edit_link}
+<span data-itemtype="grid_edit" data-itemid="grid_edit" {$item_grid_edit} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="Edit" class="btn-link   
+	 glyphicon glyphicon-pencil" href="sclosingmonth_edit.php?{$editlink}" {$editlink_attrs} title="Edit" >		
+				
+								</a>
+</span>
+{END edit_link}
+{END edit_column}
+	 
+		{BEGIN view_column}
+{BEGIN view_link}
+<span data-itemtype="grid_view" data-itemid="grid_view" {$item_grid_view} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="View record" class="btn-link   
+	 glyphicon glyphicon-search" href="sclosingmonth_view.php?{$editlink}" {$viewlink_attrs} title="View" >		
+				
+								</a>
+</span>
+{END view_link}
+{END view_column}
+	
+	</td>
+	{END cellblock_grid_cell_icons}
+				 
+					{BEGIN cellblock_grid_cell_checkbox}
+	<td
+	
+	{$cell_grid_cell_checkbox}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}"		data-control-cell
+	
+		data-checkbox-cell
+	>
+
+	 
+		{BEGIN checkbox_column}
+<span data-itemtype="grid_checkbox" data-itemid="grid_checkbox" {$item_grid_checkbox} data-pageid="{$pageid}" data-record-id="{$recId}" >
+	<input type="checkbox" {$checkbox_attrs}
+		>
+</span>	
+{END checkbox_column}
+	
+	</td>
+	{END cellblock_grid_cell_checkbox}
+				 
+					{BEGIN cellblock_grid_cell_field}
+	<td
+	
+	{$cell_grid_cell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$Code_class}
+			"
+
+			data-field="Code"
+	
+	data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN Code_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Code" data-fieldname="Code" data-default-width >
+{$Code_value}
+</span>
+{END Code_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field}
+				 
+					{BEGIN cellblock_grid_cell_field1}
+	<td
+	
+	{$cell_grid_cell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$VMonth_class}
+			"
+
+			data-field="VMonth"
+	
+	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN VMonth_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="VMonth" data-fieldname="VMonth" data-default-width >
+{$VMonth_value}
+</span>
+{END VMonth_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field1}
+				 
+					{BEGIN cellblock_grid_cell_field2}
+	<td
+	
+	{$cell_grid_cell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$VYear_class}
+			"
+
+			data-field="VYear"
+	
+	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN VYear_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="VYear" data-fieldname="VYear" data-default-width >
+{$VYear_value}
+</span>
+{END VYear_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field2}
+				 
+					{BEGIN cellblock_grid_cell_field3}
+	<td
+	
+	{$cell_grid_cell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$CloseStatus_class}
+			"
+
+			data-field="CloseStatus"
+	
+	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN CloseStatus_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="CloseStatus" data-fieldname="CloseStatus" data-default-width >
+{$CloseStatus_value}
+</span>
+{END CloseStatus_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field3}
+				 
+					{BEGIN cellblock_grid_cell_field4}
+	<td
+	
+	{$cell_grid_cell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$DefaultMonth_class}
+			"
+
+			data-field="DefaultMonth"
+	
+	data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN DefaultMonth_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="DefaultMonth" data-fieldname="DefaultMonth" data-default-width >
+{$DefaultMonth_value}
+</span>
+{END DefaultMonth_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field4}
+				 
+					{BEGIN cellblock_grid_cell_field5}
+	<td
+	
+	{$cell_grid_cell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$BuCode_class}
+			"
+
+			data-field="BuCode"
+	
+	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN BuCode_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="BuCode" data-fieldname="BuCode" data-default-width >
+{$BuCode_value}
+</span>
+{END BuCode_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field5}
+				 
+					{BEGIN cellblock_grid_cell_field6}
+	<td
+	
+	{$cell_grid_cell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$UserName_class}
+			"
+
+			data-field="UserName"
+	
+	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN UserName_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="UserName" data-fieldname="UserName" data-default-width >
+{$UserName_value}
+</span>
+{END UserName_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field6}
+				 
+					{BEGIN cellblock_grid_cell_field7}
+	<td
+	
+	{$cell_grid_cell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$CreateDate_class}
+			"
+
+			data-field="CreateDate"
+	
+	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN CreateDate_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="CreateDate" data-fieldname="CreateDate" data-default-width >
+{$CreateDate_value}
+</span>
+{END CreateDate_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field7}
+				 
+					{BEGIN cellblock_grid_cell_field8}
+	<td
+	
+	{$cell_grid_cell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$CreateTime_class}
+			"
+
+			data-field="CreateTime"
+	
+	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN CreateTime_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="CreateTime" data-fieldname="CreateTime" data-default-width >
+{$CreateTime_value}
+</span>
+{END CreateTime_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field8}
+				 
+					{BEGIN cellblock_grid_cell_field9}
+	<td
+	
+	{$cell_grid_cell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$CreatePcName_class}
+			"
+
+			data-field="CreatePcName"
+	
+	data-cellId="grid_cell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN CreatePcName_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="CreatePcName" data-fieldname="CreatePcName" data-default-width >
+{$CreatePcName_value}
+</span>
+{END CreatePcName_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field9}
+				 
+					{BEGIN cellblock_grid_cell_field10}
+	<td
+	
+	{$cell_grid_cell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$CreatePCUser_class}
+			"
+
+			data-field="CreatePCUser"
+	
+	data-cellId="grid_cell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN CreatePCUser_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="CreatePCUser" data-fieldname="CreatePCUser" data-default-width >
+{$CreatePCUser_value}
+</span>
+{END CreatePCUser_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field10}
+				 
+					{BEGIN cellblock_grid_cell_field11}
+	<td
+	
+	{$cell_grid_cell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$CreateLoc_class}
+			"
+
+			data-field="CreateLoc"
+	
+	data-cellId="grid_cell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN CreateLoc_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="CreateLoc" data-fieldname="CreateLoc" data-default-width >
+{$CreateLoc_value}
+</span>
+{END CreateLoc_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field11}
+				 
+					{BEGIN cellblock_grid_cell_field12}
+	<td
+	
+	{$cell_grid_cell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$CreateDevice_class}
+			"
+
+			data-field="CreateDevice"
+	
+	data-cellId="grid_cell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN CreateDevice_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="CreateDevice" data-fieldname="CreateDevice" data-default-width >
+{$CreateDevice_value}
+</span>
+{END CreateDevice_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field12}
+				 
+					{BEGIN cellblock_grid_cell_field13}
+	<td
+	
+	{$cell_grid_cell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$UpdatePcUser_class}
+			"
+
+			data-field="UpdatePcUser"
+	
+	data-cellId="grid_cell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN UpdatePcUser_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="UpdatePcUser" data-fieldname="UpdatePcUser" data-default-width >
+{$UpdatePcUser_value}
+</span>
+{END UpdatePcUser_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field13}
+				 
+					{BEGIN cellblock_grid_cell_field14}
+	<td
+	
+	{$cell_grid_cell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$UpdateUser_class}
+			"
+
+			data-field="UpdateUser"
+	
+	data-cellId="grid_cell_field14" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN UpdateUser_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="UpdateUser" data-fieldname="UpdateUser" data-default-width >
+{$UpdateUser_value}
+</span>
+{END UpdateUser_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field14}
+				 
+					{BEGIN cellblock_grid_cell_field15}
+	<td
+	
+	{$cell_grid_cell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$UpdateDate_class}
+			"
+
+			data-field="UpdateDate"
+	
+	data-cellId="grid_cell_field15" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN UpdateDate_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="UpdateDate" data-fieldname="UpdateDate" data-default-width >
+{$UpdateDate_value}
+</span>
+{END UpdateDate_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field15}
+				 
+					{BEGIN cellblock_grid_cell_field16}
+	<td
+	
+	{$cell_grid_cell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$UpdateTime_class}
+			"
+
+			data-field="UpdateTime"
+	
+	data-cellId="grid_cell_field16" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN UpdateTime_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field16" {$item_simple_grid_field16} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="UpdateTime" data-fieldname="UpdateTime" data-default-width >
+{$UpdateTime_value}
+</span>
+{END UpdateTime_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field16}
+				 
+					{BEGIN cellblock_grid_cell_field17}
+	<td
+	
+	{$cell_grid_cell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$UpdatePcName_class}
+			"
+
+			data-field="UpdatePcName"
+	
+	data-cellId="grid_cell_field17" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN UpdatePcName_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field17" {$item_simple_grid_field17} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="UpdatePcName" data-fieldname="UpdatePcName" data-default-width >
+{$UpdatePcName_value}
+</span>
+{END UpdatePcName_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field17}
+				 
+					{BEGIN cellblock_grid_cell_field18}
+	<td
+	
+	{$cell_grid_cell_field18}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$TotalUpdate_class}
+			"
+
+			data-field="TotalUpdate"
+	
+	data-cellId="grid_cell_field18" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN TotalUpdate_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field18" {$item_simple_grid_field18} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="TotalUpdate" data-fieldname="TotalUpdate" data-default-width >
+{$TotalUpdate_value}
+</span>
+{END TotalUpdate_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field18}
+				 
+					{BEGIN cellblock_grid_cell_field19}
+	<td
+	
+	{$cell_grid_cell_field19}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$UpdateLoc_class}
+			"
+
+			data-field="UpdateLoc"
+	
+	data-cellId="grid_cell_field19" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN UpdateLoc_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field19" {$item_simple_grid_field19} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="UpdateLoc" data-fieldname="UpdateLoc" data-default-width >
+{$UpdateLoc_value}
+</span>
+{END UpdateLoc_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field19}
+				 
+					{BEGIN cellblock_grid_cell_field20}
+	<td
+	
+	{$cell_grid_cell_field20}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$UpdateDevice_class}
+			"
+
+			data-field="UpdateDevice"
+	
+	data-cellId="grid_cell_field20" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN UpdateDevice_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field20" {$item_simple_grid_field20} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="UpdateDevice" data-fieldname="UpdateDevice" data-default-width >
+{$UpdateDevice_value}
+</span>
+{END UpdateDevice_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field20}
+							</tr>
+					 
+					
+											{END grid_row}
+					</tbody>
+													<tfoot>
+					
+		 
+					 
+					 
+						<tr {$rowattrs} {$row_grid_2} class="{$rowclass} 
+									{$gridFooter_class}
+									
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_footcell_icons}
+	<td
+	
+	{$cell_grid_footcell_icons}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_icons" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_icons}
+				 
+					{BEGIN cellblock_grid_footcell_checkbox}
+	<td
+	
+	{$cell_grid_footcell_checkbox}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_checkbox}
+				 
+					{BEGIN cellblock_grid_footcell_field}
+	<td
+	
+	{$cell_grid_footcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="sclosingmonth_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field}
+				 
+					{BEGIN cellblock_grid_footcell_field1}
+	<td
+	
+	{$cell_grid_footcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="sclosingmonth_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field1}
+				 
+					{BEGIN cellblock_grid_footcell_field2}
+	<td
+	
+	{$cell_grid_footcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="sclosingmonth_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field2}
+				 
+					{BEGIN cellblock_grid_footcell_field3}
+	<td
+	
+	{$cell_grid_footcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="sclosingmonth_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field3}
+				 
+					{BEGIN cellblock_grid_footcell_field4}
+	<td
+	
+	{$cell_grid_footcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="sclosingmonth_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field4}
+				 
+					{BEGIN cellblock_grid_footcell_field5}
+	<td
+	
+	{$cell_grid_footcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="sclosingmonth_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field5}
+				 
+					{BEGIN cellblock_grid_footcell_field6}
+	<td
+	
+	{$cell_grid_footcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="sclosingmonth_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field6}
+				 
+					{BEGIN cellblock_grid_footcell_field7}
+	<td
+	
+	{$cell_grid_footcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="sclosingmonth_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field7}
+				 
+					{BEGIN cellblock_grid_footcell_field8}
+	<td
+	
+	{$cell_grid_footcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="sclosingmonth_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field8}
+				 
+					{BEGIN cellblock_grid_footcell_field9}
+	<td
+	
+	{$cell_grid_footcell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="sclosingmonth_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field9}
+				 
+					{BEGIN cellblock_grid_footcell_field10}
+	<td
+	
+	{$cell_grid_footcell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="sclosingmonth_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field10}
+				 
+					{BEGIN cellblock_grid_footcell_field11}
+	<td
+	
+	{$cell_grid_footcell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="sclosingmonth_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field11}
+				 
+					{BEGIN cellblock_grid_footcell_field12}
+	<td
+	
+	{$cell_grid_footcell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="sclosingmonth_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field12}
+				 
+					{BEGIN cellblock_grid_footcell_field13}
+	<td
+	
+	{$cell_grid_footcell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field13" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="sclosingmonth_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field13}
+				 
+					{BEGIN cellblock_grid_footcell_field14}
+	<td
+	
+	{$cell_grid_footcell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field14" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="sclosingmonth_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field14}
+				 
+					{BEGIN cellblock_grid_footcell_field15}
+	<td
+	
+	{$cell_grid_footcell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field15" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="sclosingmonth_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field15}
+				 
+					{BEGIN cellblock_grid_footcell_field16}
+	<td
+	
+	{$cell_grid_footcell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field16" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="sclosingmonth_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field16}
+				 
+					{BEGIN cellblock_grid_footcell_field17}
+	<td
+	
+	{$cell_grid_footcell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field17" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="sclosingmonth_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field17}
+				 
+					{BEGIN cellblock_grid_footcell_field18}
+	<td
+	
+	{$cell_grid_footcell_field18}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field18" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="sclosingmonth_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field18}
+				 
+					{BEGIN cellblock_grid_footcell_field19}
+	<td
+	
+	{$cell_grid_footcell_field19}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field19" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="sclosingmonth_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field19}
+				 
+					{BEGIN cellblock_grid_footcell_field20}
+	<td
+	
+	{$cell_grid_footcell_field20}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field20" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="sclosingmonth_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field20}
+							</tr>
+					
+					</tfoot>
+				</table>
+{END grid_block}
+						</div>
+					<div class="r-below">
+										{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="leftbar" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="r-align-center r-ori-vert			col-md-12
+	
+">
+		 
+		{BEGIN pagination_block}
+<span data-itemtype="pagination" data-itemid="pagination" {$item_pagination} data-pageid="{$pageid}" >
+{$pagination}
+</span>
+{END pagination_block}
+		</div>					</div>
+	</div>		
+{END below-grid_block}
+						</div>
+					{$footer}
+				</div>	
+			</div>	
+			<div class="r-body-shadow">
+			</div>
+		</div>
+	{END body}
+	</body>
+</html>

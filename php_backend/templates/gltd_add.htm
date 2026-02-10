@@ -1,0 +1,839 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-add" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="add_header" data-itemid="add_header" {$item_add_header} data-pageid="{$pageid}" >{$pagetitlelabel GLTD add}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		{BEGIN message_block}
+<div data-itemtype="add_message" data-itemid="add_message" {$item_add_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN message_back_button}
+		
+	<button class="btn btn-sm btn-default" {$backbutton_attrs}>Back to list</button>
+	{END message_back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>View</button>
+{END view_page_button}
+{BEGIN edit_page_button}
+	<button class="btn btn-sm btn-default" {$edit_page_button_attrs}>Edit</button>
+{END edit_page_button}
+</div>
+</div>
+{END message_block}	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN Code_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Code}  r-vertical-field" 
+	data-signal-error-for="Code{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="Code" data-fieldname="Code" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_Code}">
+		{BEGIN Code_label}{$label GLTD Code }{END Code_label}
+	</label>
+	<div class="r-edit-field">
+		{$Code_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Code">
+		<div class="text-muted" >
+		{$tooltip GLTD Code }		</div>
+	</div>
+</div>
+
+
+{END Code_fieldblock}
+											
+{BEGIN CodeD_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CodeD}  r-vertical-field" 
+	data-signal-error-for="CodeD{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="CodeD" data-fieldname="CodeD" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_CodeD}">
+		{BEGIN CodeD_label}{$label GLTD CodeD }{END CodeD_label}
+	</label>
+	<div class="r-edit-field">
+		{$CodeD_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="CodeD">
+		<div class="text-muted" >
+		{$tooltip GLTD CodeD }		</div>
+	</div>
+</div>
+
+
+{END CodeD_fieldblock}
+											
+{BEGIN BookCode_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_BookCode}  r-vertical-field" 
+	data-signal-error-for="BookCode{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="BookCode" data-fieldname="BookCode" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_BookCode}">
+		{BEGIN BookCode_label}{$label GLTD BookCode }{END BookCode_label}
+	</label>
+	<div class="r-edit-field">
+		{$BookCode_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="BookCode">
+		<div class="text-muted" >
+		{$tooltip GLTD BookCode }		</div>
+	</div>
+</div>
+
+
+{END BookCode_fieldblock}
+											
+{BEGIN BookID_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_BookID}  r-vertical-field" 
+	data-signal-error-for="BookID{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="BookID" data-fieldname="BookID" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_BookID}">
+		{BEGIN BookID_label}{$label GLTD BookID }{END BookID_label}
+	</label>
+	<div class="r-edit-field">
+		{$BookID_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="BookID">
+		<div class="text-muted" >
+		{$tooltip GLTD BookID }		</div>
+	</div>
+</div>
+
+
+{END BookID_fieldblock}
+											
+{BEGIN VirtualCode_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_VirtualCode}  r-vertical-field" 
+	data-signal-error-for="VirtualCode{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="VirtualCode" data-fieldname="VirtualCode" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_VirtualCode}">
+		{BEGIN VirtualCode_label}{$label GLTD VirtualCode }{END VirtualCode_label}
+	</label>
+	<div class="r-edit-field">
+		{$VirtualCode_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="VirtualCode">
+		<div class="text-muted" >
+		{$tooltip GLTD VirtualCode }		</div>
+	</div>
+</div>
+
+
+{END VirtualCode_fieldblock}
+											
+{BEGIN Status_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Status}  r-vertical-field" 
+	data-signal-error-for="Status{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="Status" data-fieldname="Status" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_Status}">
+		{BEGIN Status_label}{$label GLTD Status }{END Status_label}
+	</label>
+	<div class="r-edit-field">
+		{$Status_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Status">
+		<div class="text-muted" >
+		{$tooltip GLTD Status }		</div>
+	</div>
+</div>
+
+
+{END Status_fieldblock}
+											
+{BEGIN TDate_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_TDate}  r-vertical-field" 
+	data-signal-error-for="TDate{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="TDate" data-fieldname="TDate" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_TDate}">
+		{BEGIN TDate_label}{$label GLTD TDate }{END TDate_label}
+	</label>
+	<div class="r-edit-field">
+		{$TDate_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="TDate">
+		<div class="text-muted" >
+		{$tooltip GLTD TDate }		</div>
+	</div>
+</div>
+
+
+{END TDate_fieldblock}
+											
+{BEGIN BUnit_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_BUnit}  r-vertical-field" 
+	data-signal-error-for="BUnit{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="BUnit" data-fieldname="BUnit" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_BUnit}">
+		{BEGIN BUnit_label}{$label GLTD BUnit }{END BUnit_label}
+	</label>
+	<div class="r-edit-field">
+		{$BUnit_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="BUnit">
+		<div class="text-muted" >
+		{$tooltip GLTD BUnit }		</div>
+	</div>
+</div>
+
+
+{END BUnit_fieldblock}
+											
+{BEGIN TBook_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_TBook}  r-vertical-field" 
+	data-signal-error-for="TBook{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="TBook" data-fieldname="TBook" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_TBook}">
+		{BEGIN TBook_label}{$label GLTD TBook }{END TBook_label}
+	</label>
+	<div class="r-edit-field">
+		{$TBook_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="TBook">
+		<div class="text-muted" >
+		{$tooltip GLTD TBook }		</div>
+	</div>
+</div>
+
+
+{END TBook_fieldblock}
+											
+{BEGIN TType_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_TType}  r-vertical-field" 
+	data-signal-error-for="TType{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="TType" data-fieldname="TType" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_TType}">
+		{BEGIN TType_label}{$label GLTD TType }{END TType_label}
+	</label>
+	<div class="r-edit-field">
+		{$TType_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="TType">
+		<div class="text-muted" >
+		{$tooltip GLTD TType }		</div>
+	</div>
+</div>
+
+
+{END TType_fieldblock}
+											
+{BEGIN AccountCode_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_AccountCode}  r-vertical-field" 
+	data-signal-error-for="AccountCode{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="AccountCode" data-fieldname="AccountCode" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_AccountCode}">
+		{BEGIN AccountCode_label}{$label GLTD AccountCode }{END AccountCode_label}
+	</label>
+	<div class="r-edit-field">
+		{$AccountCode_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="AccountCode">
+		<div class="text-muted" >
+		{$tooltip GLTD AccountCode }		</div>
+	</div>
+</div>
+
+
+{END AccountCode_fieldblock}
+											
+{BEGIN BillNo_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_BillNo}  r-vertical-field" 
+	data-signal-error-for="BillNo{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="BillNo" data-fieldname="BillNo" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_BillNo}">
+		{BEGIN BillNo_label}{$label GLTD BillNo }{END BillNo_label}
+	</label>
+	<div class="r-edit-field">
+		{$BillNo_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="BillNo">
+		<div class="text-muted" >
+		{$tooltip GLTD BillNo }		</div>
+	</div>
+</div>
+
+
+{END BillNo_fieldblock}
+											
+{BEGIN ChequeNo_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ChequeNo}  r-vertical-field" 
+	data-signal-error-for="ChequeNo{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="ChequeNo" data-fieldname="ChequeNo" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_ChequeNo}">
+		{BEGIN ChequeNo_label}{$label GLTD ChequeNo }{END ChequeNo_label}
+	</label>
+	<div class="r-edit-field">
+		{$ChequeNo_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ChequeNo">
+		<div class="text-muted" >
+		{$tooltip GLTD ChequeNo }		</div>
+	</div>
+</div>
+
+
+{END ChequeNo_fieldblock}
+											
+{BEGIN Narration_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Narration}  r-vertical-field" 
+	data-signal-error-for="Narration{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="Narration" data-fieldname="Narration" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_Narration}">
+		{BEGIN Narration_label}{$label GLTD Narration }{END Narration_label}
+	</label>
+	<div class="r-edit-field">
+		{$Narration_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Narration">
+		<div class="text-muted" >
+		{$tooltip GLTD Narration }		</div>
+	</div>
+</div>
+
+
+{END Narration_fieldblock}
+											
+{BEGIN Remarks_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Remarks}  r-vertical-field" 
+	data-signal-error-for="Remarks{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="Remarks" data-fieldname="Remarks" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_Remarks}">
+		{BEGIN Remarks_label}{$label GLTD Remarks }{END Remarks_label}
+	</label>
+	<div class="r-edit-field">
+		{$Remarks_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Remarks">
+		<div class="text-muted" >
+		{$tooltip GLTD Remarks }		</div>
+	</div>
+</div>
+
+
+{END Remarks_fieldblock}
+											
+{BEGIN Amount_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Amount}  r-vertical-field" 
+	data-signal-error-for="Amount{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="Amount" data-fieldname="Amount" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_Amount}">
+		{BEGIN Amount_label}{$label GLTD Amount }{END Amount_label}
+	</label>
+	<div class="r-edit-field">
+		{$Amount_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Amount">
+		<div class="text-muted" >
+		{$tooltip GLTD Amount }		</div>
+	</div>
+</div>
+
+
+{END Amount_fieldblock}
+											
+{BEGIN StoreCode_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_StoreCode}  r-vertical-field" 
+	data-signal-error-for="StoreCode{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="StoreCode" data-fieldname="StoreCode" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_StoreCode}">
+		{BEGIN StoreCode_label}{$label GLTD StoreCode }{END StoreCode_label}
+	</label>
+	<div class="r-edit-field">
+		{$StoreCode_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="StoreCode">
+		<div class="text-muted" >
+		{$tooltip GLTD StoreCode }		</div>
+	</div>
+</div>
+
+
+{END StoreCode_fieldblock}
+											
+{BEGIN Qty_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Qty}  r-vertical-field" 
+	data-signal-error-for="Qty{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field17" {$item_integrated_edit_field17} data-pageid="{$pageid}" data-field="Qty" data-fieldname="Qty" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_Qty}">
+		{BEGIN Qty_label}{$label GLTD Qty }{END Qty_label}
+	</label>
+	<div class="r-edit-field">
+		{$Qty_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Qty">
+		<div class="text-muted" >
+		{$tooltip GLTD Qty }		</div>
+	</div>
+</div>
+
+
+{END Qty_fieldblock}
+											
+{BEGIN Weight_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Weight}  r-vertical-field" 
+	data-signal-error-for="Weight{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field18" {$item_integrated_edit_field18} data-pageid="{$pageid}" data-field="Weight" data-fieldname="Weight" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_Weight}">
+		{BEGIN Weight_label}{$label GLTD Weight }{END Weight_label}
+	</label>
+	<div class="r-edit-field">
+		{$Weight_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Weight">
+		<div class="text-muted" >
+		{$tooltip GLTD Weight }		</div>
+	</div>
+</div>
+
+
+{END Weight_fieldblock}
+											
+{BEGIN Rate_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Rate}  r-vertical-field" 
+	data-signal-error-for="Rate{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field19" {$item_integrated_edit_field19} data-pageid="{$pageid}" data-field="Rate" data-fieldname="Rate" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_Rate}">
+		{BEGIN Rate_label}{$label GLTD Rate }{END Rate_label}
+	</label>
+	<div class="r-edit-field">
+		{$Rate_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Rate">
+		<div class="text-muted" >
+		{$tooltip GLTD Rate }		</div>
+	</div>
+</div>
+
+
+{END Rate_fieldblock}
+											
+{BEGIN UserName_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_UserName}  r-vertical-field" 
+	data-signal-error-for="UserName{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field20" {$item_integrated_edit_field20} data-pageid="{$pageid}" data-field="UserName" data-fieldname="UserName" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_UserName}">
+		{BEGIN UserName_label}{$label GLTD UserName }{END UserName_label}
+	</label>
+	<div class="r-edit-field">
+		{$UserName_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="UserName">
+		<div class="text-muted" >
+		{$tooltip GLTD UserName }		</div>
+	</div>
+</div>
+
+
+{END UserName_fieldblock}
+											
+{BEGIN CreateDate_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CreateDate}  r-vertical-field" 
+	data-signal-error-for="CreateDate{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field21" {$item_integrated_edit_field21} data-pageid="{$pageid}" data-field="CreateDate" data-fieldname="CreateDate" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_CreateDate}">
+		{BEGIN CreateDate_label}{$label GLTD CreateDate }{END CreateDate_label}
+	</label>
+	<div class="r-edit-field">
+		{$CreateDate_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="CreateDate">
+		<div class="text-muted" >
+		{$tooltip GLTD CreateDate }		</div>
+	</div>
+</div>
+
+
+{END CreateDate_fieldblock}
+											
+{BEGIN CreateTime_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CreateTime}  r-vertical-field" 
+	data-signal-error-for="CreateTime{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field22" {$item_integrated_edit_field22} data-pageid="{$pageid}" data-field="CreateTime" data-fieldname="CreateTime" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_CreateTime}">
+		{BEGIN CreateTime_label}{$label GLTD CreateTime }{END CreateTime_label}
+	</label>
+	<div class="r-edit-field">
+		{$CreateTime_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="CreateTime">
+		<div class="text-muted" >
+		{$tooltip GLTD CreateTime }		</div>
+	</div>
+</div>
+
+
+{END CreateTime_fieldblock}
+											
+{BEGIN UpdateUser_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_UpdateUser}  r-vertical-field" 
+	data-signal-error-for="UpdateUser{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field23" {$item_integrated_edit_field23} data-pageid="{$pageid}" data-field="UpdateUser" data-fieldname="UpdateUser" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_UpdateUser}">
+		{BEGIN UpdateUser_label}{$label GLTD UpdateUser }{END UpdateUser_label}
+	</label>
+	<div class="r-edit-field">
+		{$UpdateUser_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="UpdateUser">
+		<div class="text-muted" >
+		{$tooltip GLTD UpdateUser }		</div>
+	</div>
+</div>
+
+
+{END UpdateUser_fieldblock}
+											
+{BEGIN UpdateDate_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_UpdateDate}  r-vertical-field" 
+	data-signal-error-for="UpdateDate{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field24" {$item_integrated_edit_field24} data-pageid="{$pageid}" data-field="UpdateDate" data-fieldname="UpdateDate" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_UpdateDate}">
+		{BEGIN UpdateDate_label}{$label GLTD UpdateDate }{END UpdateDate_label}
+	</label>
+	<div class="r-edit-field">
+		{$UpdateDate_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="UpdateDate">
+		<div class="text-muted" >
+		{$tooltip GLTD UpdateDate }		</div>
+	</div>
+</div>
+
+
+{END UpdateDate_fieldblock}
+											
+{BEGIN UpdateTime_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_UpdateTime}  r-vertical-field" 
+	data-signal-error-for="UpdateTime{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field25" {$item_integrated_edit_field25} data-pageid="{$pageid}" data-field="UpdateTime" data-fieldname="UpdateTime" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_UpdateTime}">
+		{BEGIN UpdateTime_label}{$label GLTD UpdateTime }{END UpdateTime_label}
+	</label>
+	<div class="r-edit-field">
+		{$UpdateTime_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="UpdateTime">
+		<div class="text-muted" >
+		{$tooltip GLTD UpdateTime }		</div>
+	</div>
+</div>
+
+
+{END UpdateTime_fieldblock}
+											
+{BEGIN Block_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Block}  r-vertical-field" 
+	data-signal-error-for="Block{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field26" {$item_integrated_edit_field26} data-pageid="{$pageid}" data-field="Block" data-fieldname="Block" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_Block}">
+		{BEGIN Block_label}{$label GLTD Block }{END Block_label}
+	</label>
+	<div class="r-edit-field">
+		{$Block_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Block">
+		<div class="text-muted" >
+		{$tooltip GLTD Block }		</div>
+	</div>
+</div>
+
+
+{END Block_fieldblock}
+											
+{BEGIN ProductCode_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ProductCode}  r-vertical-field" 
+	data-signal-error-for="ProductCode{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field27" {$item_integrated_edit_field27} data-pageid="{$pageid}" data-field="ProductCode" data-fieldname="ProductCode" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_ProductCode}">
+		{BEGIN ProductCode_label}{$label GLTD ProductCode }{END ProductCode_label}
+	</label>
+	<div class="r-edit-field">
+		{$ProductCode_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ProductCode">
+		<div class="text-muted" >
+		{$tooltip GLTD ProductCode }		</div>
+	</div>
+</div>
+
+
+{END ProductCode_fieldblock}
+											
+{BEGIN ProductGroupCode_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ProductGroupCode}  r-vertical-field" 
+	data-signal-error-for="ProductGroupCode{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field28" {$item_integrated_edit_field28} data-pageid="{$pageid}" data-field="ProductGroupCode" data-fieldname="ProductGroupCode" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_ProductGroupCode}">
+		{BEGIN ProductGroupCode_label}{$label GLTD ProductGroupCode }{END ProductGroupCode_label}
+	</label>
+	<div class="r-edit-field">
+		{$ProductGroupCode_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ProductGroupCode">
+		<div class="text-muted" >
+		{$tooltip GLTD ProductGroupCode }		</div>
+	</div>
+</div>
+
+
+{END ProductGroupCode_fieldblock}
+											
+{BEGIN UnitCode_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_UnitCode}  r-vertical-field" 
+	data-signal-error-for="UnitCode{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field29" {$item_integrated_edit_field29} data-pageid="{$pageid}" data-field="UnitCode" data-fieldname="UnitCode" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_UnitCode}">
+		{BEGIN UnitCode_label}{$label GLTD UnitCode }{END UnitCode_label}
+	</label>
+	<div class="r-edit-field">
+		{$UnitCode_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="UnitCode">
+		<div class="text-muted" >
+		{$tooltip GLTD UnitCode }		</div>
+	</div>
+</div>
+
+
+{END UnitCode_fieldblock}
+											
+{BEGIN TStatus_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_TStatus}  r-vertical-field" 
+	data-signal-error-for="TStatus{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field30" {$item_integrated_edit_field30} data-pageid="{$pageid}" data-field="TStatus" data-fieldname="TStatus" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_TStatus}">
+		{BEGIN TStatus_label}{$label GLTD TStatus }{END TStatus_label}
+	</label>
+	<div class="r-edit-field">
+		{$TStatus_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="TStatus">
+		<div class="text-muted" >
+		{$tooltip GLTD TStatus }		</div>
+	</div>
+</div>
+
+
+{END TStatus_fieldblock}
+											
+{BEGIN ParentAccountCode_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ParentAccountCode}  r-vertical-field" 
+	data-signal-error-for="ParentAccountCode{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field31" {$item_integrated_edit_field31} data-pageid="{$pageid}" data-field="ParentAccountCode" data-fieldname="ParentAccountCode" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_ParentAccountCode}">
+		{BEGIN ParentAccountCode_label}{$label GLTD ParentAccountCode }{END ParentAccountCode_label}
+	</label>
+	<div class="r-edit-field">
+		{$ParentAccountCode_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ParentAccountCode">
+		<div class="text-muted" >
+		{$tooltip GLTD ParentAccountCode }		</div>
+	</div>
+</div>
+
+
+{END ParentAccountCode_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="add_save" data-itemid="add_save" {$item_add_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							Save			</a>
+</span>
+	 
+		<span data-itemtype="add_reset" data-itemid="add_reset" {$item_add_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="resetButton{$id}" >
+							Reset			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="add_back_list" data-itemid="add_back_list" {$item_add_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="backButton{$id}" >
+							Back to list			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="add_cancel" data-itemid="add_cancel" {$item_add_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Cancel			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

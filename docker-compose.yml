@@ -1,0 +1,75 @@
+services:
+  db:
+    image: mariadb:11.4
+    container_name: karsaaz_mariadb
+    restart: unless-stopped
+    environment:
+      MARIADB_ROOT_PASSWORD: rootpass # change for prod
+      MARIADB_DATABASE: karsaaz_pos
+      MARIADB_ROOT_HOST: "%" # allow root from other containers (phpMyAdmin)
+    volumes:
+      - ./mariadb_data/data:/var/lib/mysql
+      - ./mariadb_data/init:/docker-entrypoint-initdb.d:ro
+    ports:
+      - "3307:3306" # host:container (changed to 3307 to avoid conflict)
+    healthcheck:
+      test: ["CMD-SHELL", "mariadb-admin ping -h localhost -u root --password=$$MARIADB_ROOT_PASSWORD || exit 1"]
+      interval: 5s
+      timeout: 3s
+      start_period: 30s
+      retries: 30
+
+  php_backend:
+    build:
+      context: ./php_backend
+      dockerfile: Dockerfile
+    container_name: karsaaz_php
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DB_HOST: db
+      DB_PORT: "3306"
+      DB_DATABASE: karsaaz_pos
+      DB_USERNAME: root
+      DB_PASSWORD: "rootpass"
+    volumes:
+      - ./php_backend:/var/www/html
+    ports:
+      - "8080:80" # http://localhost:8080
+
+  next_frontend:
+    build:
+      context: ./next_frontend
+      dockerfile: Dockerfile
+    container_name: karsaaz_next
+    restart: unless-stopped
+    depends_on:
+      - php_backend
+    environment:
+      NEXT_PUBLIC_API_URL: http://php_backend:80
+      BACKEND_URL: http://karsaaz_php:80
+    ports:
+      - "3000:3000" # http://localhost:3000
+
+  phpmyadmin:
+    image: phpmyadmin:5.2-apache
+    container_name: karsaaz_phpmyadmin
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      PMA_HOST: db
+      PMA_PORT: 3306
+      PMA_USER: root
+      PMA_PASSWORD: rootpass
+      PMA_ARBITRARY: 1
+      UPLOAD_LIMIT: 256M
+    ports:
+      - "8081:80" # http://localhost:8081
+
+networks:
+  default:
+    name: appnet

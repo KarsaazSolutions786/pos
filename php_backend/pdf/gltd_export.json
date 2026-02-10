@@ -1,0 +1,216 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel GLTD export}","hidden":"{$item_hide_export_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+											],
+		
+		]
+	}
+}
+,
+		
+				
+								
+{
+	table: {
+	
+				
+		location: 'grid',
+		
+		
+		widths: [
+								"%", 
+					 ],	
+		
+			heights: [
+								
+			"%",
+			 
+				],
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":{$Code_pdfvalue},"hidden":"{$item_hide_export_field}"},
+				
+				
+			{"text":{$CodeD_pdfvalue},"hidden":"{$item_hide_export_field1}"},
+				
+				
+			{"text":{$BookCode_pdfvalue},"hidden":"{$item_hide_export_field2}"},
+				
+				
+			{"text":{$BookID_pdfvalue},"hidden":"{$item_hide_export_field3}"},
+				
+				
+			{"text":{$VirtualCode_pdfvalue},"hidden":"{$item_hide_export_field4}"},
+				
+				
+			{"text":{$Status_pdfvalue},"hidden":"{$item_hide_export_field5}"},
+				
+				
+			{"text":{$TDate_pdfvalue},"hidden":"{$item_hide_export_field6}"},
+				
+				
+			{"text":{$BUnit_pdfvalue},"hidden":"{$item_hide_export_field7}"},
+				
+				
+			{"text":{$TBook_pdfvalue},"hidden":"{$item_hide_export_field8}"},
+				
+				
+			{"text":{$TType_pdfvalue},"hidden":"{$item_hide_export_field9}"},
+				
+				
+			{"text":{$AccountCode_pdfvalue},"hidden":"{$item_hide_export_field10}"},
+				
+				
+			{"text":{$BillNo_pdfvalue},"hidden":"{$item_hide_export_field11}"},
+				
+				
+			{"text":{$ChequeNo_pdfvalue},"hidden":"{$item_hide_export_field12}"},
+				
+				
+			{"text":{$Narration_pdfvalue},"hidden":"{$item_hide_export_field13}"},
+				
+				
+			{"text":{$Remarks_pdfvalue},"hidden":"{$item_hide_export_field14}"},
+				
+				
+			{"text":{$Amount_pdfvalue},"hidden":"{$item_hide_export_field15}"},
+				
+				
+			{"text":{$StoreCode_pdfvalue},"hidden":"{$item_hide_export_field16}"},
+				
+				
+			{"text":{$Qty_pdfvalue},"hidden":"{$item_hide_export_field17}"},
+				
+				
+			{"text":{$Weight_pdfvalue},"hidden":"{$item_hide_export_field18}"},
+				
+				
+			{"text":{$Rate_pdfvalue},"hidden":"{$item_hide_export_field19}"},
+				
+				
+			{"text":{$UserName_pdfvalue},"hidden":"{$item_hide_export_field20}"},
+				
+				
+			{"text":{$CreateDate_pdfvalue},"hidden":"{$item_hide_export_field21}"},
+				
+				
+			{"text":{$CreateTime_pdfvalue},"hidden":"{$item_hide_export_field22}"},
+				
+				
+			{"text":{$UpdateUser_pdfvalue},"hidden":"{$item_hide_export_field23}"},
+				
+				
+			{"text":{$UpdateDate_pdfvalue},"hidden":"{$item_hide_export_field24}"},
+				
+				
+			{"text":{$UpdateTime_pdfvalue},"hidden":"{$item_hide_export_field25}"},
+				
+				
+			{"text":{$Block_pdfvalue},"hidden":"{$item_hide_export_field26}"},
+				
+				
+			{"text":{$ProductCode_pdfvalue},"hidden":"{$item_hide_export_field27}"},
+				
+				
+			{"text":{$ProductGroupCode_pdfvalue},"hidden":"{$item_hide_export_field28}"},
+				
+				
+			{"text":{$UnitCode_pdfvalue},"hidden":"{$item_hide_export_field29}"},
+				
+				
+			{"text":{$TStatus_pdfvalue},"hidden":"{$item_hide_export_field30}"},
+				
+				
+			{"text":{$ParentAccountCode_pdfvalue},"hidden":"{$item_hide_export_field31}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+											],
+		
+		]
+	}
+}
+,
+		
+					]
+}
+  

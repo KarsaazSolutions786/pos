@@ -1,0 +1,33 @@
+7/18/25, 6:23 PM P Employee, Add new
+P
+Employee,
+Add
+new
+localhost/karsaaz_pos/pemployee_add.php 1 / 3
+
+7/18/25, 6:23 PM P Employee, Add new
+BUnit
+Old Code
+Name  *
+Father Name  *
+Employee Group
+General Group
+Gender
+Address  *
+Phone
+Cell
+CNIC
+NTNNo
+Fax
+localhost/karsaaz_pos/pemployee_add.php 2 / 3
+
+7/18/25, 6:23 PM P Employee, Add new
+EMail
+Per Hour Rate
+Total Salary
+Office T ime From
+Office T ime To
+Remarks
+Block
+   
+localhost/karsaaz_pos/pemployee_add.php 3 / 3

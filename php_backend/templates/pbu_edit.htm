@@ -1,0 +1,965 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-edit" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="edit_header" data-itemid="edit_header" {$item_edit_header} data-pageid="{$pageid}" >{$pagetitlelabel pBU edit}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<div data-itemtype="edit_message" data-itemid="edit_message" {$item_edit_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN message_back_button}
+			<button class="btn btn-sm btn-default" {$backbutton_attrs}>Back to list</button>
+	{END message_back_button}
+{BEGIN message_view_page_button}
+		<a class="btn btn-sm btn-default" href="pbu_view.php?{$editlink}" {$view_page_button_attrs}>View</a>
+{END message_view_page_button}
+</div>
+</div>
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN Name_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Name}  r-vertical-field" 
+	data-signal-error-for="Name{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="Name" data-fieldname="Name" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_Name}">
+		{BEGIN Name_label}{$label pBU Name }{END Name_label}
+	</label>
+	<div class="r-edit-field">
+		{$Name_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Name">
+		<div class="text-muted" >
+		{$tooltip pBU Name }		</div>
+	</div>
+</div>
+
+
+{END Name_fieldblock}
+											
+{BEGIN ContactName_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ContactName}  r-vertical-field" 
+	data-signal-error-for="ContactName{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="ContactName" data-fieldname="ContactName" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_ContactName}">
+		{BEGIN ContactName_label}{$label pBU ContactName }{END ContactName_label}
+	</label>
+	<div class="r-edit-field">
+		{$ContactName_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ContactName">
+		<div class="text-muted" >
+		{$tooltip pBU ContactName }		</div>
+	</div>
+</div>
+
+
+{END ContactName_fieldblock}
+											
+{BEGIN BusinessType_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_BusinessType}  r-vertical-field" 
+	data-signal-error-for="BusinessType{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="BusinessType" data-fieldname="BusinessType" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_BusinessType}">
+		{BEGIN BusinessType_label}{$label pBU BusinessType }{END BusinessType_label}
+	</label>
+	<div class="r-edit-field">
+		{$BusinessType_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="BusinessType">
+		<div class="text-muted" >
+		{$tooltip pBU BusinessType }		</div>
+	</div>
+</div>
+
+
+{END BusinessType_fieldblock}
+											
+{BEGIN Address_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Address}  r-vertical-field" 
+	data-signal-error-for="Address{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="Address" data-fieldname="Address" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_Address}">
+		{BEGIN Address_label}{$label pBU Address }{END Address_label}
+	</label>
+	<div class="r-edit-field">
+		{$Address_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Address">
+		<div class="text-muted" >
+		{$tooltip pBU Address }		</div>
+	</div>
+</div>
+
+
+{END Address_fieldblock}
+											
+{BEGIN Address2_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Address2}  r-vertical-field" 
+	data-signal-error-for="Address2{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="Address2" data-fieldname="Address2" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_Address2}">
+		{BEGIN Address2_label}{$label pBU Address2 }{END Address2_label}
+	</label>
+	<div class="r-edit-field">
+		{$Address2_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Address2">
+		<div class="text-muted" >
+		{$tooltip pBU Address2 }		</div>
+	</div>
+</div>
+
+
+{END Address2_fieldblock}
+											
+{BEGIN Phone_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Phone}  r-vertical-field" 
+	data-signal-error-for="Phone{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="Phone" data-fieldname="Phone" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_Phone}">
+		{BEGIN Phone_label}{$label pBU Phone }{END Phone_label}
+	</label>
+	<div class="r-edit-field">
+		{$Phone_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Phone">
+		<div class="text-muted" >
+		{$tooltip pBU Phone }		</div>
+	</div>
+</div>
+
+
+{END Phone_fieldblock}
+											
+{BEGIN Cell_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Cell}  r-vertical-field" 
+	data-signal-error-for="Cell{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="Cell" data-fieldname="Cell" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_Cell}">
+		{BEGIN Cell_label}{$label pBU Cell }{END Cell_label}
+	</label>
+	<div class="r-edit-field">
+		{$Cell_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Cell">
+		<div class="text-muted" >
+		{$tooltip pBU Cell }		</div>
+	</div>
+</div>
+
+
+{END Cell_fieldblock}
+											
+{BEGIN Fax_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Fax}  r-vertical-field" 
+	data-signal-error-for="Fax{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="Fax" data-fieldname="Fax" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_Fax}">
+		{BEGIN Fax_label}{$label pBU Fax }{END Fax_label}
+	</label>
+	<div class="r-edit-field">
+		{$Fax_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Fax">
+		<div class="text-muted" >
+		{$tooltip pBU Fax }		</div>
+	</div>
+</div>
+
+
+{END Fax_fieldblock}
+											
+{BEGIN EMail_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_EMail}  r-vertical-field" 
+	data-signal-error-for="EMail{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="EMail" data-fieldname="EMail" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_EMail}">
+		{BEGIN EMail_label}{$label pBU EMail }{END EMail_label}
+	</label>
+	<div class="r-edit-field">
+		{$EMail_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="EMail">
+		<div class="text-muted" >
+		{$tooltip pBU EMail }		</div>
+	</div>
+</div>
+
+
+{END EMail_fieldblock}
+											
+{BEGIN WebAddress_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_WebAddress}  r-vertical-field" 
+	data-signal-error-for="WebAddress{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="WebAddress" data-fieldname="WebAddress" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_WebAddress}">
+		{BEGIN WebAddress_label}{$label pBU WebAddress }{END WebAddress_label}
+	</label>
+	<div class="r-edit-field">
+		{$WebAddress_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="WebAddress">
+		<div class="text-muted" >
+		{$tooltip pBU WebAddress }		</div>
+	</div>
+</div>
+
+
+{END WebAddress_fieldblock}
+											
+{BEGIN CNIC_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CNIC}  r-vertical-field" 
+	data-signal-error-for="CNIC{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="CNIC" data-fieldname="CNIC" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_CNIC}">
+		{BEGIN CNIC_label}{$label pBU CNIC }{END CNIC_label}
+	</label>
+	<div class="r-edit-field">
+		{$CNIC_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="CNIC">
+		<div class="text-muted" >
+		{$tooltip pBU CNIC }		</div>
+	</div>
+</div>
+
+
+{END CNIC_fieldblock}
+											
+{BEGIN NTNNo_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_NTNNo}  r-vertical-field" 
+	data-signal-error-for="NTNNo{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="NTNNo" data-fieldname="NTNNo" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_NTNNo}">
+		{BEGIN NTNNo_label}{$label pBU NTNNo }{END NTNNo_label}
+	</label>
+	<div class="r-edit-field">
+		{$NTNNo_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="NTNNo">
+		<div class="text-muted" >
+		{$tooltip pBU NTNNo }		</div>
+	</div>
+</div>
+
+
+{END NTNNo_fieldblock}
+											
+{BEGIN StnNo_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_StnNo}  r-vertical-field" 
+	data-signal-error-for="StnNo{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="StnNo" data-fieldname="StnNo" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_StnNo}">
+		{BEGIN StnNo_label}{$label pBU StnNo }{END StnNo_label}
+	</label>
+	<div class="r-edit-field">
+		{$StnNo_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="StnNo">
+		<div class="text-muted" >
+		{$tooltip pBU StnNo }		</div>
+	</div>
+</div>
+
+
+{END StnNo_fieldblock}
+											
+{BEGIN CurrencyNo_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CurrencyNo}  r-vertical-field" 
+	data-signal-error-for="CurrencyNo{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="CurrencyNo" data-fieldname="CurrencyNo" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_CurrencyNo}">
+		{BEGIN CurrencyNo_label}{$label pBU CurrencyNo }{END CurrencyNo_label}
+	</label>
+	<div class="r-edit-field">
+		{$CurrencyNo_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="CurrencyNo">
+		<div class="text-muted" >
+		{$tooltip pBU CurrencyNo }		</div>
+	</div>
+</div>
+
+
+{END CurrencyNo_fieldblock}
+											
+{BEGIN BraNo_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_BraNo}  r-vertical-field" 
+	data-signal-error-for="BraNo{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="BraNo" data-fieldname="BraNo" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_BraNo}">
+		{BEGIN BraNo_label}{$label pBU BraNo }{END BraNo_label}
+	</label>
+	<div class="r-edit-field">
+		{$BraNo_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="BraNo">
+		<div class="text-muted" >
+		{$tooltip pBU BraNo }		</div>
+	</div>
+</div>
+
+
+{END BraNo_fieldblock}
+											
+{BEGIN Remarks_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Remarks}  r-vertical-field" 
+	data-signal-error-for="Remarks{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="Remarks" data-fieldname="Remarks" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_Remarks}">
+		{BEGIN Remarks_label}{$label pBU Remarks }{END Remarks_label}
+	</label>
+	<div class="r-edit-field">
+		{$Remarks_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Remarks">
+		<div class="text-muted" >
+		{$tooltip pBU Remarks }		</div>
+	</div>
+</div>
+
+
+{END Remarks_fieldblock}
+											
+{BEGIN CountryCode_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CountryCode}  r-vertical-field" 
+	data-signal-error-for="CountryCode{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="CountryCode" data-fieldname="CountryCode" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_CountryCode}">
+		{BEGIN CountryCode_label}{$label pBU CountryCode }{END CountryCode_label}
+	</label>
+	<div class="r-edit-field">
+		{$CountryCode_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="CountryCode">
+		<div class="text-muted" >
+		{$tooltip pBU CountryCode }		</div>
+	</div>
+</div>
+
+
+{END CountryCode_fieldblock}
+											
+{BEGIN ProvinceCode_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ProvinceCode}  r-vertical-field" 
+	data-signal-error-for="ProvinceCode{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field17" {$item_integrated_edit_field17} data-pageid="{$pageid}" data-field="ProvinceCode" data-fieldname="ProvinceCode" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_ProvinceCode}">
+		{BEGIN ProvinceCode_label}{$label pBU ProvinceCode }{END ProvinceCode_label}
+	</label>
+	<div class="r-edit-field">
+		{$ProvinceCode_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ProvinceCode">
+		<div class="text-muted" >
+		{$tooltip pBU ProvinceCode }		</div>
+	</div>
+</div>
+
+
+{END ProvinceCode_fieldblock}
+											
+{BEGIN CityCode_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CityCode}  r-vertical-field" 
+	data-signal-error-for="CityCode{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field18" {$item_integrated_edit_field18} data-pageid="{$pageid}" data-field="CityCode" data-fieldname="CityCode" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_CityCode}">
+		{BEGIN CityCode_label}{$label pBU CityCode }{END CityCode_label}
+	</label>
+	<div class="r-edit-field">
+		{$CityCode_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="CityCode">
+		<div class="text-muted" >
+		{$tooltip pBU CityCode }		</div>
+	</div>
+</div>
+
+
+{END CityCode_fieldblock}
+											
+{BEGIN DivisionCode_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_DivisionCode}  r-vertical-field" 
+	data-signal-error-for="DivisionCode{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field19" {$item_integrated_edit_field19} data-pageid="{$pageid}" data-field="DivisionCode" data-fieldname="DivisionCode" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_DivisionCode}">
+		{BEGIN DivisionCode_label}{$label pBU DivisionCode }{END DivisionCode_label}
+	</label>
+	<div class="r-edit-field">
+		{$DivisionCode_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="DivisionCode">
+		<div class="text-muted" >
+		{$tooltip pBU DivisionCode }		</div>
+	</div>
+</div>
+
+
+{END DivisionCode_fieldblock}
+											
+{BEGIN DistrictCode_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_DistrictCode}  r-vertical-field" 
+	data-signal-error-for="DistrictCode{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field20" {$item_integrated_edit_field20} data-pageid="{$pageid}" data-field="DistrictCode" data-fieldname="DistrictCode" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_DistrictCode}">
+		{BEGIN DistrictCode_label}{$label pBU DistrictCode }{END DistrictCode_label}
+	</label>
+	<div class="r-edit-field">
+		{$DistrictCode_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="DistrictCode">
+		<div class="text-muted" >
+		{$tooltip pBU DistrictCode }		</div>
+	</div>
+</div>
+
+
+{END DistrictCode_fieldblock}
+											
+{BEGIN TahsileCode_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_TahsileCode}  r-vertical-field" 
+	data-signal-error-for="TahsileCode{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field21" {$item_integrated_edit_field21} data-pageid="{$pageid}" data-field="TahsileCode" data-fieldname="TahsileCode" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_TahsileCode}">
+		{BEGIN TahsileCode_label}{$label pBU TahsileCode }{END TahsileCode_label}
+	</label>
+	<div class="r-edit-field">
+		{$TahsileCode_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="TahsileCode">
+		<div class="text-muted" >
+		{$tooltip pBU TahsileCode }		</div>
+	</div>
+</div>
+
+
+{END TahsileCode_fieldblock}
+											
+{BEGIN MainAreaCode_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_MainAreaCode}  r-vertical-field" 
+	data-signal-error-for="MainAreaCode{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field22" {$item_integrated_edit_field22} data-pageid="{$pageid}" data-field="MainAreaCode" data-fieldname="MainAreaCode" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_MainAreaCode}">
+		{BEGIN MainAreaCode_label}{$label pBU MainAreaCode }{END MainAreaCode_label}
+	</label>
+	<div class="r-edit-field">
+		{$MainAreaCode_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="MainAreaCode">
+		<div class="text-muted" >
+		{$tooltip pBU MainAreaCode }		</div>
+	</div>
+</div>
+
+
+{END MainAreaCode_fieldblock}
+											
+{BEGIN SubAreaCode_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_SubAreaCode}  r-vertical-field" 
+	data-signal-error-for="SubAreaCode{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field23" {$item_integrated_edit_field23} data-pageid="{$pageid}" data-field="SubAreaCode" data-fieldname="SubAreaCode" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_SubAreaCode}">
+		{BEGIN SubAreaCode_label}{$label pBU SubAreaCode }{END SubAreaCode_label}
+	</label>
+	<div class="r-edit-field">
+		{$SubAreaCode_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="SubAreaCode">
+		<div class="text-muted" >
+		{$tooltip pBU SubAreaCode }		</div>
+	</div>
+</div>
+
+
+{END SubAreaCode_fieldblock}
+											
+{BEGIN NameInUrdu_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_NameInUrdu}  r-vertical-field" 
+	data-signal-error-for="NameInUrdu{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field24" {$item_integrated_edit_field24} data-pageid="{$pageid}" data-field="NameInUrdu" data-fieldname="NameInUrdu" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_NameInUrdu}">
+		{BEGIN NameInUrdu_label}{$label pBU NameInUrdu }{END NameInUrdu_label}
+	</label>
+	<div class="r-edit-field">
+		{$NameInUrdu_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="NameInUrdu">
+		<div class="text-muted" >
+		{$tooltip pBU NameInUrdu }		</div>
+	</div>
+</div>
+
+
+{END NameInUrdu_fieldblock}
+											
+{BEGIN RemarksInUrdu_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_RemarksInUrdu}  r-vertical-field" 
+	data-signal-error-for="RemarksInUrdu{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field25" {$item_integrated_edit_field25} data-pageid="{$pageid}" data-field="RemarksInUrdu" data-fieldname="RemarksInUrdu" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_RemarksInUrdu}">
+		{BEGIN RemarksInUrdu_label}{$label pBU RemarksInUrdu }{END RemarksInUrdu_label}
+	</label>
+	<div class="r-edit-field">
+		{$RemarksInUrdu_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="RemarksInUrdu">
+		<div class="text-muted" >
+		{$tooltip pBU RemarksInUrdu }		</div>
+	</div>
+</div>
+
+
+{END RemarksInUrdu_fieldblock}
+											
+{BEGIN Pic_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Pic}  r-vertical-field" 
+	data-signal-error-for="Pic{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field26" {$item_integrated_edit_field26} data-pageid="{$pageid}" data-field="Pic" data-fieldname="Pic" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_Pic}">
+		{BEGIN Pic_label}{$label pBU Pic }{END Pic_label}
+	</label>
+	<div class="r-edit-field">
+		{$Pic_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Pic">
+		<div class="text-muted" >
+		{$tooltip pBU Pic }		</div>
+	</div>
+</div>
+
+
+{END Pic_fieldblock}
+											
+{BEGIN PictureStatus_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_PictureStatus}  r-vertical-field" 
+	data-signal-error-for="PictureStatus{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field27" {$item_integrated_edit_field27} data-pageid="{$pageid}" data-field="PictureStatus" data-fieldname="PictureStatus" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_PictureStatus}">
+		{BEGIN PictureStatus_label}{$label pBU PictureStatus }{END PictureStatus_label}
+	</label>
+	<div class="r-edit-field">
+		{$PictureStatus_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="PictureStatus">
+		<div class="text-muted" >
+		{$tooltip pBU PictureStatus }		</div>
+	</div>
+</div>
+
+
+{END PictureStatus_fieldblock}
+											
+{BEGIN Block_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Block}  r-vertical-field" 
+	data-signal-error-for="Block{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field43" {$item_integrated_edit_field43} data-pageid="{$pageid}" data-field="Block" data-fieldname="Block" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_Block}">
+		{BEGIN Block_label}{$label pBU Block }{END Block_label}
+	</label>
+	<div class="r-edit-field">
+		{$Block_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Block">
+		<div class="text-muted" >
+		{$tooltip pBU Block }		</div>
+	</div>
+</div>
+
+
+{END Block_fieldblock}
+											
+{BEGIN Lock_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Lock}  r-vertical-field" 
+	data-signal-error-for="Lock{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field44" {$item_integrated_edit_field44} data-pageid="{$pageid}" data-field="Lock" data-fieldname="Lock" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_Lock}">
+		{BEGIN Lock_label}{$label pBU Lock }{END Lock_label}
+	</label>
+	<div class="r-edit-field">
+		{$Lock_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Lock">
+		<div class="text-muted" >
+		{$tooltip pBU Lock }		</div>
+	</div>
+</div>
+
+
+{END Lock_fieldblock}
+											
+{BEGIN Hide_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Hide}  r-vertical-field" 
+	data-signal-error-for="Hide{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field45" {$item_integrated_edit_field45} data-pageid="{$pageid}" data-field="Hide" data-fieldname="Hide" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_Hide}">
+		{BEGIN Hide_label}{$label pBU Hide }{END Hide_label}
+	</label>
+	<div class="r-edit-field">
+		{$Hide_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Hide">
+		<div class="text-muted" >
+		{$tooltip pBU Hide }		</div>
+	</div>
+</div>
+
+
+{END Hide_fieldblock}
+											
+{BEGIN Bookmark_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Bookmark}  r-vertical-field" 
+	data-signal-error-for="Bookmark{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field46" {$item_integrated_edit_field46} data-pageid="{$pageid}" data-field="Bookmark" data-fieldname="Bookmark" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_Bookmark}">
+		{BEGIN Bookmark_label}{$label pBU Bookmark }{END Bookmark_label}
+	</label>
+	<div class="r-edit-field">
+		{$Bookmark_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Bookmark">
+		<div class="text-muted" >
+		{$tooltip pBU Bookmark }		</div>
+	</div>
+</div>
+
+
+{END Bookmark_fieldblock}
+											
+{BEGIN BMStatus_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_BMStatus}  r-vertical-field" 
+	data-signal-error-for="BMStatus{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field47" {$item_integrated_edit_field47} data-pageid="{$pageid}" data-field="BMStatus" data-fieldname="BMStatus" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_BMStatus}">
+		{BEGIN BMStatus_label}{$label pBU BMStatus }{END BMStatus_label}
+	</label>
+	<div class="r-edit-field">
+		{$BMStatus_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="BMStatus">
+		<div class="text-muted" >
+		{$tooltip pBU BMStatus }		</div>
+	</div>
+</div>
+
+
+{END BMStatus_fieldblock}
+											
+{BEGIN BMIConID_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_BMIConID}  r-vertical-field" 
+	data-signal-error-for="BMIConID{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field48" {$item_integrated_edit_field48} data-pageid="{$pageid}" data-field="BMIConID" data-fieldname="BMIConID" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_BMIConID}">
+		{BEGIN BMIConID_label}{$label pBU BMIConID }{END BMIConID_label}
+	</label>
+	<div class="r-edit-field">
+		{$BMIConID_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="BMIConID">
+		<div class="text-muted" >
+		{$tooltip pBU BMIConID }		</div>
+	</div>
+</div>
+
+
+{END BMIConID_fieldblock}
+											
+{BEGIN BMRowID_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_BMRowID}  r-vertical-field" 
+	data-signal-error-for="BMRowID{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field49" {$item_integrated_edit_field49} data-pageid="{$pageid}" data-field="BMRowID" data-fieldname="BMRowID" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_BMRowID}">
+		{BEGIN BMRowID_label}{$label pBU BMRowID }{END BMRowID_label}
+	</label>
+	<div class="r-edit-field">
+		{$BMRowID_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="BMRowID">
+		<div class="text-muted" >
+		{$tooltip pBU BMRowID }		</div>
+	</div>
+</div>
+
+
+{END BMRowID_fieldblock}
+											
+{BEGIN DBRowID_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_DBRowID}  r-vertical-field" 
+	data-signal-error-for="DBRowID{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field50" {$item_integrated_edit_field50} data-pageid="{$pageid}" data-field="DBRowID" data-fieldname="DBRowID" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_DBRowID}">
+		{BEGIN DBRowID_label}{$label pBU DBRowID }{END DBRowID_label}
+	</label>
+	<div class="r-edit-field">
+		{$DBRowID_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="DBRowID">
+		<div class="text-muted" >
+		{$tooltip pBU DBRowID }		</div>
+	</div>
+</div>
+
+
+{END DBRowID_fieldblock}
+											
+{BEGIN ECol1_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ECol1}  r-vertical-field" 
+	data-signal-error-for="ECol1{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field51" {$item_integrated_edit_field51} data-pageid="{$pageid}" data-field="ECol1" data-fieldname="ECol1" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_ECol1}">
+		{BEGIN ECol1_label}{$label pBU ECol1 }{END ECol1_label}
+	</label>
+	<div class="r-edit-field">
+		{$ECol1_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ECol1">
+		<div class="text-muted" >
+		{$tooltip pBU ECol1 }		</div>
+	</div>
+</div>
+
+
+{END ECol1_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN save_edit}
+<span data-itemtype="edit_save" data-itemid="edit_save" {$item_edit_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							Save			</a>
+</span>
+{END save_edit}
+	 
+		{BEGIN back_button}
+<span data-itemtype="edit_back_list" data-itemid="edit_back_list" {$item_edit_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Back to list			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="edit_close" data-itemid="edit_close" {$item_edit_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$closebutton_attrs} >
+							Cancel			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-menu-hamburger"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+								<li data-itemtype="edit_reset" data-itemid="edit_reset" {$item_edit_reset} data-pageid="{$pageid}" data-small >
+				<a  {$resetbutton_attrs}  title="" >
+				
+		Reset		
+		</a>
+	</li>
+							{BEGIN view_page_button}
+	<li data-itemtype="edit_view" data-itemid="edit_view" {$item_edit_view} data-pageid="{$pageid}" data-small >
+				<a  href="pbu_view.php?{$editlink}" {$view_page_button_attrs}  title="" >
+				
+		View		
+		</a>
+	</li>
+{END view_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

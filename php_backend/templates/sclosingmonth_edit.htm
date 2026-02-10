@@ -1,0 +1,629 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-edit" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="edit_header" data-itemid="edit_header" {$item_edit_header} data-pageid="{$pageid}" >{$pagetitlelabel sClosingMonth edit}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<div data-itemtype="edit_message" data-itemid="edit_message" {$item_edit_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN message_back_button}
+			<button class="btn btn-sm btn-default" {$backbutton_attrs}>Back to list</button>
+	{END message_back_button}
+{BEGIN message_view_page_button}
+		<a class="btn btn-sm btn-default" href="sclosingmonth_view.php?{$editlink}" {$view_page_button_attrs}>View</a>
+{END message_view_page_button}
+</div>
+</div>
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN Code_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Code}  r-vertical-field" 
+	data-signal-error-for="Code{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="Code" data-fieldname="Code" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_Code}">
+		{BEGIN Code_label}{$label sClosingMonth Code }{END Code_label}
+	</label>
+	<div class="r-edit-field">
+		{$Code_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Code">
+		<div class="text-muted" >
+		{$tooltip sClosingMonth Code }		</div>
+	</div>
+</div>
+
+
+{END Code_fieldblock}
+											
+{BEGIN VMonth_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_VMonth}  r-vertical-field" 
+	data-signal-error-for="VMonth{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="VMonth" data-fieldname="VMonth" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_VMonth}">
+		{BEGIN VMonth_label}{$label sClosingMonth VMonth }{END VMonth_label}
+	</label>
+	<div class="r-edit-field">
+		{$VMonth_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="VMonth">
+		<div class="text-muted" >
+		{$tooltip sClosingMonth VMonth }		</div>
+	</div>
+</div>
+
+
+{END VMonth_fieldblock}
+											
+{BEGIN VYear_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_VYear}  r-vertical-field" 
+	data-signal-error-for="VYear{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="VYear" data-fieldname="VYear" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_VYear}">
+		{BEGIN VYear_label}{$label sClosingMonth VYear }{END VYear_label}
+	</label>
+	<div class="r-edit-field">
+		{$VYear_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="VYear">
+		<div class="text-muted" >
+		{$tooltip sClosingMonth VYear }		</div>
+	</div>
+</div>
+
+
+{END VYear_fieldblock}
+											
+{BEGIN CloseStatus_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CloseStatus}  r-vertical-field" 
+	data-signal-error-for="CloseStatus{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="CloseStatus" data-fieldname="CloseStatus" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_CloseStatus}">
+		{BEGIN CloseStatus_label}{$label sClosingMonth CloseStatus }{END CloseStatus_label}
+	</label>
+	<div class="r-edit-field">
+		{$CloseStatus_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="CloseStatus">
+		<div class="text-muted" >
+		{$tooltip sClosingMonth CloseStatus }		</div>
+	</div>
+</div>
+
+
+{END CloseStatus_fieldblock}
+											
+{BEGIN DefaultMonth_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_DefaultMonth}  r-vertical-field" 
+	data-signal-error-for="DefaultMonth{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="DefaultMonth" data-fieldname="DefaultMonth" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_DefaultMonth}">
+		{BEGIN DefaultMonth_label}{$label sClosingMonth DefaultMonth }{END DefaultMonth_label}
+	</label>
+	<div class="r-edit-field">
+		{$DefaultMonth_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="DefaultMonth">
+		<div class="text-muted" >
+		{$tooltip sClosingMonth DefaultMonth }		</div>
+	</div>
+</div>
+
+
+{END DefaultMonth_fieldblock}
+											
+{BEGIN BuCode_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_BuCode}  r-vertical-field" 
+	data-signal-error-for="BuCode{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="BuCode" data-fieldname="BuCode" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_BuCode}">
+		{BEGIN BuCode_label}{$label sClosingMonth BuCode }{END BuCode_label}
+	</label>
+	<div class="r-edit-field">
+		{$BuCode_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="BuCode">
+		<div class="text-muted" >
+		{$tooltip sClosingMonth BuCode }		</div>
+	</div>
+</div>
+
+
+{END BuCode_fieldblock}
+											
+{BEGIN UserName_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_UserName}  r-vertical-field" 
+	data-signal-error-for="UserName{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="UserName" data-fieldname="UserName" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_UserName}">
+		{BEGIN UserName_label}{$label sClosingMonth UserName }{END UserName_label}
+	</label>
+	<div class="r-edit-field">
+		{$UserName_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="UserName">
+		<div class="text-muted" >
+		{$tooltip sClosingMonth UserName }		</div>
+	</div>
+</div>
+
+
+{END UserName_fieldblock}
+											
+{BEGIN CreateDate_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CreateDate}  r-vertical-field" 
+	data-signal-error-for="CreateDate{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="CreateDate" data-fieldname="CreateDate" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_CreateDate}">
+		{BEGIN CreateDate_label}{$label sClosingMonth CreateDate }{END CreateDate_label}
+	</label>
+	<div class="r-edit-field">
+		{$CreateDate_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="CreateDate">
+		<div class="text-muted" >
+		{$tooltip sClosingMonth CreateDate }		</div>
+	</div>
+</div>
+
+
+{END CreateDate_fieldblock}
+											
+{BEGIN CreateTime_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CreateTime}  r-vertical-field" 
+	data-signal-error-for="CreateTime{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="CreateTime" data-fieldname="CreateTime" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_CreateTime}">
+		{BEGIN CreateTime_label}{$label sClosingMonth CreateTime }{END CreateTime_label}
+	</label>
+	<div class="r-edit-field">
+		{$CreateTime_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="CreateTime">
+		<div class="text-muted" >
+		{$tooltip sClosingMonth CreateTime }		</div>
+	</div>
+</div>
+
+
+{END CreateTime_fieldblock}
+											
+{BEGIN CreatePcName_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CreatePcName}  r-vertical-field" 
+	data-signal-error-for="CreatePcName{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="CreatePcName" data-fieldname="CreatePcName" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_CreatePcName}">
+		{BEGIN CreatePcName_label}{$label sClosingMonth CreatePcName }{END CreatePcName_label}
+	</label>
+	<div class="r-edit-field">
+		{$CreatePcName_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="CreatePcName">
+		<div class="text-muted" >
+		{$tooltip sClosingMonth CreatePcName }		</div>
+	</div>
+</div>
+
+
+{END CreatePcName_fieldblock}
+											
+{BEGIN CreatePCUser_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CreatePCUser}  r-vertical-field" 
+	data-signal-error-for="CreatePCUser{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="CreatePCUser" data-fieldname="CreatePCUser" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_CreatePCUser}">
+		{BEGIN CreatePCUser_label}{$label sClosingMonth CreatePCUser }{END CreatePCUser_label}
+	</label>
+	<div class="r-edit-field">
+		{$CreatePCUser_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="CreatePCUser">
+		<div class="text-muted" >
+		{$tooltip sClosingMonth CreatePCUser }		</div>
+	</div>
+</div>
+
+
+{END CreatePCUser_fieldblock}
+											
+{BEGIN CreateLoc_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CreateLoc}  r-vertical-field" 
+	data-signal-error-for="CreateLoc{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="CreateLoc" data-fieldname="CreateLoc" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_CreateLoc}">
+		{BEGIN CreateLoc_label}{$label sClosingMonth CreateLoc }{END CreateLoc_label}
+	</label>
+	<div class="r-edit-field">
+		{$CreateLoc_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="CreateLoc">
+		<div class="text-muted" >
+		{$tooltip sClosingMonth CreateLoc }		</div>
+	</div>
+</div>
+
+
+{END CreateLoc_fieldblock}
+											
+{BEGIN CreateDevice_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CreateDevice}  r-vertical-field" 
+	data-signal-error-for="CreateDevice{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="CreateDevice" data-fieldname="CreateDevice" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_CreateDevice}">
+		{BEGIN CreateDevice_label}{$label sClosingMonth CreateDevice }{END CreateDevice_label}
+	</label>
+	<div class="r-edit-field">
+		{$CreateDevice_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="CreateDevice">
+		<div class="text-muted" >
+		{$tooltip sClosingMonth CreateDevice }		</div>
+	</div>
+</div>
+
+
+{END CreateDevice_fieldblock}
+											
+{BEGIN UpdatePcUser_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_UpdatePcUser}  r-vertical-field" 
+	data-signal-error-for="UpdatePcUser{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="UpdatePcUser" data-fieldname="UpdatePcUser" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_UpdatePcUser}">
+		{BEGIN UpdatePcUser_label}{$label sClosingMonth UpdatePcUser }{END UpdatePcUser_label}
+	</label>
+	<div class="r-edit-field">
+		{$UpdatePcUser_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="UpdatePcUser">
+		<div class="text-muted" >
+		{$tooltip sClosingMonth UpdatePcUser }		</div>
+	</div>
+</div>
+
+
+{END UpdatePcUser_fieldblock}
+											
+{BEGIN UpdateUser_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_UpdateUser}  r-vertical-field" 
+	data-signal-error-for="UpdateUser{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="UpdateUser" data-fieldname="UpdateUser" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_UpdateUser}">
+		{BEGIN UpdateUser_label}{$label sClosingMonth UpdateUser }{END UpdateUser_label}
+	</label>
+	<div class="r-edit-field">
+		{$UpdateUser_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="UpdateUser">
+		<div class="text-muted" >
+		{$tooltip sClosingMonth UpdateUser }		</div>
+	</div>
+</div>
+
+
+{END UpdateUser_fieldblock}
+											
+{BEGIN UpdateDate_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_UpdateDate}  r-vertical-field" 
+	data-signal-error-for="UpdateDate{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="UpdateDate" data-fieldname="UpdateDate" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_UpdateDate}">
+		{BEGIN UpdateDate_label}{$label sClosingMonth UpdateDate }{END UpdateDate_label}
+	</label>
+	<div class="r-edit-field">
+		{$UpdateDate_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="UpdateDate">
+		<div class="text-muted" >
+		{$tooltip sClosingMonth UpdateDate }		</div>
+	</div>
+</div>
+
+
+{END UpdateDate_fieldblock}
+											
+{BEGIN UpdateTime_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_UpdateTime}  r-vertical-field" 
+	data-signal-error-for="UpdateTime{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="UpdateTime" data-fieldname="UpdateTime" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_UpdateTime}">
+		{BEGIN UpdateTime_label}{$label sClosingMonth UpdateTime }{END UpdateTime_label}
+	</label>
+	<div class="r-edit-field">
+		{$UpdateTime_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="UpdateTime">
+		<div class="text-muted" >
+		{$tooltip sClosingMonth UpdateTime }		</div>
+	</div>
+</div>
+
+
+{END UpdateTime_fieldblock}
+											
+{BEGIN UpdatePcName_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_UpdatePcName}  r-vertical-field" 
+	data-signal-error-for="UpdatePcName{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field17" {$item_integrated_edit_field17} data-pageid="{$pageid}" data-field="UpdatePcName" data-fieldname="UpdatePcName" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_UpdatePcName}">
+		{BEGIN UpdatePcName_label}{$label sClosingMonth UpdatePcName }{END UpdatePcName_label}
+	</label>
+	<div class="r-edit-field">
+		{$UpdatePcName_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="UpdatePcName">
+		<div class="text-muted" >
+		{$tooltip sClosingMonth UpdatePcName }		</div>
+	</div>
+</div>
+
+
+{END UpdatePcName_fieldblock}
+											
+{BEGIN TotalUpdate_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_TotalUpdate}  r-vertical-field" 
+	data-signal-error-for="TotalUpdate{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field18" {$item_integrated_edit_field18} data-pageid="{$pageid}" data-field="TotalUpdate" data-fieldname="TotalUpdate" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_TotalUpdate}">
+		{BEGIN TotalUpdate_label}{$label sClosingMonth TotalUpdate }{END TotalUpdate_label}
+	</label>
+	<div class="r-edit-field">
+		{$TotalUpdate_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="TotalUpdate">
+		<div class="text-muted" >
+		{$tooltip sClosingMonth TotalUpdate }		</div>
+	</div>
+</div>
+
+
+{END TotalUpdate_fieldblock}
+											
+{BEGIN UpdateLoc_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_UpdateLoc}  r-vertical-field" 
+	data-signal-error-for="UpdateLoc{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field19" {$item_integrated_edit_field19} data-pageid="{$pageid}" data-field="UpdateLoc" data-fieldname="UpdateLoc" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_UpdateLoc}">
+		{BEGIN UpdateLoc_label}{$label sClosingMonth UpdateLoc }{END UpdateLoc_label}
+	</label>
+	<div class="r-edit-field">
+		{$UpdateLoc_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="UpdateLoc">
+		<div class="text-muted" >
+		{$tooltip sClosingMonth UpdateLoc }		</div>
+	</div>
+</div>
+
+
+{END UpdateLoc_fieldblock}
+											
+{BEGIN UpdateDevice_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_UpdateDevice}  r-vertical-field" 
+	data-signal-error-for="UpdateDevice{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field20" {$item_integrated_edit_field20} data-pageid="{$pageid}" data-field="UpdateDevice" data-fieldname="UpdateDevice" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_UpdateDevice}">
+		{BEGIN UpdateDevice_label}{$label sClosingMonth UpdateDevice }{END UpdateDevice_label}
+	</label>
+	<div class="r-edit-field">
+		{$UpdateDevice_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="UpdateDevice">
+		<div class="text-muted" >
+		{$tooltip sClosingMonth UpdateDevice }		</div>
+	</div>
+</div>
+
+
+{END UpdateDevice_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN save_edit}
+<span data-itemtype="edit_save" data-itemid="edit_save" {$item_edit_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							Save			</a>
+</span>
+{END save_edit}
+	 
+		{BEGIN back_button}
+<span data-itemtype="edit_back_list" data-itemid="edit_back_list" {$item_edit_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Back to list			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="edit_close" data-itemid="edit_close" {$item_edit_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$closebutton_attrs} >
+							Cancel			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-menu-hamburger"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+								<li data-itemtype="edit_reset" data-itemid="edit_reset" {$item_edit_reset} data-pageid="{$pageid}" data-small >
+				<a  {$resetbutton_attrs}  title="" >
+				
+		Reset		
+		</a>
+	</li>
+							{BEGIN view_page_button}
+	<li data-itemtype="edit_view" data-itemid="edit_view" {$item_edit_view} data-pageid="{$pageid}" data-small >
+				<a  href="sclosingmonth_view.php?{$editlink}" {$view_page_button_attrs}  title="" >
+				
+		View		
+		</a>
+	</li>
+{END view_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

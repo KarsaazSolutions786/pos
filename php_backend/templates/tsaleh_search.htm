@@ -1,0 +1,964 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-search" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel tSaleH search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN ID_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ID}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="ID{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="ID" data-fieldname="ID" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ID}">
+		{$label tSaleH ID }	</label>
+	<div class="r-search-option">
+		{$searchtype_ID}
+	</div>
+	<div class="r-search-field">
+		{$ID_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ID_editcontrol1}
+	</div>
+	
+</div>
+
+{END ID_fieldblock}
+											
+{BEGIN Code_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Code}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="Code{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="Code" data-fieldname="Code" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Code}">
+		{$label tSaleH Code }	</label>
+	<div class="r-search-option">
+		{$searchtype_Code}
+	</div>
+	<div class="r-search-field">
+		{$Code_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Code_editcontrol1}
+	</div>
+	
+</div>
+
+{END Code_fieldblock}
+											
+{BEGIN TMonth_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_TMonth}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="TMonth{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="TMonth" data-fieldname="TMonth" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_TMonth}">
+		{$label tSaleH TMonth }	</label>
+	<div class="r-search-option">
+		{$searchtype_TMonth}
+	</div>
+	<div class="r-search-field">
+		{$TMonth_editcontrol}	</div>
+	<div class="r-search-field">
+		{$TMonth_editcontrol1}
+	</div>
+	
+</div>
+
+{END TMonth_fieldblock}
+											
+{BEGIN TYear_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_TYear}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="TYear{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="TYear" data-fieldname="TYear" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_TYear}">
+		{$label tSaleH TYear }	</label>
+	<div class="r-search-option">
+		{$searchtype_TYear}
+	</div>
+	<div class="r-search-field">
+		{$TYear_editcontrol}	</div>
+	<div class="r-search-field">
+		{$TYear_editcontrol1}
+	</div>
+	
+</div>
+
+{END TYear_fieldblock}
+											
+{BEGIN BookCode_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_BookCode}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="BookCode{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="BookCode" data-fieldname="BookCode" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_BookCode}">
+		{$label tSaleH BookCode }	</label>
+	<div class="r-search-option">
+		{$searchtype_BookCode}
+	</div>
+	<div class="r-search-field">
+		{$BookCode_editcontrol}	</div>
+	<div class="r-search-field">
+		{$BookCode_editcontrol1}
+	</div>
+	
+</div>
+
+{END BookCode_fieldblock}
+											
+{BEGIN BookID_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_BookID}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="BookID{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="BookID" data-fieldname="BookID" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_BookID}">
+		{$label tSaleH BookID }	</label>
+	<div class="r-search-option">
+		{$searchtype_BookID}
+	</div>
+	<div class="r-search-field">
+		{$BookID_editcontrol}	</div>
+	<div class="r-search-field">
+		{$BookID_editcontrol1}
+	</div>
+	
+</div>
+
+{END BookID_fieldblock}
+											
+{BEGIN VirtualCode_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_VirtualCode}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="VirtualCode{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="VirtualCode" data-fieldname="VirtualCode" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_VirtualCode}">
+		{$label tSaleH VirtualCode }	</label>
+	<div class="r-search-option">
+		{$searchtype_VirtualCode}
+	</div>
+	<div class="r-search-field">
+		{$VirtualCode_editcontrol}	</div>
+	<div class="r-search-field">
+		{$VirtualCode_editcontrol1}
+	</div>
+	
+</div>
+
+{END VirtualCode_fieldblock}
+											
+{BEGIN TBook_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_TBook}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="TBook{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="TBook" data-fieldname="TBook" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_TBook}">
+		{$label tSaleH TBook }	</label>
+	<div class="r-search-option">
+		{$searchtype_TBook}
+	</div>
+	<div class="r-search-field">
+		{$TBook_editcontrol}	</div>
+	<div class="r-search-field">
+		{$TBook_editcontrol1}
+	</div>
+	
+</div>
+
+{END TBook_fieldblock}
+											
+{BEGIN TType_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_TType}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="TType{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="TType" data-fieldname="TType" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_TType}">
+		{$label tSaleH TType }	</label>
+	<div class="r-search-option">
+		{$searchtype_TType}
+	</div>
+	<div class="r-search-field">
+		{$TType_editcontrol}	</div>
+	<div class="r-search-field">
+		{$TType_editcontrol1}
+	</div>
+	
+</div>
+
+{END TType_fieldblock}
+											
+{BEGIN TDate_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_TDate}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="TDate{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="TDate" data-fieldname="TDate" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_TDate}">
+		{$label tSaleH TDate }	</label>
+	<div class="r-search-option">
+		{$searchtype_TDate}
+	</div>
+	<div class="r-search-field">
+		{$TDate_editcontrol}	</div>
+	<div class="r-search-field">
+		{$TDate_editcontrol1}
+	</div>
+	
+</div>
+
+{END TDate_fieldblock}
+											
+{BEGIN BUnit_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_BUnit}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="BUnit{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="BUnit" data-fieldname="BUnit" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_BUnit}">
+		{$label tSaleH BUnit }	</label>
+	<div class="r-search-option">
+		{$searchtype_BUnit}
+	</div>
+	<div class="r-search-field">
+		{$BUnit_editcontrol}	</div>
+	<div class="r-search-field">
+		{$BUnit_editcontrol1}
+	</div>
+	
+</div>
+
+{END BUnit_fieldblock}
+											
+{BEGIN Status_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Status}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="Status{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field11" {$item_integrated_search_field11} data-pageid="{$pageid}" data-field="Status" data-fieldname="Status" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Status}">
+		{$label tSaleH Status }	</label>
+	<div class="r-search-option">
+		{$searchtype_Status}
+	</div>
+	<div class="r-search-field">
+		{$Status_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Status_editcontrol1}
+	</div>
+	
+</div>
+
+{END Status_fieldblock}
+											
+{BEGIN PartyCode_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_PartyCode}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="PartyCode{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field12" {$item_integrated_search_field12} data-pageid="{$pageid}" data-field="PartyCode" data-fieldname="PartyCode" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_PartyCode}">
+		{$label tSaleH PartyCode }	</label>
+	<div class="r-search-option">
+		{$searchtype_PartyCode}
+	</div>
+	<div class="r-search-field">
+		{$PartyCode_editcontrol}	</div>
+	<div class="r-search-field">
+		{$PartyCode_editcontrol1}
+	</div>
+	
+</div>
+
+{END PartyCode_fieldblock}
+											
+{BEGIN TotalAmount_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_TotalAmount}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="TotalAmount{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field13" {$item_integrated_search_field13} data-pageid="{$pageid}" data-field="TotalAmount" data-fieldname="TotalAmount" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_TotalAmount}">
+		{$label tSaleH TotalAmount }	</label>
+	<div class="r-search-option">
+		{$searchtype_TotalAmount}
+	</div>
+	<div class="r-search-field">
+		{$TotalAmount_editcontrol}	</div>
+	<div class="r-search-field">
+		{$TotalAmount_editcontrol1}
+	</div>
+	
+</div>
+
+{END TotalAmount_fieldblock}
+											
+{BEGIN FreightAccountCode_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_FreightAccountCode}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="FreightAccountCode{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field14" {$item_integrated_search_field14} data-pageid="{$pageid}" data-field="FreightAccountCode" data-fieldname="FreightAccountCode" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_FreightAccountCode}">
+		{$label tSaleH FreightAccountCode }	</label>
+	<div class="r-search-option">
+		{$searchtype_FreightAccountCode}
+	</div>
+	<div class="r-search-field">
+		{$FreightAccountCode_editcontrol}	</div>
+	<div class="r-search-field">
+		{$FreightAccountCode_editcontrol1}
+	</div>
+	
+</div>
+
+{END FreightAccountCode_fieldblock}
+											
+{BEGIN FreightCharges_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_FreightCharges}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="FreightCharges{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field15" {$item_integrated_search_field15} data-pageid="{$pageid}" data-field="FreightCharges" data-fieldname="FreightCharges" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_FreightCharges}">
+		{$label tSaleH FreightCharges }	</label>
+	<div class="r-search-option">
+		{$searchtype_FreightCharges}
+	</div>
+	<div class="r-search-field">
+		{$FreightCharges_editcontrol}	</div>
+	<div class="r-search-field">
+		{$FreightCharges_editcontrol1}
+	</div>
+	
+</div>
+
+{END FreightCharges_fieldblock}
+											
+{BEGIN LaborAccountCode_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_LaborAccountCode}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="LaborAccountCode{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field16" {$item_integrated_search_field16} data-pageid="{$pageid}" data-field="LaborAccountCode" data-fieldname="LaborAccountCode" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_LaborAccountCode}">
+		{$label tSaleH LaborAccountCode }	</label>
+	<div class="r-search-option">
+		{$searchtype_LaborAccountCode}
+	</div>
+	<div class="r-search-field">
+		{$LaborAccountCode_editcontrol}	</div>
+	<div class="r-search-field">
+		{$LaborAccountCode_editcontrol1}
+	</div>
+	
+</div>
+
+{END LaborAccountCode_fieldblock}
+											
+{BEGIN LaborCharges_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_LaborCharges}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="LaborCharges{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field17" {$item_integrated_search_field17} data-pageid="{$pageid}" data-field="LaborCharges" data-fieldname="LaborCharges" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_LaborCharges}">
+		{$label tSaleH LaborCharges }	</label>
+	<div class="r-search-option">
+		{$searchtype_LaborCharges}
+	</div>
+	<div class="r-search-field">
+		{$LaborCharges_editcontrol}	</div>
+	<div class="r-search-field">
+		{$LaborCharges_editcontrol1}
+	</div>
+	
+</div>
+
+{END LaborCharges_fieldblock}
+											
+{BEGIN SaleTaxAccCode_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_SaleTaxAccCode}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="SaleTaxAccCode{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field18" {$item_integrated_search_field18} data-pageid="{$pageid}" data-field="SaleTaxAccCode" data-fieldname="SaleTaxAccCode" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_SaleTaxAccCode}">
+		{$label tSaleH SaleTaxAccCode }	</label>
+	<div class="r-search-option">
+		{$searchtype_SaleTaxAccCode}
+	</div>
+	<div class="r-search-field">
+		{$SaleTaxAccCode_editcontrol}	</div>
+	<div class="r-search-field">
+		{$SaleTaxAccCode_editcontrol1}
+	</div>
+	
+</div>
+
+{END SaleTaxAccCode_fieldblock}
+											
+{BEGIN SaleTaxRate_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_SaleTaxRate}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="SaleTaxRate{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field19" {$item_integrated_search_field19} data-pageid="{$pageid}" data-field="SaleTaxRate" data-fieldname="SaleTaxRate" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_SaleTaxRate}">
+		{$label tSaleH SaleTaxRate }	</label>
+	<div class="r-search-option">
+		{$searchtype_SaleTaxRate}
+	</div>
+	<div class="r-search-field">
+		{$SaleTaxRate_editcontrol}	</div>
+	<div class="r-search-field">
+		{$SaleTaxRate_editcontrol1}
+	</div>
+	
+</div>
+
+{END SaleTaxRate_fieldblock}
+											
+{BEGIN SaleTaxAmount_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_SaleTaxAmount}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="SaleTaxAmount{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field20" {$item_integrated_search_field20} data-pageid="{$pageid}" data-field="SaleTaxAmount" data-fieldname="SaleTaxAmount" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_SaleTaxAmount}">
+		{$label tSaleH SaleTaxAmount }	</label>
+	<div class="r-search-option">
+		{$searchtype_SaleTaxAmount}
+	</div>
+	<div class="r-search-field">
+		{$SaleTaxAmount_editcontrol}	</div>
+	<div class="r-search-field">
+		{$SaleTaxAmount_editcontrol1}
+	</div>
+	
+</div>
+
+{END SaleTaxAmount_fieldblock}
+											
+{BEGIN DiscountAccCode_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_DiscountAccCode}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="DiscountAccCode{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field21" {$item_integrated_search_field21} data-pageid="{$pageid}" data-field="DiscountAccCode" data-fieldname="DiscountAccCode" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_DiscountAccCode}">
+		{$label tSaleH DiscountAccCode }	</label>
+	<div class="r-search-option">
+		{$searchtype_DiscountAccCode}
+	</div>
+	<div class="r-search-field">
+		{$DiscountAccCode_editcontrol}	</div>
+	<div class="r-search-field">
+		{$DiscountAccCode_editcontrol1}
+	</div>
+	
+</div>
+
+{END DiscountAccCode_fieldblock}
+											
+{BEGIN DiscountRemarks_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_DiscountRemarks}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="DiscountRemarks{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field22" {$item_integrated_search_field22} data-pageid="{$pageid}" data-field="DiscountRemarks" data-fieldname="DiscountRemarks" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_DiscountRemarks}">
+		{$label tSaleH DiscountRemarks }	</label>
+	<div class="r-search-option">
+		{$searchtype_DiscountRemarks}
+	</div>
+	<div class="r-search-field">
+		{$DiscountRemarks_editcontrol}	</div>
+	<div class="r-search-field">
+		{$DiscountRemarks_editcontrol1}
+	</div>
+	
+</div>
+
+{END DiscountRemarks_fieldblock}
+											
+{BEGIN DiscountRate_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_DiscountRate}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="DiscountRate{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field23" {$item_integrated_search_field23} data-pageid="{$pageid}" data-field="DiscountRate" data-fieldname="DiscountRate" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_DiscountRate}">
+		{$label tSaleH DiscountRate }	</label>
+	<div class="r-search-option">
+		{$searchtype_DiscountRate}
+	</div>
+	<div class="r-search-field">
+		{$DiscountRate_editcontrol}	</div>
+	<div class="r-search-field">
+		{$DiscountRate_editcontrol1}
+	</div>
+	
+</div>
+
+{END DiscountRate_fieldblock}
+											
+{BEGIN DiscountAmount_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_DiscountAmount}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="DiscountAmount{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field24" {$item_integrated_search_field24} data-pageid="{$pageid}" data-field="DiscountAmount" data-fieldname="DiscountAmount" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_DiscountAmount}">
+		{$label tSaleH DiscountAmount }	</label>
+	<div class="r-search-option">
+		{$searchtype_DiscountAmount}
+	</div>
+	<div class="r-search-field">
+		{$DiscountAmount_editcontrol}	</div>
+	<div class="r-search-field">
+		{$DiscountAmount_editcontrol1}
+	</div>
+	
+</div>
+
+{END DiscountAmount_fieldblock}
+											
+{BEGIN GrandTotal_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_GrandTotal}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="GrandTotal{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field25" {$item_integrated_search_field25} data-pageid="{$pageid}" data-field="GrandTotal" data-fieldname="GrandTotal" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_GrandTotal}">
+		{$label tSaleH GrandTotal }	</label>
+	<div class="r-search-option">
+		{$searchtype_GrandTotal}
+	</div>
+	<div class="r-search-field">
+		{$GrandTotal_editcontrol}	</div>
+	<div class="r-search-field">
+		{$GrandTotal_editcontrol1}
+	</div>
+	
+</div>
+
+{END GrandTotal_fieldblock}
+											
+{BEGIN SaleMenCode_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_SaleMenCode}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="SaleMenCode{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field26" {$item_integrated_search_field26} data-pageid="{$pageid}" data-field="SaleMenCode" data-fieldname="SaleMenCode" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_SaleMenCode}">
+		{$label tSaleH SaleMenCode }	</label>
+	<div class="r-search-option">
+		{$searchtype_SaleMenCode}
+	</div>
+	<div class="r-search-field">
+		{$SaleMenCode_editcontrol}	</div>
+	<div class="r-search-field">
+		{$SaleMenCode_editcontrol1}
+	</div>
+	
+</div>
+
+{END SaleMenCode_fieldblock}
+											
+{BEGIN Commission_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Commission}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="Commission{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field27" {$item_integrated_search_field27} data-pageid="{$pageid}" data-field="Commission" data-fieldname="Commission" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Commission}">
+		{$label tSaleH Commission }	</label>
+	<div class="r-search-option">
+		{$searchtype_Commission}
+	</div>
+	<div class="r-search-field">
+		{$Commission_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Commission_editcontrol1}
+	</div>
+	
+</div>
+
+{END Commission_fieldblock}
+											
+{BEGIN Remarks_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Remarks}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="Remarks{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field28" {$item_integrated_search_field28} data-pageid="{$pageid}" data-field="Remarks" data-fieldname="Remarks" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Remarks}">
+		{$label tSaleH Remarks }	</label>
+	<div class="r-search-option">
+		{$searchtype_Remarks}
+	</div>
+	<div class="r-search-field">
+		{$Remarks_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Remarks_editcontrol1}
+	</div>
+	
+</div>
+
+{END Remarks_fieldblock}
+											
+{BEGIN UserName_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_UserName}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="UserName{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field29" {$item_integrated_search_field29} data-pageid="{$pageid}" data-field="UserName" data-fieldname="UserName" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_UserName}">
+		{$label tSaleH UserName }	</label>
+	<div class="r-search-option">
+		{$searchtype_UserName}
+	</div>
+	<div class="r-search-field">
+		{$UserName_editcontrol}	</div>
+	<div class="r-search-field">
+		{$UserName_editcontrol1}
+	</div>
+	
+</div>
+
+{END UserName_fieldblock}
+											
+{BEGIN CreateDate_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CreateDate}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="CreateDate{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field30" {$item_integrated_search_field30} data-pageid="{$pageid}" data-field="CreateDate" data-fieldname="CreateDate" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_CreateDate}">
+		{$label tSaleH CreateDate }	</label>
+	<div class="r-search-option">
+		{$searchtype_CreateDate}
+	</div>
+	<div class="r-search-field">
+		{$CreateDate_editcontrol}	</div>
+	<div class="r-search-field">
+		{$CreateDate_editcontrol1}
+	</div>
+	
+</div>
+
+{END CreateDate_fieldblock}
+											
+{BEGIN CreateTime_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CreateTime}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="CreateTime{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field31" {$item_integrated_search_field31} data-pageid="{$pageid}" data-field="CreateTime" data-fieldname="CreateTime" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_CreateTime}">
+		{$label tSaleH CreateTime }	</label>
+	<div class="r-search-option">
+		{$searchtype_CreateTime}
+	</div>
+	<div class="r-search-field">
+		{$CreateTime_editcontrol}	</div>
+	<div class="r-search-field">
+		{$CreateTime_editcontrol1}
+	</div>
+	
+</div>
+
+{END CreateTime_fieldblock}
+											
+{BEGIN UpdateUser_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_UpdateUser}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="UpdateUser{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field32" {$item_integrated_search_field32} data-pageid="{$pageid}" data-field="UpdateUser" data-fieldname="UpdateUser" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_UpdateUser}">
+		{$label tSaleH UpdateUser }	</label>
+	<div class="r-search-option">
+		{$searchtype_UpdateUser}
+	</div>
+	<div class="r-search-field">
+		{$UpdateUser_editcontrol}	</div>
+	<div class="r-search-field">
+		{$UpdateUser_editcontrol1}
+	</div>
+	
+</div>
+
+{END UpdateUser_fieldblock}
+											
+{BEGIN UpdateDate_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_UpdateDate}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="UpdateDate{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field33" {$item_integrated_search_field33} data-pageid="{$pageid}" data-field="UpdateDate" data-fieldname="UpdateDate" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_UpdateDate}">
+		{$label tSaleH UpdateDate }	</label>
+	<div class="r-search-option">
+		{$searchtype_UpdateDate}
+	</div>
+	<div class="r-search-field">
+		{$UpdateDate_editcontrol}	</div>
+	<div class="r-search-field">
+		{$UpdateDate_editcontrol1}
+	</div>
+	
+</div>
+
+{END UpdateDate_fieldblock}
+											
+{BEGIN UpdateTime_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_UpdateTime}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="UpdateTime{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field34" {$item_integrated_search_field34} data-pageid="{$pageid}" data-field="UpdateTime" data-fieldname="UpdateTime" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_UpdateTime}">
+		{$label tSaleH UpdateTime }	</label>
+	<div class="r-search-option">
+		{$searchtype_UpdateTime}
+	</div>
+	<div class="r-search-field">
+		{$UpdateTime_editcontrol}	</div>
+	<div class="r-search-field">
+		{$UpdateTime_editcontrol1}
+	</div>
+	
+</div>
+
+{END UpdateTime_fieldblock}
+											
+{BEGIN Block_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Block}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="Block{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field35" {$item_integrated_search_field35} data-pageid="{$pageid}" data-field="Block" data-fieldname="Block" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Block}">
+		{$label tSaleH Block }	</label>
+	<div class="r-search-option">
+		{$searchtype_Block}
+	</div>
+	<div class="r-search-field">
+		{$Block_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Block_editcontrol1}
+	</div>
+	
+</div>
+
+{END Block_fieldblock}
+											
+{BEGIN SaleType_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_SaleType}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="SaleType{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field36" {$item_integrated_search_field36} data-pageid="{$pageid}" data-field="SaleType" data-fieldname="SaleType" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_SaleType}">
+		{$label tSaleH SaleType }	</label>
+	<div class="r-search-option">
+		{$searchtype_SaleType}
+	</div>
+	<div class="r-search-field">
+		{$SaleType_editcontrol}	</div>
+	<div class="r-search-field">
+		{$SaleType_editcontrol1}
+	</div>
+	
+</div>
+
+{END SaleType_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} >
+							Search			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Reset			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Back to list			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Cancel			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,14 @@
+[Mon Jan 19 19:54:13.160571 2026] [core:warn] [pid 20208:tid 704] AH00117: Ignoring deprecated use of DefaultType in line 21 of C:/Projects/karsaaz_pos/tmp/webserver.conf.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::76d2:974:eb27:1590. Set the 'ServerName' directive globally to suppress this message
+[Mon Jan 19 19:54:16.142421 2026] [mpm_winnt:notice] [pid 20208:tid 704] AH00455: Apache/2.4.41 (Win32) PHP/7.2.22 configured -- resuming normal operations
+[Mon Jan 19 19:54:16.142421 2026] [mpm_winnt:notice] [pid 20208:tid 704] AH00456: Apache Lounge VC15 Server built: Aug 11 2019 11:47:29
+[Mon Jan 19 19:54:16.142421 2026] [core:notice] [pid 20208:tid 704] AH00094: Command line: 'C:\\Program Files\\PHPRunner10.7\\EmbeddedServer\\bin\\httpd.exe -d C:/Program Files/PHPRunner10.7/EmbeddedServer -d C:\\Program Files\\PHPRunner10.7\\EmbeddedServer -f C:\\Projects\\karsaaz_pos\\tmp\\webserver.conf'
+[Mon Jan 19 19:54:16.142421 2026] [mpm_winnt:notice] [pid 20208:tid 704] AH00418: Parent: Created child process 4800
+[Mon Jan 19 19:54:17.929910 2026] [core:warn] [pid 4800:tid 768] AH00117: Ignoring deprecated use of DefaultType in line 21 of C:/Projects/karsaaz_pos/tmp/webserver.conf.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::76d2:974:eb27:1590. Set the 'ServerName' directive globally to suppress this message
+[Mon Jan 19 19:54:19.262867 2026] [core:warn] [pid 4800:tid 768] AH00117: Ignoring deprecated use of DefaultType in line 21 of C:/Projects/karsaaz_pos/tmp/webserver.conf.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::76d2:974:eb27:1590. Set the 'ServerName' directive globally to suppress this message
+[Mon Jan 19 19:54:20.197060 2026] [mpm_winnt:notice] [pid 4800:tid 768] AH00354: Child: Starting 64 worker threads.
+[Thu Jan 22 20:07:26.402691 2026] [mpm_winnt:notice] [pid 20208:tid 704] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Thu Jan 22 20:07:28.415837 2026] [mpm_winnt:notice] [pid 4800:tid 768] AH00364: Child: All worker threads have exited.
+[Thu Jan 22 20:07:28.483253 2026] [mpm_winnt:notice] [pid 20208:tid 704] AH00430: Parent: Child process 4800 exited successfully.

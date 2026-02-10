@@ -1,0 +1,503 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-edit" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="edit_header" data-itemid="edit_header" {$item_edit_header} data-pageid="{$pageid}" >{$pagetitlelabel AccountCBal1 edit}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<div data-itemtype="edit_message" data-itemid="edit_message" {$item_edit_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN message_back_button}
+			<button class="btn btn-sm btn-default" {$backbutton_attrs}>Back to list</button>
+	{END message_back_button}
+{BEGIN message_view_page_button}
+		<a class="btn btn-sm btn-default" href="accountcbal1_view.php?{$editlink}" {$view_page_button_attrs}>View</a>
+{END message_view_page_button}
+</div>
+</div>
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN Code_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Code}  r-vertical-field" 
+	data-signal-error-for="Code{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="Code" data-fieldname="Code" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_Code}">
+		{BEGIN Code_label}{$label AccountCBal1 Code }{END Code_label}
+	</label>
+	<div class="r-edit-field">
+		{$Code_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Code">
+		<div class="text-muted" >
+		{$tooltip AccountCBal1 Code }		</div>
+	</div>
+</div>
+
+
+{END Code_fieldblock}
+											
+{BEGIN ParentAccountCode_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ParentAccountCode}  r-vertical-field" 
+	data-signal-error-for="ParentAccountCode{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="ParentAccountCode" data-fieldname="ParentAccountCode" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_ParentAccountCode}">
+		{BEGIN ParentAccountCode_label}{$label AccountCBal1 ParentAccountCode }{END ParentAccountCode_label}
+	</label>
+	<div class="r-edit-field">
+		{$ParentAccountCode_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ParentAccountCode">
+		<div class="text-muted" >
+		{$tooltip AccountCBal1 ParentAccountCode }		</div>
+	</div>
+</div>
+
+
+{END ParentAccountCode_fieldblock}
+											
+{BEGIN ParentCode_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ParentCode}  r-vertical-field" 
+	data-signal-error-for="ParentCode{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="ParentCode" data-fieldname="ParentCode" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_ParentCode}">
+		{BEGIN ParentCode_label}{$label AccountCBal1 ParentCode }{END ParentCode_label}
+	</label>
+	<div class="r-edit-field">
+		{$ParentCode_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ParentCode">
+		<div class="text-muted" >
+		{$tooltip AccountCBal1 ParentCode }		</div>
+	</div>
+</div>
+
+
+{END ParentCode_fieldblock}
+											
+{BEGIN AccountCode_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_AccountCode}  r-vertical-field" 
+	data-signal-error-for="AccountCode{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="AccountCode" data-fieldname="AccountCode" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_AccountCode}">
+		{BEGIN AccountCode_label}{$label AccountCBal1 AccountCode }{END AccountCode_label}
+	</label>
+	<div class="r-edit-field">
+		{$AccountCode_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="AccountCode">
+		<div class="text-muted" >
+		{$tooltip AccountCBal1 AccountCode }		</div>
+	</div>
+</div>
+
+
+{END AccountCode_fieldblock}
+											
+{BEGIN BuCode_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_BuCode}  r-vertical-field" 
+	data-signal-error-for="BuCode{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="BuCode" data-fieldname="BuCode" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_BuCode}">
+		{BEGIN BuCode_label}{$label AccountCBal1 BuCode }{END BuCode_label}
+	</label>
+	<div class="r-edit-field">
+		{$BuCode_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="BuCode">
+		<div class="text-muted" >
+		{$tooltip AccountCBal1 BuCode }		</div>
+	</div>
+</div>
+
+
+{END BuCode_fieldblock}
+											
+{BEGIN AccountTypeCode_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_AccountTypeCode}  r-vertical-field" 
+	data-signal-error-for="AccountTypeCode{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="AccountTypeCode" data-fieldname="AccountTypeCode" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_AccountTypeCode}">
+		{BEGIN AccountTypeCode_label}{$label AccountCBal1 AccountTypeCode }{END AccountTypeCode_label}
+	</label>
+	<div class="r-edit-field">
+		{$AccountTypeCode_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="AccountTypeCode">
+		<div class="text-muted" >
+		{$tooltip AccountCBal1 AccountTypeCode }		</div>
+	</div>
+</div>
+
+
+{END AccountTypeCode_fieldblock}
+											
+{BEGIN AccountType_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_AccountType}  r-vertical-field" 
+	data-signal-error-for="AccountType{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="AccountType" data-fieldname="AccountType" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_AccountType}">
+		{BEGIN AccountType_label}{$label AccountCBal1 AccountType }{END AccountType_label}
+	</label>
+	<div class="r-edit-field">
+		{$AccountType_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="AccountType">
+		<div class="text-muted" >
+		{$tooltip AccountCBal1 AccountType }		</div>
+	</div>
+</div>
+
+
+{END AccountType_fieldblock}
+											
+{BEGIN CBalance_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CBalance}  r-vertical-field" 
+	data-signal-error-for="CBalance{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="CBalance" data-fieldname="CBalance" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_CBalance}">
+		{BEGIN CBalance_label}{$label AccountCBal1 CBalance }{END CBalance_label}
+	</label>
+	<div class="r-edit-field">
+		{$CBalance_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="CBalance">
+		<div class="text-muted" >
+		{$tooltip AccountCBal1 CBalance }		</div>
+	</div>
+</div>
+
+
+{END CBalance_fieldblock}
+											
+{BEGIN CBalStatus_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CBalStatus}  r-vertical-field" 
+	data-signal-error-for="CBalStatus{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="CBalStatus" data-fieldname="CBalStatus" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_CBalStatus}">
+		{BEGIN CBalStatus_label}{$label AccountCBal1 CBalStatus }{END CBalStatus_label}
+	</label>
+	<div class="r-edit-field">
+		{$CBalStatus_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="CBalStatus">
+		<div class="text-muted" >
+		{$tooltip AccountCBal1 CBalStatus }		</div>
+	</div>
+</div>
+
+
+{END CBalStatus_fieldblock}
+											
+{BEGIN FcCBalance_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_FcCBalance}  r-vertical-field" 
+	data-signal-error-for="FcCBalance{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="FcCBalance" data-fieldname="FcCBalance" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_FcCBalance}">
+		{BEGIN FcCBalance_label}{$label AccountCBal1 FcCBalance }{END FcCBalance_label}
+	</label>
+	<div class="r-edit-field">
+		{$FcCBalance_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="FcCBalance">
+		<div class="text-muted" >
+		{$tooltip AccountCBal1 FcCBalance }		</div>
+	</div>
+</div>
+
+
+{END FcCBalance_fieldblock}
+											
+{BEGIN FCBalStatus_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_FCBalStatus}  r-vertical-field" 
+	data-signal-error-for="FCBalStatus{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="FCBalStatus" data-fieldname="FCBalStatus" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_FCBalStatus}">
+		{BEGIN FCBalStatus_label}{$label AccountCBal1 FCBalStatus }{END FCBalStatus_label}
+	</label>
+	<div class="r-edit-field">
+		{$FCBalStatus_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="FCBalStatus">
+		<div class="text-muted" >
+		{$tooltip AccountCBal1 FCBalStatus }		</div>
+	</div>
+</div>
+
+
+{END FCBalStatus_fieldblock}
+											
+{BEGIN Remarks_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Remarks}  r-vertical-field" 
+	data-signal-error-for="Remarks{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="Remarks" data-fieldname="Remarks" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_Remarks}">
+		{BEGIN Remarks_label}{$label AccountCBal1 Remarks }{END Remarks_label}
+	</label>
+	<div class="r-edit-field">
+		{$Remarks_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Remarks">
+		<div class="text-muted" >
+		{$tooltip AccountCBal1 Remarks }		</div>
+	</div>
+</div>
+
+
+{END Remarks_fieldblock}
+											
+{BEGIN FcCurrencyCode_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_FcCurrencyCode}  r-vertical-field" 
+	data-signal-error-for="FcCurrencyCode{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="FcCurrencyCode" data-fieldname="FcCurrencyCode" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_FcCurrencyCode}">
+		{BEGIN FcCurrencyCode_label}{$label AccountCBal1 FcCurrencyCode }{END FcCurrencyCode_label}
+	</label>
+	<div class="r-edit-field">
+		{$FcCurrencyCode_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="FcCurrencyCode">
+		<div class="text-muted" >
+		{$tooltip AccountCBal1 FcCurrencyCode }		</div>
+	</div>
+</div>
+
+
+{END FcCurrencyCode_fieldblock}
+											
+{BEGIN AccStatusType_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_AccStatusType}  r-vertical-field" 
+	data-signal-error-for="AccStatusType{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="AccStatusType" data-fieldname="AccStatusType" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_AccStatusType}">
+		{BEGIN AccStatusType_label}{$label AccountCBal1 AccStatusType }{END AccStatusType_label}
+	</label>
+	<div class="r-edit-field">
+		{$AccStatusType_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="AccStatusType">
+		<div class="text-muted" >
+		{$tooltip AccountCBal1 AccStatusType }		</div>
+	</div>
+</div>
+
+
+{END AccStatusType_fieldblock}
+											
+{BEGIN UDate_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_UDate}  r-vertical-field" 
+	data-signal-error-for="UDate{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="UDate" data-fieldname="UDate" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_UDate}">
+		{BEGIN UDate_label}{$label AccountCBal1 UDate }{END UDate_label}
+	</label>
+	<div class="r-edit-field">
+		{$UDate_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="UDate">
+		<div class="text-muted" >
+		{$tooltip AccountCBal1 UDate }		</div>
+	</div>
+</div>
+
+
+{END UDate_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN save_edit}
+<span data-itemtype="edit_save" data-itemid="edit_save" {$item_edit_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							Save			</a>
+</span>
+{END save_edit}
+	 
+		{BEGIN back_button}
+<span data-itemtype="edit_back_list" data-itemid="edit_back_list" {$item_edit_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Back to list			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="edit_close" data-itemid="edit_close" {$item_edit_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$closebutton_attrs} >
+							Cancel			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-menu-hamburger"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+								<li data-itemtype="edit_reset" data-itemid="edit_reset" {$item_edit_reset} data-pageid="{$pageid}" data-small >
+				<a  {$resetbutton_attrs}  title="" >
+				
+		Reset		
+		</a>
+	</li>
+							{BEGIN view_page_button}
+	<li data-itemtype="edit_view" data-itemid="edit_view" {$item_edit_view} data-pageid="{$pageid}" data-small >
+				<a  href="accountcbal1_view.php?{$editlink}" {$view_page_button_attrs}  title="" >
+				
+		View		
+		</a>
+	</li>
+{END view_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

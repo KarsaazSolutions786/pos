@@ -1,0 +1,28 @@
+7/18/25, 6:23 PM P Supplier, Add new
+P
+Supplier ,
+Add
+new
+localhost/karsaaz_pos/psupplier_add.php 1 / 3
+
+7/18/25, 6:23 PM P Supplier, Add new
+Old Code
+Name  *
+Contact Name
+Group Code
+Address
+Sale Tax Reg No
+NTNNo
+CNIC
+Phone  *
+Fax
+Cell
+Web Address
+localhost/karsaaz_pos/psupplier_add.php 2 / 3
+
+7/18/25, 6:23 PM P Supplier, Add new
+EMail
+Remarks
+Block
+   
+localhost/karsaaz_pos/psupplier_add.php 3 / 3

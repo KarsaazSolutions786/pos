@@ -1,0 +1,28 @@
+7/18/25, 6:25 PM Ps Product Group, Add new
+Ps
+Product
+Group,
+Add
+new
+localhost/karsaaz_pos/psproductgroup_add.php 1 / 3
+
+7/18/25, 6:25 PM Ps Product Group, Add new
+Name  *
+Remarks
+Name In Urdu
+Remarks In Urdu
+Block
+Lock
+Hide
+Bookmark
+BMStatus
+BMICon ID
+BMRow ID
+DBRow ID
+ECol1
+localhost/karsaaz_pos/psproductgroup_add.php 2 / 3
+
+7/18/25, 6:25 PM Ps Product Group, Add new
+ECol2
+   
+localhost/karsaaz_pos/psproductgroup_add.php 3 / 3

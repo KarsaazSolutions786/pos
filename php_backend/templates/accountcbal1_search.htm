@@ -1,0 +1,480 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-search" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel AccountCBal1 search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN Code_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Code}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="Code{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="Code" data-fieldname="Code" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Code}">
+		{$label AccountCBal1 Code }	</label>
+	<div class="r-search-option">
+		{$searchtype_Code}
+	</div>
+	<div class="r-search-field">
+		{$Code_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Code_editcontrol1}
+	</div>
+	
+</div>
+
+{END Code_fieldblock}
+											
+{BEGIN ParentAccountCode_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ParentAccountCode}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="ParentAccountCode{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="ParentAccountCode" data-fieldname="ParentAccountCode" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ParentAccountCode}">
+		{$label AccountCBal1 ParentAccountCode }	</label>
+	<div class="r-search-option">
+		{$searchtype_ParentAccountCode}
+	</div>
+	<div class="r-search-field">
+		{$ParentAccountCode_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ParentAccountCode_editcontrol1}
+	</div>
+	
+</div>
+
+{END ParentAccountCode_fieldblock}
+											
+{BEGIN ParentCode_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ParentCode}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="ParentCode{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="ParentCode" data-fieldname="ParentCode" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ParentCode}">
+		{$label AccountCBal1 ParentCode }	</label>
+	<div class="r-search-option">
+		{$searchtype_ParentCode}
+	</div>
+	<div class="r-search-field">
+		{$ParentCode_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ParentCode_editcontrol1}
+	</div>
+	
+</div>
+
+{END ParentCode_fieldblock}
+											
+{BEGIN AccountCode_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_AccountCode}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="AccountCode{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="AccountCode" data-fieldname="AccountCode" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_AccountCode}">
+		{$label AccountCBal1 AccountCode }	</label>
+	<div class="r-search-option">
+		{$searchtype_AccountCode}
+	</div>
+	<div class="r-search-field">
+		{$AccountCode_editcontrol}	</div>
+	<div class="r-search-field">
+		{$AccountCode_editcontrol1}
+	</div>
+	
+</div>
+
+{END AccountCode_fieldblock}
+											
+{BEGIN BuCode_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_BuCode}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="BuCode{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="BuCode" data-fieldname="BuCode" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_BuCode}">
+		{$label AccountCBal1 BuCode }	</label>
+	<div class="r-search-option">
+		{$searchtype_BuCode}
+	</div>
+	<div class="r-search-field">
+		{$BuCode_editcontrol}	</div>
+	<div class="r-search-field">
+		{$BuCode_editcontrol1}
+	</div>
+	
+</div>
+
+{END BuCode_fieldblock}
+											
+{BEGIN AccountTypeCode_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_AccountTypeCode}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="AccountTypeCode{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="AccountTypeCode" data-fieldname="AccountTypeCode" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_AccountTypeCode}">
+		{$label AccountCBal1 AccountTypeCode }	</label>
+	<div class="r-search-option">
+		{$searchtype_AccountTypeCode}
+	</div>
+	<div class="r-search-field">
+		{$AccountTypeCode_editcontrol}	</div>
+	<div class="r-search-field">
+		{$AccountTypeCode_editcontrol1}
+	</div>
+	
+</div>
+
+{END AccountTypeCode_fieldblock}
+											
+{BEGIN AccountType_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_AccountType}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="AccountType{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="AccountType" data-fieldname="AccountType" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_AccountType}">
+		{$label AccountCBal1 AccountType }	</label>
+	<div class="r-search-option">
+		{$searchtype_AccountType}
+	</div>
+	<div class="r-search-field">
+		{$AccountType_editcontrol}	</div>
+	<div class="r-search-field">
+		{$AccountType_editcontrol1}
+	</div>
+	
+</div>
+
+{END AccountType_fieldblock}
+											
+{BEGIN CBalance_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CBalance}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="CBalance{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="CBalance" data-fieldname="CBalance" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_CBalance}">
+		{$label AccountCBal1 CBalance }	</label>
+	<div class="r-search-option">
+		{$searchtype_CBalance}
+	</div>
+	<div class="r-search-field">
+		{$CBalance_editcontrol}	</div>
+	<div class="r-search-field">
+		{$CBalance_editcontrol1}
+	</div>
+	
+</div>
+
+{END CBalance_fieldblock}
+											
+{BEGIN CBalStatus_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CBalStatus}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="CBalStatus{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="CBalStatus" data-fieldname="CBalStatus" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_CBalStatus}">
+		{$label AccountCBal1 CBalStatus }	</label>
+	<div class="r-search-option">
+		{$searchtype_CBalStatus}
+	</div>
+	<div class="r-search-field">
+		{$CBalStatus_editcontrol}	</div>
+	<div class="r-search-field">
+		{$CBalStatus_editcontrol1}
+	</div>
+	
+</div>
+
+{END CBalStatus_fieldblock}
+											
+{BEGIN FcCBalance_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_FcCBalance}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="FcCBalance{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="FcCBalance" data-fieldname="FcCBalance" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_FcCBalance}">
+		{$label AccountCBal1 FcCBalance }	</label>
+	<div class="r-search-option">
+		{$searchtype_FcCBalance}
+	</div>
+	<div class="r-search-field">
+		{$FcCBalance_editcontrol}	</div>
+	<div class="r-search-field">
+		{$FcCBalance_editcontrol1}
+	</div>
+	
+</div>
+
+{END FcCBalance_fieldblock}
+											
+{BEGIN FCBalStatus_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_FCBalStatus}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="FCBalStatus{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="FCBalStatus" data-fieldname="FCBalStatus" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_FCBalStatus}">
+		{$label AccountCBal1 FCBalStatus }	</label>
+	<div class="r-search-option">
+		{$searchtype_FCBalStatus}
+	</div>
+	<div class="r-search-field">
+		{$FCBalStatus_editcontrol}	</div>
+	<div class="r-search-field">
+		{$FCBalStatus_editcontrol1}
+	</div>
+	
+</div>
+
+{END FCBalStatus_fieldblock}
+											
+{BEGIN Remarks_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Remarks}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="Remarks{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field11" {$item_integrated_search_field11} data-pageid="{$pageid}" data-field="Remarks" data-fieldname="Remarks" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Remarks}">
+		{$label AccountCBal1 Remarks }	</label>
+	<div class="r-search-option">
+		{$searchtype_Remarks}
+	</div>
+	<div class="r-search-field">
+		{$Remarks_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Remarks_editcontrol1}
+	</div>
+	
+</div>
+
+{END Remarks_fieldblock}
+											
+{BEGIN FcCurrencyCode_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_FcCurrencyCode}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="FcCurrencyCode{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field12" {$item_integrated_search_field12} data-pageid="{$pageid}" data-field="FcCurrencyCode" data-fieldname="FcCurrencyCode" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_FcCurrencyCode}">
+		{$label AccountCBal1 FcCurrencyCode }	</label>
+	<div class="r-search-option">
+		{$searchtype_FcCurrencyCode}
+	</div>
+	<div class="r-search-field">
+		{$FcCurrencyCode_editcontrol}	</div>
+	<div class="r-search-field">
+		{$FcCurrencyCode_editcontrol1}
+	</div>
+	
+</div>
+
+{END FcCurrencyCode_fieldblock}
+											
+{BEGIN AccStatusType_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_AccStatusType}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="AccStatusType{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field13" {$item_integrated_search_field13} data-pageid="{$pageid}" data-field="AccStatusType" data-fieldname="AccStatusType" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_AccStatusType}">
+		{$label AccountCBal1 AccStatusType }	</label>
+	<div class="r-search-option">
+		{$searchtype_AccStatusType}
+	</div>
+	<div class="r-search-field">
+		{$AccStatusType_editcontrol}	</div>
+	<div class="r-search-field">
+		{$AccStatusType_editcontrol1}
+	</div>
+	
+</div>
+
+{END AccStatusType_fieldblock}
+											
+{BEGIN UDate_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_UDate}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="UDate{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field14" {$item_integrated_search_field14} data-pageid="{$pageid}" data-field="UDate" data-fieldname="UDate" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_UDate}">
+		{$label AccountCBal1 UDate }	</label>
+	<div class="r-search-option">
+		{$searchtype_UDate}
+	</div>
+	<div class="r-search-field">
+		{$UDate_editcontrol}	</div>
+	<div class="r-search-field">
+		{$UDate_editcontrol1}
+	</div>
+	
+</div>
+
+{END UDate_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} >
+							Search			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Reset			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Back to list			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Cancel			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

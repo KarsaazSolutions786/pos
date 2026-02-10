@@ -1,0 +1,43 @@
+<?php
+$dalTabletSaleH = array();
+$dalTabletSaleH["ID"] = array("type"=>3,"varname"=>"ID", "name" => "ID", "autoInc" => "1");
+$dalTabletSaleH["Code"] = array("type"=>3,"varname"=>"Code", "name" => "Code", "autoInc" => "0");
+$dalTabletSaleH["TMonth"] = array("type"=>200,"varname"=>"TMonth", "name" => "TMonth", "autoInc" => "0");
+$dalTabletSaleH["TYear"] = array("type"=>200,"varname"=>"TYear", "name" => "TYear", "autoInc" => "0");
+$dalTabletSaleH["BookCode"] = array("type"=>3,"varname"=>"BookCode", "name" => "BookCode", "autoInc" => "0");
+$dalTabletSaleH["BookID"] = array("type"=>3,"varname"=>"BookID", "name" => "BookID", "autoInc" => "0");
+$dalTabletSaleH["VirtualCode"] = array("type"=>200,"varname"=>"VirtualCode", "name" => "VirtualCode", "autoInc" => "0");
+$dalTabletSaleH["TBook"] = array("type"=>200,"varname"=>"TBook", "name" => "TBook", "autoInc" => "0");
+$dalTabletSaleH["TType"] = array("type"=>200,"varname"=>"TType", "name" => "TType", "autoInc" => "0");
+$dalTabletSaleH["SaleType"] = array("type"=>200,"varname"=>"SaleType", "name" => "SaleType", "autoInc" => "0");
+$dalTabletSaleH["TDate"] = array("type"=>135,"varname"=>"TDate", "name" => "TDate", "autoInc" => "0");
+$dalTabletSaleH["BUnit"] = array("type"=>3,"varname"=>"BUnit", "name" => "BUnit", "autoInc" => "0");
+$dalTabletSaleH["Status"] = array("type"=>200,"varname"=>"Status", "name" => "Status", "autoInc" => "0");
+$dalTabletSaleH["PartyCode"] = array("type"=>3,"varname"=>"PartyCode", "name" => "PartyCode", "autoInc" => "0");
+$dalTabletSaleH["TotalAmount"] = array("type"=>5,"varname"=>"TotalAmount", "name" => "TotalAmount", "autoInc" => "0");
+$dalTabletSaleH["FreightAccountCode"] = array("type"=>3,"varname"=>"FreightAccountCode", "name" => "FreightAccountCode", "autoInc" => "0");
+$dalTabletSaleH["FreightCharges"] = array("type"=>14,"varname"=>"FreightCharges", "name" => "FreightCharges", "autoInc" => "0");
+$dalTabletSaleH["LaborAccountCode"] = array("type"=>3,"varname"=>"LaborAccountCode", "name" => "LaborAccountCode", "autoInc" => "0");
+$dalTabletSaleH["LaborCharges"] = array("type"=>5,"varname"=>"LaborCharges", "name" => "LaborCharges", "autoInc" => "0");
+$dalTabletSaleH["SaleTaxAccCode"] = array("type"=>3,"varname"=>"SaleTaxAccCode", "name" => "SaleTaxAccCode", "autoInc" => "0");
+$dalTabletSaleH["SaleTaxRate"] = array("type"=>5,"varname"=>"SaleTaxRate", "name" => "SaleTaxRate", "autoInc" => "0");
+$dalTabletSaleH["SaleTaxAmount"] = array("type"=>5,"varname"=>"SaleTaxAmount", "name" => "SaleTaxAmount", "autoInc" => "0");
+$dalTabletSaleH["DiscountAccCode"] = array("type"=>3,"varname"=>"DiscountAccCode", "name" => "DiscountAccCode", "autoInc" => "0");
+$dalTabletSaleH["DiscountRemarks"] = array("type"=>200,"varname"=>"DiscountRemarks", "name" => "DiscountRemarks", "autoInc" => "0");
+$dalTabletSaleH["DiscountRate"] = array("type"=>5,"varname"=>"DiscountRate", "name" => "DiscountRate", "autoInc" => "0");
+$dalTabletSaleH["DiscountAmount"] = array("type"=>5,"varname"=>"DiscountAmount", "name" => "DiscountAmount", "autoInc" => "0");
+$dalTabletSaleH["GrandTotal"] = array("type"=>5,"varname"=>"GrandTotal", "name" => "GrandTotal", "autoInc" => "0");
+$dalTabletSaleH["SaleMenCode"] = array("type"=>3,"varname"=>"SaleMenCode", "name" => "SaleMenCode", "autoInc" => "0");
+$dalTabletSaleH["Commission"] = array("type"=>5,"varname"=>"Commission", "name" => "Commission", "autoInc" => "0");
+$dalTabletSaleH["Remarks"] = array("type"=>200,"varname"=>"Remarks", "name" => "Remarks", "autoInc" => "0");
+$dalTabletSaleH["UserName"] = array("type"=>3,"varname"=>"UserName", "name" => "UserName", "autoInc" => "0");
+$dalTabletSaleH["CreateDate"] = array("type"=>135,"varname"=>"CreateDate", "name" => "CreateDate", "autoInc" => "0");
+$dalTabletSaleH["CreateTime"] = array("type"=>134,"varname"=>"CreateTime", "name" => "CreateTime", "autoInc" => "0");
+$dalTabletSaleH["UpdateUser"] = array("type"=>3,"varname"=>"UpdateUser", "name" => "UpdateUser", "autoInc" => "0");
+$dalTabletSaleH["UpdateDate"] = array("type"=>135,"varname"=>"UpdateDate", "name" => "UpdateDate", "autoInc" => "0");
+$dalTabletSaleH["UpdateTime"] = array("type"=>134,"varname"=>"UpdateTime", "name" => "UpdateTime", "autoInc" => "0");
+$dalTabletSaleH["Block"] = array("type"=>16,"varname"=>"Block", "name" => "Block", "autoInc" => "0");
+$dalTabletSaleH["ID"]["key"]=true;
+
+$dal_info["karsaaz_pos_at_localhost__tSaleH"] = &$dalTabletSaleH;
+?>

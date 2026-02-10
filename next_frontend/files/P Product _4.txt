@@ -1,0 +1,23 @@
+7/18/25, 6:23 PM P Product Items, Add new
+P
+Product
+Items,
+Add
+new
+localhost/karsaaz_pos/pproductitems_add.php 1 / 2
+
+7/18/25, 6:23 PM P Product Items, Add new
+Code  *
+Old Code
+Bar Code
+Product Group Code
+Please select
+Unit Code
+Please select
+Name  *
+Packing
+Packing Qty
+Remarks
+Block
+   
+localhost/karsaaz_pos/pproductitems_add.php 2 / 2

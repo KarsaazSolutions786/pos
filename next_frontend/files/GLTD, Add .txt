@@ -1,0 +1,45 @@
+7/18/25, 6:27 PM GLTD, Add new
+GLTD,
+Add
+new
+localhost/karsaaz_pos/gltd_add.php 1 / 4
+
+7/18/25, 6:27 PM GLTD, Add new
+Code  *
+Code D  *
+Book Code
+Book ID
+Virtual Code
+Status
+TDate
+BUnit
+TBook
+TType
+Account Code
+localhost/karsaaz_pos/gltd_add.php 2 / 4
+
+7/18/25, 6:27 PM GLTD, Add new
+Bill No
+Cheque No
+Narration
+Remarks
+Amount
+Store Code
+Qty
+Weight
+Rate
+User Name
+Create Date
+localhost/karsaaz_pos/gltd_add.php 3 / 4
+
+7/18/25, 6:27 PM GLTD, Add new
+Create T ime
+Update User
+Update Date
+Update T ime
+Block
+Product Code
+Product Group Code
+Unit Code
+   
+localhost/karsaaz_pos/gltd_add.php 4 / 4

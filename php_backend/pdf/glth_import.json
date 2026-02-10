@@ -1,0 +1,174 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel GltH import}","hidden":"{$item_hide_import_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+											],
+		
+		]
+	}
+}
+,
+		
+				
+								
+{
+	table: {
+	
+				
+		location: 'grid',
+		
+		
+		widths: [
+								"%", 
+					 ],	
+		
+			heights: [
+								
+			"%",
+			 
+				],
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":{$Code_pdfvalue},"hidden":"{$item_hide_import_field}"},
+				
+				
+			{"text":{$BookCode_pdfvalue},"hidden":"{$item_hide_import_field1}"},
+				
+				
+			{"text":{$VirtualCode_pdfvalue},"hidden":"{$item_hide_import_field2}"},
+				
+				
+			{"text":{$TBook_pdfvalue},"hidden":"{$item_hide_import_field3}"},
+				
+				
+			{"text":{$TType_pdfvalue},"hidden":"{$item_hide_import_field4}"},
+				
+				
+			{"text":{$TDate_pdfvalue},"hidden":"{$item_hide_import_field5}"},
+				
+				
+			{"text":{$BUnit_pdfvalue},"hidden":"{$item_hide_import_field6}"},
+				
+				
+			{"text":{$Status_pdfvalue},"hidden":"{$item_hide_import_field7}"},
+				
+				
+			{"text":{$Remarks_pdfvalue},"hidden":"{$item_hide_import_field8}"},
+				
+				
+			{"text":{$UserName_pdfvalue},"hidden":"{$item_hide_import_field9}"},
+				
+				
+			{"text":{$CreateDate_pdfvalue},"hidden":"{$item_hide_import_field10}"},
+				
+				
+			{"text":{$CreateTime_pdfvalue},"hidden":"{$item_hide_import_field11}"},
+				
+				
+			{"text":{$UpdateUser_pdfvalue},"hidden":"{$item_hide_import_field12}"},
+				
+				
+			{"text":{$UpdateDate_pdfvalue},"hidden":"{$item_hide_import_field13}"},
+				
+				
+			{"text":{$UpdateTime_pdfvalue},"hidden":"{$item_hide_import_field14}"},
+				
+				
+			{"text":{$Block_pdfvalue},"hidden":"{$item_hide_import_field15}"},
+				
+				
+			{"text":{$Lock_pdfvalue},"hidden":"{$item_hide_import_field16}"},
+				
+				
+			{"text":{$TotalAmount_pdfvalue},"hidden":"{$item_hide_import_field17}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+											],
+		
+		]
+	}
+}
+,
+		
+					]
+}
+  

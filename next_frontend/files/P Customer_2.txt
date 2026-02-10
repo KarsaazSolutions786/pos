@@ -1,0 +1,34 @@
+7/18/25, 6:22 PM P Customer, Add new
+P
+Customer ,
+Add
+new
+localhost/karsaaz_pos/pcustomer_add.php 1 / 3
+
+7/18/25, 6:22 PM P Customer, Add new
+BUnit  *
+1
+Old Code
+Name  *
+Contact Name
+Group Code  *
+General Custome
+Address  *
+Sale Tax Reg No
+NTNNo
+CNIC
+Phone  *
+Fax
+Cell
+localhost/karsaaz_pos/pcustomer_add.php 2 / 3
+
+7/18/25, 6:22 PM P Customer, Add new
+Web Address
+EMail
+Remarks
+Securty Deposit
+Sale Men Code
+Commission
+Block  *
+   
+localhost/karsaaz_pos/pcustomer_add.php 3 / 3

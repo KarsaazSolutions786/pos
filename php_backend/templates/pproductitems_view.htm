@@ -1,0 +1,542 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-view" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="view_header" data-itemid="view_header" {$item_view_header} data-pageid="{$pageid}" >{$pagetitlelabel pProductItems view}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN ID_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ID}  r-vertical-field" data-fieldname="ID" data-signal-error-for="ID{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="ID" data-fieldname="ID" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ID}">
+		
+		{BEGIN ID_label}{$label pProductItems ID }{END ID_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ID_value}	</div>
+
+		
+</div>
+
+
+{END ID_fieldblock}
+											
+{BEGIN Code_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Code}  r-vertical-field" data-fieldname="Code" data-signal-error-for="Code{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="Code" data-fieldname="Code" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Code}">
+		
+		{BEGIN Code_label}{$label pProductItems Code }{END Code_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Code_value}	</div>
+
+		
+</div>
+
+
+{END Code_fieldblock}
+											
+{BEGIN BUnit_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_BUnit}  r-vertical-field" data-fieldname="BUnit" data-signal-error-for="BUnit{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="BUnit" data-fieldname="BUnit" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_BUnit}">
+		
+		{BEGIN BUnit_label}{$label pProductItems BUnit }{END BUnit_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$BUnit_value}	</div>
+
+		
+</div>
+
+
+{END BUnit_fieldblock}
+											
+{BEGIN OldCode_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_OldCode}  r-vertical-field" data-fieldname="OldCode" data-signal-error-for="OldCode{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="OldCode" data-fieldname="OldCode" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_OldCode}">
+		
+		{BEGIN OldCode_label}{$label pProductItems OldCode }{END OldCode_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$OldCode_value}	</div>
+
+		
+</div>
+
+
+{END OldCode_fieldblock}
+											
+{BEGIN BarCode_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_BarCode}  r-vertical-field" data-fieldname="BarCode" data-signal-error-for="BarCode{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="BarCode" data-fieldname="BarCode" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_BarCode}">
+		
+		{BEGIN BarCode_label}{$label pProductItems BarCode }{END BarCode_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$BarCode_value}	</div>
+
+		
+</div>
+
+
+{END BarCode_fieldblock}
+											
+{BEGIN ProductGroupCode_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ProductGroupCode}  r-vertical-field" data-fieldname="ProductGroupCode" data-signal-error-for="ProductGroupCode{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="ProductGroupCode" data-fieldname="ProductGroupCode" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ProductGroupCode}">
+		
+		{BEGIN ProductGroupCode_label}{$label pProductItems ProductGroupCode }{END ProductGroupCode_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ProductGroupCode_value}	</div>
+
+		
+</div>
+
+
+{END ProductGroupCode_fieldblock}
+											
+{BEGIN UnitCode_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_UnitCode}  r-vertical-field" data-fieldname="UnitCode" data-signal-error-for="UnitCode{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="UnitCode" data-fieldname="UnitCode" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_UnitCode}">
+		
+		{BEGIN UnitCode_label}{$label pProductItems UnitCode }{END UnitCode_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$UnitCode_value}	</div>
+
+		
+</div>
+
+
+{END UnitCode_fieldblock}
+											
+{BEGIN Name_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Name}  r-vertical-field" data-fieldname="Name" data-signal-error-for="Name{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="Name" data-fieldname="Name" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Name}">
+		
+		{BEGIN Name_label}{$label pProductItems Name }{END Name_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Name_value}	</div>
+
+		
+</div>
+
+
+{END Name_fieldblock}
+											
+{BEGIN Packing_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Packing}  r-vertical-field" data-fieldname="Packing" data-signal-error-for="Packing{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="Packing" data-fieldname="Packing" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Packing}">
+		
+		{BEGIN Packing_label}{$label pProductItems Packing }{END Packing_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Packing_value}	</div>
+
+		
+</div>
+
+
+{END Packing_fieldblock}
+											
+{BEGIN PackingQty_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_PackingQty}  r-vertical-field" data-fieldname="PackingQty" data-signal-error-for="PackingQty{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="PackingQty" data-fieldname="PackingQty" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_PackingQty}">
+		
+		{BEGIN PackingQty_label}{$label pProductItems PackingQty }{END PackingQty_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$PackingQty_value}	</div>
+
+		
+</div>
+
+
+{END PackingQty_fieldblock}
+											
+{BEGIN Remarks_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Remarks}  r-vertical-field" data-fieldname="Remarks" data-signal-error-for="Remarks{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="Remarks" data-fieldname="Remarks" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Remarks}">
+		
+		{BEGIN Remarks_label}{$label pProductItems Remarks }{END Remarks_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Remarks_value}	</div>
+
+		
+</div>
+
+
+{END Remarks_fieldblock}
+											
+{BEGIN UserName_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_UserName}  r-vertical-field" data-fieldname="UserName" data-signal-error-for="UserName{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="UserName" data-fieldname="UserName" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_UserName}">
+		
+		{BEGIN UserName_label}{$label pProductItems UserName }{END UserName_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$UserName_value}	</div>
+
+		
+</div>
+
+
+{END UserName_fieldblock}
+											
+{BEGIN CreateDate_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CreateDate}  r-vertical-field" data-fieldname="CreateDate" data-signal-error-for="CreateDate{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="CreateDate" data-fieldname="CreateDate" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_CreateDate}">
+		
+		{BEGIN CreateDate_label}{$label pProductItems CreateDate }{END CreateDate_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$CreateDate_value}	</div>
+
+		
+</div>
+
+
+{END CreateDate_fieldblock}
+											
+{BEGIN CreateTime_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CreateTime}  r-vertical-field" data-fieldname="CreateTime" data-signal-error-for="CreateTime{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="CreateTime" data-fieldname="CreateTime" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_CreateTime}">
+		
+		{BEGIN CreateTime_label}{$label pProductItems CreateTime }{END CreateTime_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$CreateTime_value}	</div>
+
+		
+</div>
+
+
+{END CreateTime_fieldblock}
+											
+{BEGIN UpdateUser_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_UpdateUser}  r-vertical-field" data-fieldname="UpdateUser" data-signal-error-for="UpdateUser{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="UpdateUser" data-fieldname="UpdateUser" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_UpdateUser}">
+		
+		{BEGIN UpdateUser_label}{$label pProductItems UpdateUser }{END UpdateUser_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$UpdateUser_value}	</div>
+
+		
+</div>
+
+
+{END UpdateUser_fieldblock}
+											
+{BEGIN UpdateDate_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_UpdateDate}  r-vertical-field" data-fieldname="UpdateDate" data-signal-error-for="UpdateDate{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="UpdateDate" data-fieldname="UpdateDate" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_UpdateDate}">
+		
+		{BEGIN UpdateDate_label}{$label pProductItems UpdateDate }{END UpdateDate_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$UpdateDate_value}	</div>
+
+		
+</div>
+
+
+{END UpdateDate_fieldblock}
+											
+{BEGIN UpdateTime_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_UpdateTime}  r-vertical-field" data-fieldname="UpdateTime" data-signal-error-for="UpdateTime{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="UpdateTime" data-fieldname="UpdateTime" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_UpdateTime}">
+		
+		{BEGIN UpdateTime_label}{$label pProductItems UpdateTime }{END UpdateTime_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$UpdateTime_value}	</div>
+
+		
+</div>
+
+
+{END UpdateTime_fieldblock}
+											
+{BEGIN Block_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Block}  r-vertical-field" data-fieldname="Block" data-signal-error-for="Block{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field17" {$item_integrated_edit_field17} data-pageid="{$pageid}" data-field="Block" data-fieldname="Block" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Block}">
+		
+		{BEGIN Block_label}{$label pProductItems Block }{END Block_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Block_value}	</div>
+
+		
+</div>
+
+
+{END Block_fieldblock}
+											
+{BEGIN rate_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_rate}  r-vertical-field" data-fieldname="rate" data-signal-error-for="rate{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field18" {$item_integrated_edit_field18} data-pageid="{$pageid}" data-field="rate" data-fieldname="rate" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_rate}">
+		
+		{BEGIN rate_label}{$label pProductItems rate }{END rate_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$rate_value}	</div>
+
+		
+</div>
+
+
+{END rate_fieldblock}
+											
+{BEGIN product_image_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_product_image}  r-vertical-field" data-fieldname="product_image" data-signal-error-for="product_image{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field19" {$item_integrated_edit_field19} data-pageid="{$pageid}" data-field="product_image" data-fieldname="product_image" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_product_image}">
+		
+		{BEGIN product_image_label}{$label pProductItems product_image }{END product_image_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$product_image_value}	</div>
+
+		
+</div>
+
+
+{END product_image_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN back_button}
+<span data-itemtype="view_back_list" data-itemid="view_back_list" {$item_view_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Back to list			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="view_close" data-itemid="view_close" {$item_view_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" href="#" {$closebutton_attrs} >
+							Close window			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-menu-hamburger"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN edit_page_button}
+	<li data-itemtype="view_edit" data-itemid="view_edit" {$item_view_edit} data-pageid="{$pageid}" data-small >
+				<a  href="pproductitems_edit.php?{$editlink}" {$edit_page_button_attrs}  title="" >
+				
+		Edit		
+		</a>
+	</li>
+{END edit_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

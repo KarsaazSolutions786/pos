@@ -1,0 +1,165 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel AccountCBal1 import}","hidden":"{$item_hide_import_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+											],
+		
+		]
+	}
+}
+,
+		
+				
+								
+{
+	table: {
+	
+				
+		location: 'grid',
+		
+		
+		widths: [
+								"%", 
+					 ],	
+		
+			heights: [
+								
+			"%",
+			 
+				],
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":{$Code_pdfvalue},"hidden":"{$item_hide_import_field}"},
+				
+				
+			{"text":{$ParentAccountCode_pdfvalue},"hidden":"{$item_hide_import_field1}"},
+				
+				
+			{"text":{$ParentCode_pdfvalue},"hidden":"{$item_hide_import_field2}"},
+				
+				
+			{"text":{$AccountCode_pdfvalue},"hidden":"{$item_hide_import_field3}"},
+				
+				
+			{"text":{$BuCode_pdfvalue},"hidden":"{$item_hide_import_field4}"},
+				
+				
+			{"text":{$AccountTypeCode_pdfvalue},"hidden":"{$item_hide_import_field5}"},
+				
+				
+			{"text":{$AccountType_pdfvalue},"hidden":"{$item_hide_import_field6}"},
+				
+				
+			{"text":{$CBalance_pdfvalue},"hidden":"{$item_hide_import_field7}"},
+				
+				
+			{"text":{$CBalStatus_pdfvalue},"hidden":"{$item_hide_import_field8}"},
+				
+				
+			{"text":{$FcCBalance_pdfvalue},"hidden":"{$item_hide_import_field9}"},
+				
+				
+			{"text":{$FCBalStatus_pdfvalue},"hidden":"{$item_hide_import_field10}"},
+				
+				
+			{"text":{$Remarks_pdfvalue},"hidden":"{$item_hide_import_field11}"},
+				
+				
+			{"text":{$FcCurrencyCode_pdfvalue},"hidden":"{$item_hide_import_field12}"},
+				
+				
+			{"text":{$AccStatusType_pdfvalue},"hidden":"{$item_hide_import_field13}"},
+				
+				
+			{"text":{$UDate_pdfvalue},"hidden":"{$item_hide_import_field14}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+											],
+		
+		]
+	}
+}
+,
+		
+					]
+}
+  

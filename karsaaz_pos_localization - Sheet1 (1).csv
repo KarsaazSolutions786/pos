@@ -1,0 +1,355 @@
+Key,En,Description
+sidebar_menu_dashboard,Dashboard,Main navigation menu link
+sidebar_menu_transaction_book,Transaction Book,Main navigation menu link
+sidebar_menu_setup_books,Setup Books,Main navigation menu link
+sidebar_menu_account_book,Account Book,Main navigation menu link
+sidebar_menu_reports,Reports,Main navigation menu link
+sidebar_menu_preference,Preference,Main navigation menu link
+footer_company_text,Karsaaz Solutions,Footer company branding text
+app_name_branding,Karsaaz POS,Main application name in sidebar header
+sidebar_submenu_orders_list,Orders List,Sub-menu item under Transaction Book
+sidebar_submenu_point_of_sale,Point of Sale,Sub-menu item under Transaction Book
+sidebar_submenu_pos_list,POS List,Sub-menu item under Transaction Book
+sidebar_submenu_accounts,Accounts,Sub-menu item under Setup Books
+sidebar_submenu_customers,Customers,Sub-menu item under Setup Books
+sidebar_submenu_employees,Employees,Sub-menu item under Setup Books
+sidebar_submenu_banks,Banks,Sub-menu item under Setup Books
+sidebar_submenu_products,Products,Sub-menu item under Setup Books
+sidebar_submenu_suppliers,Suppliers,Sub-menu item under Setup Books
+sidebar_submenu_customer_groups,Customer Groups,Sub-menu item under Setup Books
+sidebar_submenu_employee_groups,Employee Groups,Sub-menu item under Setup Books
+sidebar_submenu_product_groups,Product Groups,Sub-menu item under Setup Books
+sidebar_submenu_supplier_groups,Supplier Groups,Sub-menu item under Setup Books
+sidebar_submenu_bank_groups,Bank Groups,Sub-menu item under Setup Books
+sidebar_submenu_user_groups,User Groups,Sub-menu item under Setup Books
+sidebar_submenu_journal_voucher,Journal Voucher,Sub-menu item under Account Book
+sidebar_submenu_voucher_list,Voucher List,Sub-menu item under Account Book
+sidebar_submenu_account_ledger,Account Ledger,Sub-menu item under Reports
+sidebar_submenu_trial_balance,Trial Balance,Sub-menu item under Reports
+sidebar_submenu_closing_month,Closing Month,Sub-menu item under Preference
+sidebar_submenu_user_management,User Management,Sub-menu item under Preference
+dashboard_title,Dashboard,Main page heading
+welcome_user_msg,Welcome to your user dashboard,Welcome message on dashboard
+role_access_text,You have access to the following features based on your role.,Role-based access description
+logout_btn,Logout,Logout button text
+card_total_cash,Total Cash,Dashboard summary card title
+card_today_cash_in,Today Cash In,Sub-label in cash card
+card_today_cash_out,Today Cash Out,Sub-label in cash card
+card_total_sales,Total Sales,Dashboard summary card title
+card_total_cash_bank,Total Cash in Bank,Dashboard summary card title
+card_incoming,Incoming,Sub-label in bank card
+card_outgoing,Outgoing,Sub-label in bank card
+card_total_expense,Total Expense,Dashboard summary card title
+card_today_expense,Today Expense,Sub-label in expense card
+card_total_debtors,Total Debtors,Dashboard summary card title
+card_total_creditors,Total Creditors,Dashboard summary card title
+section_all_creditors,All Creditors,Table section heading
+section_all_debitors,All Debitors,Table section heading
+table_col_sno,SNO.,Table column header
+table_col_party_name,Party Name,Table column header
+table_col_account_type,Account Type,Table column header
+table_col_balance,Balance,Table column header
+table_col_last_updated,Last Updated,Table column header
+table_no_records,No records Found,Empty state table message
+section_debitors,Debitors,Table section heading
+section_creditors,Creditors,Table section heading
+section_cash_in_hand_debit,Cash In Hand (Debit),Table section heading
+section_parties_to_pay_credit,Parties to Pay (Credit),Table section heading
+section_cash_incoming_bank_debit,Cash Incoming in Bank (Debit),Table section heading
+section_cash_outgoing_bank_credit,Cash Outgoing in Bank (Credit),Table section heading
+section_expense_debit,Expense (Debit),Table section heading
+page_title_orders_list,Orders List,Main page heading
+section_recent_orders,Recent Orders,Table section heading
+table_col_date,DATE,Table column header
+table_col_order_no,ORDER NO,Table column header
+table_col_party,PARTY,Table column header
+table_col_product,PRODUCT,Table column header
+table_col_qty,QTY,Table column header
+table_col_status,STATUS,Table column header
+table_col_update_status,UPDATE STATUS,Table column header
+status_label_open,OPEN,Order status tag text
+btn_mark_as_closed,Mark as Closed,Action button text
+pagination_previous,Previous,Pagination navigation text
+pagination_next,Next,Pagination navigation text
+toggle_btn_cash,Cash,Payment method toggle button
+toggle_btn_credit,Credit,Payment method toggle button
+label_select_customer,Select Customer,Dropdown input label
+btn_add_new_customer,Add,Button text to add a new customer
+page_title_pos,Point of Sale (POS),Main page heading
+label_sale_date,Sale Date:,Date picker label
+label_sale_man,Sale Man,Dropdown input label
+table_col_product_name,Product Name,POS table column header
+table_col_price,Price,POS table column header
+table_col_quantity,Quantity,POS table column header
+table_col_total,Total,POS table column header
+label_total_amount,Total Amount,Summary section label
+label_invoice_discount,Invoice Discount,Summary section label
+label_total_item,Total Item,Summary section label
+label_salesman_commission,Salesman Commission,Summary section label
+label_commission_type,Commission Type,Summary section label
+label_grand_total,Grand Total:,Final total display label
+btn_save_sale,Save,Action button text
+page_title_pos_list,POS List,Main page heading
+btn_add_new_pos,Add New,Action button to create new POS entry
+label_show_entries,Show entries,Pagination entries selector label
+table_col_date_pos,Date,POS table column header
+table_col_order_no_pos,Orde No.,POS table column header
+table_col_party_name_pos,Party Name,POS table column header
+table_col_product_name_pos,Product Name,POS table column header
+table_col_quantity_pos,Quantity,POS table column header
+table_col_rate_pos,Rate,POS table column header
+table_col_amount_pos,Amount,POS table column header
+table_col_action_pos,Action,POS table column header
+pagination_info_text,Showing 1 to 5 of 5 entries,Table pagination summary text
+page_title_accounts_info,Accounts Information,Main page heading
+btn_add_account,Add,Action button to add a new account
+label_search,Search:,Search input label
+table_col_code,CODE,Table column header
+table_col_name,NAME,Table column header
+table_col_main_group,ACCOUNT MAIN GROUP,Table column header
+table_col_sub_group,ACCOUNT SUB GROUP,Table column header
+table_col_block,BLOCK,Table column header
+table_col_action,ACTION,Table column header
+status_label_no,NO,Block status indicator text
+status_label_yes,YES,Block status indicator text
+page_title_add_new_account,Add New Account,Main page heading
+btn_back,Back,Navigation button text
+btn_save_account_top,Save Account,Top action button text
+section_basic_info,Basic Information,Form section heading
+label_business_unit,Business Unit,Input field label
+label_old_code,Old Code,Input field label
+label_account_name,Account Name,Input field label
+label_account_main_group,Account Main Group,Input field label
+label_account_sub_group,Account Sub Group,Input field label
+label_block_status,Block Status,Input field label
+label_remarks,Remarks,Textarea label
+btn_save_account_bottom,Save Account,Bottom action button text
+page_title_customer_list,Customer List,Main page heading
+btn_add_new_customer_main,Add New,Action button to create a new customer entry
+table_col_code_cust,CODE,Customer table column header
+table_col_business_unit_cust,BUSINESS UNIT,Customer table column header
+table_col_old_code_cust,OLD CODE,Customer table column header
+table_col_name_cust,NAME,Customer table column header
+table_col_contact_name_cust,CONTACT NAME,Customer table column header
+table_col_group_code_cust,GROUP CODE,Customer table column header
+table_col_phone_cust,PHONE,Customer table column header
+table_col_block_cust,BLOCK,Customer table column header
+table_col_action_cust,ACTION,Customer table column header
+page_title_add_new_customer,Add New Customer,Main page heading
+section_contact_info,Contact Information,Form section heading
+section_address_info,Address Information,Form section heading
+label_customer_name,Customer Name,Input field label
+label_contact_name_field,Contact Name,Input field label
+label_group_code,Group Code,Input field label
+label_security_deposit,Security Deposit,Input field label
+label_phone_cell,Phone / Cell,Input field label
+label_other_number,Other Number,Input field label
+label_email,Email,Input field label
+label_fax,Fax,Input field label
+label_web_address,Web Address,Input field label
+label_address,Address,Textarea label
+btn_save_customer,Save Customer,Action button text
+section_legal_info,Legal Information,Form section heading
+section_sales_info,Sales Information,Form section heading
+label_cnic,CNIC,Input field label
+label_ntn_number,NTN Number,Input field label
+label_sales_tax_reg_no,Sales Tax Registration No,Input field label
+label_salesman_code,Salesman Code,Dropdown field label
+label_commission_percent,Commission,Input field label with percentage/amount context
+label_block_status_dropdown,Block Status,Dropdown field label
+label_remarks_customer,Remarks,Textarea field label for customer notes
+btn_save_customer_final,Save Customer,Action button text to submit form
+page_title_employee_list,Employee List,Main page heading
+btn_add_new_employee,Add New,Action button to create a new employee entry
+table_col_code_emp,CODE,Employee table column header
+table_col_business_unit_emp,BUSINESS UNIT,Employee table column header
+table_col_old_code_emp,OLD CODE,Employee table column header
+table_col_name_emp,NAME,Employee table column header
+table_col_father_name_emp,FATHER NAME,Employee table column header
+table_col_group_emp,GROUP,Employee table column header
+table_col_gender_emp,GENDER,Employee table column header
+table_col_phone_emp,PHONE,Employee table column header
+table_col_block_emp,BLOCK,Employee table column header
+table_col_action_emp,ACTION,Employee table column header
+pagination_no_entries_emp,Showing 1 to 0 of 0 entries,Empty state pagination text
+page_title_add_new_employee,Add New Employee,Main page heading
+btn_save_employee_top,Save Employee,Top action button text
+section_basic_info_emp,Basic Information,Form section heading
+label_employee_name,Employee Name,Input field label
+label_father_name,Father Name,Input field label
+label_employee_group,Employee Group,Dropdown field label
+label_gender,Gender,Dropdown field label
+label_user_name,User Name,Input field label
+section_contact_info_emp,Contact Information,Form section heading
+section_address_info_emp,Address Information,Form section heading
+btn_save_employee_bottom,Save Employee,Bottom action button text
+section_employment_info,Employment Information,Form section heading
+label_commission_group,Commission Group,Dropdown field label
+label_per_hour_rate,Per Hour Rate,Input field label
+label_total_salary,Total Salary,Input field label
+label_office_time_from,Office Time From,Time picker label
+label_office_time_to,Office Time To,Time picker label
+page_title_banks,Banks,Main page heading
+btn_add_new_bank,Add New,Action button to add a new bank
+table_col_id,ID,Bank table column header
+table_col_old_code_bank,OLD CODE,Bank table column header
+table_col_bank_name,BANK NAME,Bank table column header
+table_col_account_title,ACCOUNT TITLE,Bank table column header
+table_col_bank_group_code,BANK GROUP CODE,Bank table column header
+table_col_action_bank,ACTION,Bank table column header
+page_title_add_new_bank,Add New Bank,Main page heading
+btn_save_bank,Save Bank,Action button text
+section_bank_account_info,Bank Account Information,Form section heading
+label_bank_name,Bank Name,Input field label
+label_title_of_account,Title of Account,Input field label
+label_iban_number,IBAN Number,Input field label
+label_bank_group_code,Bank Group Code,Dropdown field label
+page_title_product_list,Product List,Main page heading
+btn_add_new_product,Add New,Action button to add a new product
+table_col_code_prod,CODE,Product table column header
+table_col_old_code_prod,OLD CODE,Product table column header
+table_col_name_prod,NAME,Product table column header
+table_col_group_prod,GROUP,Product table column header
+table_col_unit,UNIT,Product table column header
+table_col_packing_qty,PACKING QTY,Product table column header
+table_col_block_prod,BLOCK,Product table column header
+table_col_action_prod,ACTION,Product table column header
+page_title_add_new_product,Add New Product,Main page heading
+btn_save_product,Save Product,Action button text
+section_product_info,Product Information,Form section heading
+label_bar_code,Bar Code,Input field label
+label_product_group,Product Group,Dropdown field label
+label_unit,Unit,Dropdown field label
+label_product_name,Product Name,Input field label
+label_rate,Rate,Input field label
+label_upload_image,Upload Image,File input label
+section_packaging_info,Packaging Information,Form section heading
+label_packing,Packing,Input field label
+label_packing_qty,Packing Qty,Input field label
+label_block_simple,Block,Dropdown field label
+page_title_supplier_list,Supplier List,Main page heading
+btn_add_new_supplier,Add New,Action button to add a new supplier
+table_col_code_supp,CODE,Supplier table column header
+table_col_old_code_supp,OLD CODE,Supplier table column header
+table_col_name_supp,NAME,Supplier table column header
+table_col_contact_name_supp,CONTACT NAME,Supplier table column header
+table_col_group_supp,GROUP,Supplier table column header
+table_col_phone_supp,PHONE,Supplier table column header
+table_col_block_supp,BLOCK,Supplier table column header
+table_col_action_supp,ACTION,Supplier table column header
+page_title_add_new_supplier,Add New Supplier,Main page heading
+btn_save_supplier,Save Supplier,Action button text
+label_supplier_name,Supplier Name,Input field label
+label_supplier_group,Supplier Group,Dropdown field label
+label_phone_simple,Phone,"Input field label (Different from ""Phone / Cell"")"
+label_cell_simple,Cell,"Input field label (Different from ""Phone / Cell"")"
+label_sale_tax_reg_short,Sale Tax Reg No,"Input label (Different from ""Sales Tax Registration No"")"
+label_ntn_no_short,NTN No,"Input label (Different from ""NTN Number"")"
+page_title_add_cust_group,Add New Customer Group,Main page heading
+btn_save_cust_group,Save Customer Group,Action button text
+section_group_info,Group Information,Form section heading
+label_group_name,Group Name,Input field label
+page_title_employee_group_list,Employee Group List,Main page heading
+table_col_remarks_header,REMARKS,"Table column header (Unique uppercase header, distinct from form label)"
+page_title_employee_group_list,Employee Group List,Main page heading
+table_col_remarks_header,REMARKS,"Table column header (Uppercase, distinct from form label)"
+page_title_add_employee_group,Add New Employee Group,Main page heading
+btn_save_employee_group,Save Employee Group,Action button text
+page_title_product_group_list,Product Group List,Main page heading
+page_title_add_product_group,Add New Product Group,Main page heading
+btn_save_product_group,Save Product Group,Action button text
+label_code_input,Code,"Input field label (Unique, distinct from ""Old Code"")"
+label_name_input,Name,"Input field label (Unique, distinct from ""Group Name"")"
+label_name_urdu,Name (Urdu),Input field label
+label_remarks_urdu,Remarks (Urdu),Input field label
+label_ecol1,ECol1,Input field label (Custom field)
+label_ecol2,ECol2,Input field label (Custom field)
+label_lock,Lock,Dropdown field label
+label_hide,Hide,Dropdown field label
+label_bookmark,Bookmark,Dropdown field label
+page_title_supplier_group_list,Supplier Group,Main page heading
+page_title_add_supplier_group,Add New Supplier Group,Main page heading
+btn_save_supplier_group,Save Supplier Group,Action button text
+page_title_bank_group_list,Bank Group,Main page heading
+page_title_add_bank_group,Add New Bank Group,Main page heading
+btn_save_bank_group,Save Bank Group,Action button text
+label_bank_group_name,Bank Group Name,"Input field label (Unique, specific to bank groups)"
+page_title_user_group_list,User Group,Main page heading
+page_title_add_user_group,Add New User Group,Main page heading
+btn_save_user_group,Save User Group,Action button text
+page_title_jv_entry,Journal Voucher Entry,Main page heading
+page_subtitle_jv,Secure & Professional Accounting Management,Page subtitle
+section_account_details,Account Details,Form section heading
+label_date,Date,Input field label
+label_bill_number,Bill Number,Input field label
+label_cheque_number,Cheque Number,Input field label
+label_amount,Amount,Input field label
+label_debit_account,Debit Account,Dropdown field label
+label_credit_account,Credit Account,Dropdown field label
+label_debit_narration,Debit Narration,Textarea field label
+label_credit_narration,Credit Narration,Textarea field label
+btn_save_entry,Save Entry,Action button text
+btn_exit,Exit,Action button text
+page_title_voucher_list,Voucher,Main page heading
+table_col_date,Date,Table column header
+table_col_trans_status,Transaction Status,Table column header
+table_col_trans_type,Transaction Type,Table column header
+table_col_account_name,AccountName,Table column header
+table_col_bill_no_header,Bill No.,Table column header (distinct from form label)
+table_col_cheque_no_header,Cheque No.,Table column header (distinct from form label)
+table_col_narration_header,Narration,Table column header
+table_col_amount_header,Amount,Table column header
+table_col_actions_header,Actions,Table column header
+page_title_account_ledger,Account Ledger,Main page heading
+label_account_simple,Account,Filter dropdown label
+label_start_date,Start Date,Date picker label
+label_end_date,End Date,Date picker label
+btn_apply,Apply,Action button text
+btn_reset,Reset,Action button text
+table_col_s_no,S.NO,Table column header
+table_col_voucher_no,VOUCHER NO,Table column header
+table_col_description,DESCRIPTION,Table column header
+table_col_debit,DEBIT,Table column header
+table_col_credit,CREDIT,Table column header
+table_col_balance,BALANCE,Table column header
+text_bf_balance,B / F Balance,Static row text (Brought Forward)
+text_closing_balance,Account Closing Balance As On,Footer text
+text_net_after_period,Net After Period,Footer text
+page_title_trial_balance,Trial Balance,Main page heading
+section_filter_accounts,Filter Accounts,Filter section heading
+label_account_type,Account Type,Dropdown label
+label_credit_balance_filter,Credit Balance,Filter dropdown label
+label_debit_balance_filter,Debit Balance,Filter dropdown label
+label_group_by,Group By,Dropdown label
+placeholder_search_group,Search by name or group...,Search input placeholder
+dropdown_option_greater,Greater Than,Filter condition text
+dropdown_option_less,Less Than,Filter condition text
+dropdown_option_equal,Equal,Filter condition text
+table_col_main_groups,ACCOUNT MAIN GROUPS,Table column header
+table_col_sub_groups,ACCOUNT SUB GROUPS,Table column header
+table_col_debit_bal,DEBIT BALANCE,"Table column header (Distinct from ""Debit"")"
+table_col_credit_bal,CREDIT BALANCE,"Table column header (Distinct from ""Credit"")"
+page_title_closing_month_list,Add New Closing Month,Main page heading
+btn_add_closing_month_action,Add Closing Month,Action button text
+table_col_code_closing,CODE,Table column header
+table_col_month,MONTH,Table column header
+table_col_year,YEAR,Table column header
+table_col_status,STATUS,Table column header
+table_col_created_by,CREATED BY,Table column header
+page_title_user_info_list,User Info List,Main page heading
+btn_add_plus,Add ,"Action button text (Distinct from ""Add New"")"
+table_col_user_name,USER NAME,Table column header
+table_col_email,EMAIL,Table column header
+table_col_user_type,USER TYPE,Table column header
+page_title_add_user_info,User Info - Add New,Main page heading
+btn_save_user_info,Save User Info,Action button text
+label_cell_no,Cell No,"Input field label (Distinct from ""Cell"" or ""Phone"")"
+label_login_user_name,Login User Name,Input field label
+label_password,Password,Input field label
+label_password_hint,Password Hint,Input field label
+label_group_code,Group Code,Dropdown field label
+label_user_type_select,User Type,Dropdown field label
+label_is_account_active,Is Account Active,Dropdown field label
+section_security_info,Security Information,Form section heading
+label_no_of_attempt,No Of Attempt,Input field label
+label_no_of_wrong_attempt,No Of Wrong Attempt,Input field label

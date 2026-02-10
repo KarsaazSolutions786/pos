@@ -1,0 +1,34 @@
+7/18/25, 6:22 PM P Accounts, Add new
+P
+Accounts,
+Add
+new
+localhost/karsaaz_pos/paccounts_add.php 1 / 3
+
+7/18/25, 6:22 PM P Accounts, Add new
+Parent  Account Code
+Code  *
+Virtual Code
+BUnit
+1
+Old Code
+Coa Code
+Acc Sub Code
+Name
+Acc Type
+Remarks
+Unit Code
+1
+User Name
+localhost/karsaaz_pos/paccounts_add.php 2 / 3
+
+7/18/25, 6:22 PM P Accounts, Add new
+Create Date
+Create T ime
+Update User
+Update Date
+Update T ime
+Block
+Group Code
+   
+localhost/karsaaz_pos/paccounts_add.php 3 / 3
