@@ -435,8 +435,8 @@ function DashboardContent() {
     .reduce((sum, acc) => sum + Math.abs(parseFloat(acc.CBalance || "0")), 0);
 
   const tablesConfig = [
-    { title: t("section_all_creditors", "All Creditors"), data: allCreditors, highlight: "credit" },
     { title: t("section_all_debitors", "All Debitors"), data: allDebitors, highlight: "debit" },
+    { title: t("section_all_creditors", "All Creditors"), data: allCreditors, highlight: "credit" },
     { title: t("section_debitors", "Debitors"), data: debitorsTable, highlight: "debit" },
     { title: t("section_creditors", "Creditors"), data: creditorsTable, highlight: "credit" },
     { title: t("section_cash_in_hand_debit", "Cash In Hand (Debit)"), data: cashInTable, highlight: "debit" },
