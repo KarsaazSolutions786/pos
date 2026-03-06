@@ -1,0 +1,48 @@
+# ===== MariaDB / MySQL data =====
+mariadb_data/data/
+mariadb_data/*.sql
+
+# ===== macOS artifacts =====
+__MACOSX/
+.DS_Store
+
+# ===== PHPRunner project files =====
+karsaaz_pos/
+*.phpr
+
+# ===== Node / Next.js =====
+node_modules/
+next_frontend/.next/
+next_frontend/out/
+next_frontend/build/
+next_frontend/node_modules/
+next_frontend/.env*.local
+next_frontend/.vercel
+next_frontend/*.tsbuildinfo
+next_frontend/next-env.d.ts
+
+# ===== PHP backend =====
+php_backend/tmp/
+php_backend/*.log
+
+# ===== IDEs & editors =====
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ===== OS files =====
+Thumbs.db
+Desktop.ini
+
+# ===== Archives =====
+*.zip
+*.tar
+*.gz
+*.rar
+
+# ===== Misc =====
+*.pem
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
