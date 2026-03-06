@@ -146,6 +146,59 @@ function fetchGltdTotals(array $accCodes, string $startDT, string $endDT): array
     ];
 }
 
+/**
+ * Fetch individual GLTD entries for given accounts within date range.
+ * Returns each row with account name, amount, date, status, narration.
+ */
+function fetchGltdEntries(array $accCodes, string $startDT, string $endDT): array
+{
+    $in = buildIntInList($accCodes);
+    if ($in === '') return [];
+
+    $startDT = db_addslashes($startDT);
+    $endDT   = db_addslashes($endDT);
+
+    $sql = "
+        SELECT
+            g.`CodeD`,
+            g.`Code` AS GLTH_Code,
+            g.`TDate`,
+            g.`AccountCode`,
+            p.`Name` AS AccountName,
+            g.`Amount`,
+            g.`TStatus`,
+            g.`TType`,
+            g.`TBook`,
+            g.`Narration`,
+            g.`BookCode`
+        FROM `gltd` g
+        LEFT JOIN `paccounts` p ON g.`AccountCode` = p.`Code`
+        WHERE g.`AccountCode` IN ($in)
+          AND g.`TDate` >= '$startDT'
+          AND g.`TDate` <  '$endDT'
+          AND IFNULL(g.`TType`, '') <> 'MONTH_CLOSE'
+        ORDER BY g.`TDate` ASC, g.`CodeD` ASC
+    ";
+
+    $rs = DB::Query($sql);
+    $entries = [];
+    while ($rs && ($row = $rs->fetchAssoc())) {
+        $entries[] = [
+            'CodeD'       => (int)$row['CodeD'],
+            'GLTH_Code'   => (int)$row['GLTH_Code'],
+            'TDate'       => $row['TDate'],
+            'AccountCode' => (int)$row['AccountCode'],
+            'AccountName' => $row['AccountName'] ?? '',
+            'Amount'      => (float)$row['Amount'],
+            'TStatus'     => $row['TStatus'] ?? 'Dr',
+            'TType'       => $row['TType'] ?? '',
+            'TBook'       => $row['TBook'] ?? '',
+            'Narration'   => $row['Narration'] ?? '',
+        ];
+    }
+    return $entries;
+}
+
 // -------------------- Main --------------------
 try {
 
@@ -222,6 +275,9 @@ try {
         $salesTotals   = fetchGltdTotals($salesAccountCodes, $startDT, $endDT);
         $expenseTotals = fetchGltdTotals($expenseAccountCodes, $startDT, $endDT);
 
+        $salesEntries   = fetchGltdEntries($salesAccountCodes, $startDT, $endDT);
+        $expenseEntries = fetchGltdEntries($expenseAccountCodes, $startDT, $endDT);
+
         $data[] = [
             'ClosingCode'    => $year_code,
             'VYear'          => $year,
@@ -229,6 +285,8 @@ try {
             'Range'          => ['start' => $startDT, 'end_exclusive' => $endDT],
             'SalesTotals'    => $salesTotals,
             'ExpenseTotals'  => $expenseTotals,
+            'SalesEntries'   => $salesEntries,
+            'ExpenseEntries' => $expenseEntries,
         ];
     }
 

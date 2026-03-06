@@ -353,6 +353,9 @@ try {
 
             DB::Insert("GLTD", $gltd);
 
+            // 3) Mark the closing month as "Closed"
+            DB::Exec("UPDATE sclosingmonth SET CloseStatus = 'Closed' WHERE Code = '" . db_addslashes($closing_code) . "'");
+
             DB::Exec("COMMIT");
         } catch (Exception $inner) {
             DB::Exec("ROLLBACK");
