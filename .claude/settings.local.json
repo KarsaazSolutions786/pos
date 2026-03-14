@@ -44,7 +44,10 @@
       "Bash(powershell -Command \"\\(Get-Content page.tsx -Raw\\) -replace ''title=\"\"Edit\"\"'', ''title={t\\(\"\"btn_edit\"\", \"\"Edit\"\"\\)}'' -replace ''title=\\\\{closed \\\\? \"\"This voucher''''s month is closed — deletion blocked\"\" : \"\"Delete\"\"\\\\}'', ''title={closed ? t\\(\"\"tooltip_month_closed\"\", \"\"This voucher''''s month is closed - deletion blocked\"\"\\) : t\\(\"\"btn_delete\"\", \"\"Delete\"\"\\)}'' | Set-Content page.tsx -NoNewline\")",
       "Bash(taskkill:*)",
       "mcp__MCP_DOCKER__browser_navigate",
-      "WebFetch(domain:localhost)"
+      "WebFetch(domain:localhost)",
+      "Bash(xargs grep:*)",
+      "Bash(xargs ls:*)",
+      "Bash(npx next:*)"
     ]
   }
 }

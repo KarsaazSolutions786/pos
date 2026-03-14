@@ -169,6 +169,52 @@ function fetchSignedSumAndCount(array $accCodes, string $startDT, string $endDT,
 }
 
 /**
+ * Per-account signed SUM grouped by AccountCode.
+ * Returns an array of [AccountCode, AccountName, SignedSum] for accounts with non-zero balance.
+ * Used to create individual closing entries that zero out each account.
+ */
+function fetchPerAccountSignedSums(array $accCodes, string $startDT, string $endDT, int $buCode): array
+{
+    $in = buildIntInList($accCodes);
+    if ($in === '') return [];
+
+    $startDT = db_addslashes($startDT);
+    $endDT   = db_addslashes($endDT);
+
+    $sql = "
+        SELECT
+            g.`AccountCode`,
+            p.`Name` AS AccountName,
+            COALESCE(SUM(
+                CASE
+                    WHEN UPPER(IFNULL(g.`TStatus`, 'DR')) = 'CR' THEN -g.`Amount`
+                    ELSE g.`Amount`
+                END
+            ), 0) AS SignedSum
+        FROM `GLTD` g
+        LEFT JOIN `paccounts` p ON g.`AccountCode` = p.`Code`
+        WHERE g.`AccountCode` IN ($in)
+          AND g.`TDate` >= '$startDT'
+          AND g.`TDate` <  '$endDT'
+          AND g.`BUnit` = $buCode
+          AND IFNULL(g.`TType`, '') <> 'MONTH_CLOSE'
+        GROUP BY g.`AccountCode`, p.`Name`
+        HAVING ABS(SignedSum) > 0.001
+    ";
+
+    $rs = DB::Query($sql);
+    $results = [];
+    while ($rs && ($row = $rs->fetchAssoc())) {
+        $results[] = [
+            'AccountCode' => (int)$row['AccountCode'],
+            'AccountName' => $row['AccountName'] ?? '',
+            'SignedSum'    => (float)$row['SignedSum'],
+        ];
+    }
+    return $results;
+}
+
+/**
  * Guard: prevent running closing twice for same month closing code
  * (checks GLTD for any MONTH_CLOSE line with BookID=closing_code)
  */
@@ -305,6 +351,19 @@ try {
         $code = "MC";              // BookCode (varchar)
         $bookId = (string)$closing_code;
 
+        // Fetch per-account balances for zeroing entries
+        $salesPerAccount   = fetchPerAccountSignedSums($salesAccountCodes, $startDT, $endDT, $buCode);
+        $expensePerAccount = fetchPerAccountSignedSums($expenseAccountCodes, $startDT, $endDT, $buCode);
+        $allAccountEntries = array_merge($salesPerAccount, $expensePerAccount);
+
+        // Calculate total amount across all entries for GLTH header
+        $totalEntryAmount = $abs; // P&L entry amount
+        foreach ($allAccountEntries as $accEntry) {
+            $totalEntryAmount += abs($accEntry['SignedSum']);
+        }
+
+        $closingEntriesPosted = 0;
+
         DB::Exec("START TRANSACTION");
         try {
             // 1) GLTH header
@@ -322,18 +381,57 @@ try {
             $gltHData["CreateTime"] = $currentdatetime;
             $gltHData["Block"] = 0;
             $gltHData["Lock"] = 0;
-            $gltHData["TotalAmount"] = $abs;
+            $gltHData["TotalAmount"] = $totalEntryAmount;
 
             DB::Insert("GltH", $gltHData);
             $glth_id = DB::LastId();
 
-            // 2) Single GLTD line (only AccountCode 13)
+            // 2) Per-account zeroing GLTD entries (zero out each sales/expense account)
+            foreach ($allAccountEntries as $accEntry) {
+                $accCode   = (int)$accEntry['AccountCode'];
+                $accName   = $accEntry['AccountName'];
+                $signedSum = (float)$accEntry['SignedSum'];
+
+                // Opposite TStatus to zero out the account balance
+                // SignedSum > 0 means net Debit => post Credit to zero it
+                // SignedSum < 0 means net Credit => post Debit to zero it
+                $zeroTStatus = ($signedSum > 0) ? 'Cr' : 'Dr';
+                $zeroAmount  = abs($signedSum);
+
+                $zeroNarr = "Month close $mName $year: zero out $accName ($accCode)";
+
+                $gltdZero = array();
+                $gltdZero["Code"] = $glth_id;
+                $gltdZero["BookCode"] = $code;
+                $gltdZero["BookID"] = $bookId;
+                $gltdZero["VirtualCode"] = $virtual_code;
+                $gltdZero["Status"] = "OPEN";
+                $gltdZero["TDate"] = $currentdatetime;
+                $gltdZero["BUnit"] = $buCode;
+                $gltdZero["TBook"] = "GL";
+                $gltdZero["TType"] = "MONTH_CLOSE";
+                $gltdZero["Narration"] = $zeroNarr;
+                $gltdZero["ParentAccountCode"] = 0;
+                $gltdZero["AccountCode"] = $accCode;
+                $gltdZero["Remarks"] = $master["Remarks"] ?? "";
+                $gltdZero["Amount"] = $zeroAmount;
+                $gltdZero["UserName"] = $userCode;
+                $gltdZero["CreateDate"] = $currentdatetime;
+                $gltdZero["CreateTime"] = $currentdatetime;
+                $gltdZero["Block"] = 0;
+                $gltdZero["TStatus"] = $zeroTStatus;
+
+                DB::Insert("GLTD", $gltdZero);
+                $closingEntriesPosted++;
+            }
+
+            // 3) P&L balancing GLTD entry (AccountCode 13)
             $narr = "Month close $mName $year: net $plStatus (Sales vs Expense)";
 
             $gltd = array();
-            $gltd["Code"] = $glth_id;           // link to GLTH
+            $gltd["Code"] = $glth_id;
             $gltd["BookCode"] = $code;
-            $gltd["BookID"] = $bookId;          // closing month code
+            $gltd["BookID"] = $bookId;
             $gltd["VirtualCode"] = $virtual_code;
             $gltd["Status"] = "OPEN";
             $gltd["TDate"] = $currentdatetime;
@@ -342,9 +440,9 @@ try {
             $gltd["TType"] = "MONTH_CLOSE";
             $gltd["Narration"] = $narr;
             $gltd["ParentAccountCode"] = 0;
-            $gltd["AccountCode"] = $PL_ACC;     // ONLY 13
+            $gltd["AccountCode"] = $PL_ACC;
             $gltd["Remarks"] = $master["Remarks"] ?? "";
-            $gltd["Amount"] = $abs;             // always positive
+            $gltd["Amount"] = $abs;
             $gltd["UserName"] = $userCode;
             $gltd["CreateDate"] = $currentdatetime;
             $gltd["CreateTime"] = $currentdatetime;
@@ -352,8 +450,9 @@ try {
             $gltd["TStatus"] = $tStatus;        // Dr (loss) / Cr (profit)
 
             DB::Insert("GLTD", $gltd);
+            $closingEntriesPosted++;
 
-            // 3) Mark the closing month as "Closed"
+            // 4) Mark the closing month as "Closed"
             DB::Exec("UPDATE sclosingmonth SET CloseStatus = 'Closed' WHERE Code = '" . db_addslashes($closing_code) . "'");
 
             DB::Exec("COMMIT");
@@ -374,13 +473,15 @@ try {
             'Posted' => true,
             'GLTH_ID' => $glth_id,
             'VirtualCode' => $virtual_code,
+            'ClosingEntriesPosted' => $closingEntriesPosted,
+            'AccountsZeroed' => count($allAccountEntries),
             'ProfitLoss' => ['Status' => $plStatus, 'Amount' => $abs, 'TStatus' => $tStatus]
         ];
     }
 
     echo json_encode([
         'success' => true,
-        'message' => 'Month closing posted: GLTH created then single GLTD entry in AccountCode=13 (Dr=Loss / Cr=Profit).',
+        'message' => 'Month closing posted: individual sales/expense accounts zeroed out with offsetting entries, P&L entry in AccountCode=13.',
         'BUnit' => $buCode,
         'data' => $results
     ]);
